@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Header6 extends Component {
   render() {
-    return <h6>Cheap vs. the Peer Group</h6>;
+    return <h6>Header6 lorum ipsum</h6>;
   }
 }
 

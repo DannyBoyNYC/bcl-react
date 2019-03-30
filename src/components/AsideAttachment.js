@@ -13,7 +13,8 @@ class AsideAttachment extends Component {
           <span>CDS Options.xls</span>
         </a>
         <span>
-          The market for CDS options has experienced significant growth
+          AsideAttchment - The market for CDS options has experienced
+          significant growth
         </span>
       </aside>
     );

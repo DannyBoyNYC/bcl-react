@@ -63,7 +63,6 @@ class App extends Component {
         <Caption />
         <CaptionSource />
         <Header6 />
-        <AsidePull />
         <Paragraph />
         <AsidePull />
         <Paragraph />

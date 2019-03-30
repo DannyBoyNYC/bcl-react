@@ -4,8 +4,7 @@ class Header3figure extends Component {
   render() {
     return (
       <h3 className="figure-header">
-        <span>FIGURE 1.</span> Russia Slowdown in inflation supports key rate
-        cuts
+        <span>Header3</span> contains span tag not supported in prod
       </h3>
     );
   }

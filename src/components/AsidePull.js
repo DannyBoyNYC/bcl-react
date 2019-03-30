@@ -4,8 +4,8 @@ class AsidePull extends Component {
   render() {
     return (
       <aside className="pull">
-        CDS index options provide the right to buy or sell index protection at a
-        predetermined strike and time
+        AsidePull - CDS index options provide the right to buy or sell index
+        protection at a predetermined strike and time
       </aside>
     );
   }
