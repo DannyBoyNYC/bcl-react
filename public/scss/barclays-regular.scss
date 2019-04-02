@@ -22,10 +22,167 @@
 /* multimedia - experimental */
 @import "imports/multimedia";
 /* to demo multichapter switching */
+// @import "imports/switching";
+@import "imports/related-research";
+
+html.zoomed {
+  font-size: 120%;
+}
+
+
+@import "imports/variables";
+@import "imports/fonts-local";
+@import "imports/mixins";
+@import "imports/elements";
+@import "imports/structure";
+@import "imports/pullquote";
+@import "imports/footnotes";
+@import "imports/sidebyside";
+@import "imports/meta";
+@import "imports/article-body";
+@import "imports/tables";
+@import "imports/figures";
+@import "imports/aside";
+@import "imports/byline";
+@import "imports/popovers";
+@import "imports/previous-next-links";
+@import "imports/quick-take";
+@import "imports/svg";
+@import "imports/toc";
+@import "imports/timeline";
+@import "imports/multipart-list";
+/* multimedia - experimental */
+@import "imports/multimedia";
+/* to demo multichapter switching */
 @import "imports/switching";
 @import "imports/related-research";
 
 html.zoomed {
-    font-size: 120%;
+  font-size: 120%;
 }
 
+// ratings inpage
+
+.ratings {
+  h3.header {
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 500;
+    color: #666;
+    display: none;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  ul li {
+    margin-bottom: 0.25rem;
+  }
+  ul li:nth-child(n+4) {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }  
+  .sector {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.875rem;
+  }
+  .sector-rating {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+  .status {
+    font-size: 0.75rem;
+    color: #666;
+  }
+}
+
+.shower {
+  padding: 0.25rem;
+  cursor: pointer;
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: white;
+  background-color: #007eb6;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+
+ul.showit li:nth-child(n+4) {
+  opacity: 1;
+  max-height: 23rem;
+  transition: all cubic-bezier(0.64, 0, 1, 0.33) 0.25s; 
+}
+
+.stuck {
+  position: fixed !important;
+  top: 80px;
+  width: 260px;
+}
+
+
+// equities sidebar
+
+.eqdata.ratings {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.5rem;
+
+  ul li:nth-child(n+4){
+    opacity: 1;
+    max-height: 300px;
+    overflow: auto;
+    grid-template-rows: auto;
+  }
+  ul li:nth-child(4),
+  ul li:nth-child(7),
+  ul li:nth-child(16) {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #999;
+  }
+  p {
+    margin: 0;
+  }
+  li {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto 20px;
+  }
+  .sector-rating {
+    text-align: right;
+  }
+  .status {
+    grid-column: 1 / span 2;
+    text-align: right;
+  }
+  .source {
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+  }
+  ul li:nth-child(19) {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #999;
+  }
+}
+
+
+.eqdata.ratings.multi {
+  ul li:nth-child(4),
+  ul li:nth-child(7),
+  ul li:nth-child(16) {
+    margin-top: 0;
+    padding-top: 0;
+    border: none;
+  }
+}
+
+.sector-rating a {
+  color: $text !important;
+}

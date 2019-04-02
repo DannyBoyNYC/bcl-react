@@ -7,7 +7,7 @@ class Certifications extends Component {
         <div className="main">
           <svg className="icn">
             <title>Related</title>
-            <use href="#book" />
+            <use xlinkHref="#book" />
           </svg>
           <h1>Related Research</h1>
         </div>
