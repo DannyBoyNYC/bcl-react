@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class EqDataTable extends Component {
   render() {
     return (
-      <div className="table-container">
-        <div className="figure-header table-xl">
-          <span className="table-xl--btn">
-            <svg className="icn">
+      <div className='table-container' id='eqdatatable'>
+        <div className='figure-header table-xl'>
+          <span className='table-xl--btn'>
+            <svg className='icn'>
               <title>Open table</title>
-              <use xlinkHref="#arrows-open" />
+              <use xlinkHref='#arrows-open' />
             </svg>
           </span>
-          <span className="fig-number">
+          <span className='fig-number'>
             FIGURE 1. Summary of our Ratings, Price Targets and Earnings Changes
             in this Report (all changes are shown in bold)
           </span>
@@ -20,18 +20,18 @@ class EqDataTable extends Component {
         <table
           style={{
             borderTopWeight: 2,
-            BorderTopStyle: 'solid',
-            borderTopColor: '#007eb6',
+            BorderTopStyle: "solid",
+            borderTopColor: "#007eb6"
           }}
         >
-           <thead>
+          <thead>
             <tr>
               <th>Company</th>
-              <th colSpan="2">Rating</th>
+              <th colSpan='2'>Rating</th>
               <th>Price</th>
-              <th colSpan="3">Price Target</th>        
-              <th colSpan="3">EPS FY1 (E)</th>
-              <th colSpan="3">EPS FY2 (E)</th>
+              <th colSpan='3'>Price Target</th>
+              <th colSpan='3'>EPS FY1 (E)</th>
+              <th colSpan='3'>EPS FY2 (E)</th>
             </tr>
           </thead>
           <thead>
@@ -144,8 +144,8 @@ class EqDataTable extends Component {
             </tr>
           </tbody>
         </table>
-        <p className="caption source">Source: Barclays Research</p>
-        <p className="caption source">
+        <p className='caption source'>Source: Barclays Research</p>
+        <p className='caption source'>
           Consensus numbers are from Refinitiv received on 18-Mar-2019; 13:35
           GMT
         </p>

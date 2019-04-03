@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
-import Iconlist from './Iconlist';
-import BylineSmall from './BylineSmall';
-import BylineLarge from './BylineLarge';
-import ReadStar from './ReadStar';
-import Disclosures from './Disclosures';
+import React, { Component } from "react";
+
+import Iconlist from "./components/Iconlist";
+import BylineSmall from "./components/BylineSmall";
+import BylineLarge from "./components/BylineLarge";
+import ReadStar from "./components/ReadStar";
+import Disclosures from "./components/Disclosures";
 
 class Sidebar extends Component {
   render() {
     return (
-      <div className="sidebar">
+      <div className='sidebar'>
         <Iconlist />
         <BylineSmall />
         <ReadStar />

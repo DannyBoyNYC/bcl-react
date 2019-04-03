@@ -1,44 +1,44 @@
-import React, { Component } from 'react';
-import Aside from './Aside';
-import AsideAttachment from './AsideAttachment';
-import AsidePull from './AsidePull';
-import Paragraph from './Paragraph';
-import ParagraphFootnote from './ParagraphFootnote';
-import Table from './Table';
-import TableBig from './TableBig';
-import Header2 from './Header2';
-import Header3 from './Header3';
-import Header3figure from './Header3figure';
-import Header4 from './Header4';
-import Header6 from './Header6';
-import Multimedia from './Multimedia';
-import MultimediaVideo from './MultimediaVideo';
-import PopableTable from './PopableTable';
-import ListUnordered from './ListUnordered';
-import ListOrdered from './ListOrdered';
-import Image from './Image';
-import Caption from './Caption';
-import CaptionSource from './CaptionSource';
-import Blockquote from './Blockquote';
-import SideBySide from './SideBySide';
-import Quicktake from './Quicktake';
-import ChapterLinks from './ChapterLinks';
-import ChapterTextLinks from './ChapterTextLinks';
-import MultipartList from './MultipartList';
-import DisclosuresBottom from './DisclosuresBottom';
+import React, { Component } from "react";
 
-import EqDataTable from '../equities/EqDataTable';
+import Aside from "./components/Aside";
+import AsideAttachment from "./components/AsideAttachment";
+import AsidePull from "./components/AsidePull";
+import Paragraph from "./components/Paragraph";
+import ParagraphFootnote from "./components/ParagraphFootnote";
+import Table from "./components/Table";
+import TableBig from "./components/TableBig";
+import Header2 from "./components/Header2";
+import Header3 from "./components/Header3";
+import Header3figure from "./components/Header3figure";
+import Header4 from "./components/Header4";
+import Header6 from "./components/Header6";
+import Multimedia from "./components/Multimedia";
+import MultimediaVideo from "./components/MultimediaVideo";
+import PopableTable from "./components/PopableTable";
+import ListUnordered from "./components/ListUnordered";
+import ListOrdered from "./components/ListOrdered";
+import Image from "./components/Image";
+import Caption from "./components/Caption";
+import CaptionSource from "./components/CaptionSource";
+import Blockquote from "./components/Blockquote";
+import SideBySide from "./components/SideBySide";
+import Quicktake from "./components/Quicktake";
+import ChapterLinks from "./components/ChapterLinks";
+import ChapterTextLinks from "./components/ChapterTextLinks";
+import MultipartList from "./components/MultipartList";
+import DisclosuresBottom from "./components/DisclosuresBottom";
+
+import EqDataTable from "./components/EqDataTable";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className='App'>
         {/* <Aside /> */}
         <Paragraph />
         <Paragraph />
         <Paragraph />
         {/* <Table /> */}
-        <EqDataTable />
         <Header3 />
         <Paragraph />
         {/* <Header4 /> */}
@@ -65,7 +65,7 @@ class App extends Component {
         <Caption />
         <CaptionSource />
         <Header6 />
-        <AsidePull />
+        {/* <AsidePull /> */}
         <Paragraph />
         <AsidePull />
         <Paragraph />
@@ -78,6 +78,7 @@ class App extends Component {
         <Paragraph />
         <Quicktake />
         <Paragraph />
+        <EqDataTable />
         {/* <ChapterLinks /> */}
         {/* <ChapterTextLinks /> */}
         {/* <MultipartList /> */}

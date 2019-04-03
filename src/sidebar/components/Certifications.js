@@ -20,9 +20,9 @@ class Certifications extends Component {
         </p>
 
         <p>
-          Completed 12 Nov 2017, 12:00 GMT
+          Completed 12 Nov 2019, 12:00 GMT
           <br />
-          Released 13 Nov 2017, 0600 GMT.
+          Released 13 Nov 2019, 0600 GMT.
         </p>
 
         <p>Barclays Classification: Restricted - External</p>

@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import CompanyData from '../equities/CompanyData';
-import MultiCompanyData from '../equities/MultiCompanyData';
-import Certifications from './Certifications';
+import React, { Component } from "react";
+import EqSingleCompanyData from "./components/EqSingleCompanyData";
+import EqMultiCompanyData from "./components/EqMultiCompanyData";
+import Certifications from "./components/Certifications";
 
 class Sidebar extends Component {
   render() {
     return (
-      <div className="sidebar">
-        <MultiCompanyData />
-        {/* <CompanyData /> */}
+      <div className='sidebar'>
+        {/* <EqMultiCompanyData /> */}
+        <EqSingleCompanyData />
         <Certifications />
         {/* <Related /> */}
       </div>

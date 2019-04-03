@@ -1,6 +1,6 @@
 module.exports = {
   assetClass: ['Equity Research'],
-  eqAssetClass: ['U.S. Payments, Processors &amp; IT Services'],
+  eqAssetClass: ['U.S. Payments, Processors & IT Services'],
   date: ['30 July 2019'],
   series: ['U.S. Payments, Processors & IT Services'],
   headline: ['A Look at the Week Ahead'],

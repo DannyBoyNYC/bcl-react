@@ -19,42 +19,8 @@
 @import "imports/toc";
 @import "imports/timeline";
 @import "imports/multipart-list";
-/* multimedia - experimental */
+
 @import "imports/multimedia";
-/* to demo multichapter switching */
-// @import "imports/switching";
-@import "imports/related-research";
-
-html.zoomed {
-  font-size: 120%;
-}
-
-
-@import "imports/variables";
-@import "imports/fonts-local";
-@import "imports/mixins";
-@import "imports/elements";
-@import "imports/structure";
-@import "imports/pullquote";
-@import "imports/footnotes";
-@import "imports/sidebyside";
-@import "imports/meta";
-@import "imports/article-body";
-@import "imports/tables";
-@import "imports/figures";
-@import "imports/aside";
-@import "imports/byline";
-@import "imports/popovers";
-@import "imports/previous-next-links";
-@import "imports/quick-take";
-@import "imports/svg";
-@import "imports/toc";
-@import "imports/timeline";
-@import "imports/multipart-list";
-/* multimedia - experimental */
-@import "imports/multimedia";
-/* to demo multichapter switching */
-@import "imports/switching";
 @import "imports/related-research";
 
 html.zoomed {
@@ -75,9 +41,7 @@ html.zoomed {
     list-style: none;
     padding: 0;
   }
-  ul li {
-    margin-bottom: 0.25rem;
-  }
+
   ul li:nth-child(n+4) {
     opacity: 0;
     max-height: 0;
@@ -149,11 +113,18 @@ ul.showit li:nth-child(n+4) {
   }
   p {
     margin: 0;
+    line-height: 1.1;
+  }
+  p.full-ratings {
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+    line-height: 1.4;
   }
   li {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto 20px;
+    margin-bottom: 0.5rem;
   }
   .sector-rating {
     text-align: right;
@@ -161,6 +132,7 @@ ul.showit li:nth-child(n+4) {
   .status {
     grid-column: 1 / span 2;
     text-align: right;
+    padding-top: 0.25rem;
   }
   .source {
     font-size: 0.75rem;
@@ -187,9 +159,38 @@ ul.showit li:nth-child(n+4) {
   color: $text !important;
 }
 
+// eq sidebar stats
+.eqdata.multi .sub-stats {
+  display: none;
+  padding-bottom: 1rem;
+  &.stats__open {
+    display: block;
+  }
+
+  table {
+    font-size: 0.75rem;
+    border: 1px solid #eee;
+    margin-bottom: 0.5rem;
+    th {
+      padding: 0.125rem;
+    }
+    button {
+      background-color: $link;
+      color: #fff;
+      padding: 0.25rem;
+      border-radius: 3px;
+      border: none;
+      font-weight: 700;
+    }
+  }
+}
+
 /// table bull
 .table-container table {
-  border-top: 2px solid #007eb6;
+  border-top: 1px solid #007eb6;
   border-bottom: 1px solid #999;
   font-size: 0.75rem;
+  th {
+    font-weight: 600;
+  }
 }
