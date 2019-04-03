@@ -1,35 +1,32 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
 class Toc extends Component {
   constructor(props) {
     super(props);
-    this.state = { isToggleOn: true, tocCoords: '' };
-    this.handleClick = this.handleClick.bind(this);
+    this.state = { showMenu: true, tocCoords: '' };
+    this.openMenu = this.openMenu.bind(this);
   }
-  handleClick(e) {
-    e.preventDefault();
+
+  openMenu(event) {
+    event.preventDefault();
+    
     const tocRef = this.refs.menu;
-    const def1 = tocRef.getBoundingClientRect();
-    const coords = def1.height;
+    const tocContainer = this.refs.tocContainer;
+    const coords = ReactDOM.findDOMNode(tocContainer).getBoundingClientRect().height;
+    tocRef.style.top = coords + 'px';
     tocRef.classList.toggle('toc__open');
     this.setState(state => ({
-      isToggleOn: !state.isToggleOn,
+      showMenu: !state.showMenu,
       tocCoords: coords,
     }));
   }
 
-  // function activateToc() {
-  //   const tocCoords = toc.getBoundingClientRect();
-  //   const topOfToc = tocCoords.height;
-  //   toctoc.style.top = topOfToc + "px";
-  //   toctoc.classList.toggle("toc__open");
-  // }
-
   render() {
     return (
       <div className="toc">
-        <div className="toc-container">
-          <a className="menu-bug" href="#!" onClick={this.handleClick}>
+        <div className="toc-container" ref="tocContainer">
+          <a className="menu-bug" href="#!" onClick={this.openMenu}>
             <svg className="icn">
               <title>Table of contents</title>
               <use xlinkHref="#toc" />
@@ -47,6 +44,7 @@ class Toc extends Component {
             </a>
           </div>
 
+          {/* menu ref */}
           <div className="toc__toc" ref="menu">
             <ul>
               <li className="sect">

@@ -14,18 +14,8 @@ import headData from '../data/multi-data-head.js';
 class Main extends Component {
   constructor() {
     super();
-    // now loaded from json
     this.state = {
-      content: {
-        assetClass: ['Equity Research'],
-        eqAssetClass: ['Consumer | U.S. Food'],
-        date: ['30 July 2019'],
-        series: ['Mondelez International (MDLZ)', 'test'],
-        headline: ['Good Things Come In Threes (%)'],
-        lede: [
-          'With MDLZ trading at a ~+30% premium to the food group (and shares +20% YTD), we often hear from investors that the stock is already well owned.',
-        ],
-      },
+
     };
   }
 
@@ -33,7 +23,7 @@ class Main extends Component {
     return (
       <div className="header__sub">
         <div className="asset-class">
-          {/* wide screen - left side - logo assetclass sectorindustry date */}
+          {/* wide screen - left side */}
           <Logo />
           <AssetClass assetClass={headData.assetClass} />
           <SectorIndustry eqAssetClass={headData.eqAssetClass} />
@@ -41,7 +31,7 @@ class Main extends Component {
         </div>
 
         <div className="main">
-          {/* small screen - logo date - data is next to logo */}
+          {/* small screen - data is next to logo */}
           <div className="main__logo-date">
             <Logo />
             <Date date={headData.date} className="main__date" />
