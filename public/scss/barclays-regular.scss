@@ -187,10 +187,9 @@ ul.showit li:nth-child(n+4) {
   color: $text !important;
 }
 
-/// bull
+/// table bull
 .table-container table {
-  border: 2px solid #007eb6;
+  border-top: 2px solid #007eb6;
+  border-bottom: 1px solid #999;
+  font-size: 0.75rem;
 }
-// borderTopWeight: 2,
-// BorderTopStyle: 'solid',
-// borderTopColor: '#007eb6',
