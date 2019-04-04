@@ -9,7 +9,7 @@ import Disclosures from "./components/Disclosures";
 class Sidebar extends Component {
   render() {
     return (
-      <div>
+      <div class='content__meta-container main'>
         <Iconlist />
         <BylineSmall />
         <ReadStar />

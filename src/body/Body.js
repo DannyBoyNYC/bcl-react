@@ -33,7 +33,7 @@ import EqDataTable from "./components/EqDataTable";
 class Body extends Component {
   render() {
     return (
-      <div className='App'>
+      <>
         {/* <Aside /> */}
         <Paragraph />
         <Paragraph />
@@ -83,7 +83,7 @@ class Body extends Component {
         {/* <ChapterTextLinks /> */}
         {/* <MultipartList /> */}
         <DisclosuresBottom />
-      </div>
+      </>
     );
   }
 }
