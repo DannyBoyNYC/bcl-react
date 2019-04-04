@@ -1925,18 +1925,6 @@ html.zoomed {
   color: #666;
 }
 
-.shower {
-  padding: 0.25rem;
-  cursor: pointer;
-  font-size: 0.5rem;
-  font-weight: 700;
-  color: white;
-  background-color: #007eb6;
-  border: none;
-  border-radius: 4px;
-  outline: none;
-}
-
 ul.showit li:nth-child(n+4) {
   opacity: 1;
   max-height: 23rem;
@@ -2008,8 +1996,14 @@ ul.showit li:nth-child(n+4) {
   border: none;
 }
 
-.sector-rating a {
-  color: #444 !important;
+.eqdata__ratings {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+  padding-bottom: 10px;
+}
+
+.eqdata__eqassetclass {
+  border-bottom: 1px dashed rgba(51, 51, 51, 0.4);
+  padding-bottom: 10px;
 }
 
 .eqdata.multi .sub-stats {

@@ -21,23 +21,8 @@ class MultiCompanyData extends Component {
   render() {
     return (
       <div className='eqdata ratings multi'>
-        <ul
-          className=''
-          style={{
-            borderBottomStyle: "solid",
-            borderBottomWidth: 1,
-            borderBottomColor: "gray",
-            paddingBottom: 10
-          }}
-        >
-          <li
-            style={{
-              borderBottomStyle: "dashed",
-              borderBottomWidth: 1,
-              borderBottomColor: "gray",
-              paddingBottom: 10
-            }}
-          >
+        <ul className='eqdata__ratings'>
+          <li className='eqdata__eqassetclass'>
             <p className='sector' style={{ fontWeight: 600 }}>
               U.S. Payments, Processors &amp; IT Services
             </p>
