@@ -39,6 +39,7 @@ class Body extends Component {
         <Paragraph />
         <Paragraph />
         {/* <Table /> */}
+        {/* <EqDataTable /> */}
         <Header3 />
         <Paragraph />
         {/* <Header4 /> */}
