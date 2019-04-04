@@ -15,7 +15,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      single: true,
+      single: false,
       multiData: multiData,
       singleData: singleData
     };
