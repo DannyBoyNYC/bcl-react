@@ -6,19 +6,11 @@ import EqMultiCompanyData from "./components/EqMultiCompanyData";
 import Certifications from "./components/Certifications";
 
 class Sidebar extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  // function sepData() {
-
-  // }
 
   render() {
-    const single = true;
     return (
-      <div className='sidebar'>
-        {single ? <EqSingleCompanyData /> : <EqMultiCompanyData />}
+      <div class="content__secondary-column">
+        {this.props.single ? <EqSingleCompanyData /> : <EqMultiCompanyData />}
         <Certifications />
         {/* <Related /> */}
       </div>
