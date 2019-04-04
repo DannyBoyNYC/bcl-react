@@ -62,7 +62,7 @@ class MultiCompanyData extends Component {
             <p className='status'>Unchanged</p>
           </li>
           {/* hidden activated by link above */}
-          <div class='sub-stats' ref='stats'>
+          <div className='sub-stats' ref='stats'>
             <table>
               <thead>
                 <tr>

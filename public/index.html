@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="js-on is-modern svg has-flex has-flex-wrap has-fixed">
+<html class="has-cssgrid">
 
 <head>
   <title>Barclays Live - Equities</title>
@@ -7,9 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta data-asset-class="" data-region="" data-company="" data-ticker="" data-industry="" data-sector="" data-report-type="">
-  <style>
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i');
-</style>
   <link href="css/barclays-regular.min.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
@@ -18,11 +15,9 @@
     <header class="content__head">
       <div class="content__header tonal__header u-cf">
         <div class="gs-container">
-          <div class="content__main-column" style="box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.1);">
-
+          <div class="content__main-column">
             <!-- See head.js and index.js -->
             <div id="head"></div>
-
           </div>
         </div>
       </div>
@@ -32,26 +27,19 @@
     <div class="content__main-column ">
       <div class="content__article-body">
         <div class="content__meta-container main">
-
           <!-- see meta components and index.js -->
           <div id="meta"></div>
-          
         </div>
-          
           <!-- see body components and index.js -->
-          <div id="root"></div>
-          
+          <div id="body"></div>
         </div>
       </div>
-      
       
       <div class="content__secondary-column ">
-        
+        <!-- see sidebar components and index.js -->
         <div id="sidebar"></div>
-        
       </div>
     </div>
-    
   </article>
   
   <svg width="0" height="0" class="hide">
@@ -358,9 +346,7 @@
     </defs>
   </svg>
   
-  <!-- <script src="./js/min/scripts-babel.js"></script> -->
   <script src="./js/scripts.js"></script>
   
-</body>
-
+  </body>
 </html>

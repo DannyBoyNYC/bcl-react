@@ -30,7 +30,7 @@ import DisclosuresBottom from "./components/DisclosuresBottom";
 
 import EqDataTable from "./components/EqDataTable";
 
-class App extends Component {
+class Body extends Component {
   render() {
     return (
       <div className='App'>
@@ -88,4 +88,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Body;
