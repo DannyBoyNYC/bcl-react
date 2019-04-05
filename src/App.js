@@ -23,9 +23,9 @@ class App extends Component {
     return (
       <>
         <Head data={this.state.data}/>
-        <div class="gs-container ">
-          <div class="content__main-column">
-            <div class="content__article-body">
+        <div className="gs-container ">
+          <div className="content__main-column">
+            <div className="content__article-body">
             <Meta />
             <Body />
             </div>

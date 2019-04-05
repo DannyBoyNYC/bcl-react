@@ -9,7 +9,7 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <div class="content__secondary-column">
+      <div className="content__secondary-column">
         {this.props.single ? <EqSingleCompanyData /> : <EqMultiCompanyData />}
         <Certifications />
         {/* <Related /> */}

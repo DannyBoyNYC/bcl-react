@@ -25,9 +25,9 @@ class EqSingleCoDataTable extends Component {
         >
           <thead>
             <tr>
-              <th colspan="2">2018</th>
+              <th colSpan="2">2018</th>
               <th colSpan="3">2019</th>
-              <th colspan="3">2020</th>
+              <th colSpan="3">2020</th>
               <th colSpan="3">2021</th>        
               <th colSpan="3">Change Y/Y</th>
             </tr>

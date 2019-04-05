@@ -7,10 +7,10 @@ class Head extends Component {
   render() {
     const data = this.props.data;
     return (
-      <header class="content__head">
-        <div class="content__header tonal__header u-cf">
-          <div class="gs-container">
-            <div class="content__main-column">
+      <header className="content__head">
+        <div className="content__header tonal__header u-cf">
+          <div className="gs-container">
+            <div className="content__main-column">
               <Toc data={data} />
               <Main data={data} />
             </div>
