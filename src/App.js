@@ -6,26 +6,23 @@ import Body from "./body/Body";
 import Sidebar from "./sidebar/Sidebar";
 
 // duplicated in Head
-import multiData from "./data/eq-multicompany-head.js";
-import singleData from "./data/eq-singlecompany-head.js";
+import multiCompany from "./data/eq-multicompany-head.js";
+import singleCompany from "./data/eq-singlecompany-head.js";
 import multiSector from "./data/eq-mutisector-head.js";
-import companyData from "./data/eq-companydata.js";
 
 class App extends Component {
 
   constructor() {
     super();
     this.state = {
-      single: false,
-      multiData: multiData,
-      singleData: singleData
+      data: { ...multiSector },
     };
   }
 
   render() {
     return (
       <>
-        <Head single={this.state.single}/>
+        <Head data={this.state.data}/>
         <div class="gs-container ">
           <div class="content__main-column">
             <div class="content__article-body">
@@ -33,7 +30,7 @@ class App extends Component {
             <Body />
             </div>
           </div>
-        <Sidebar single={this.state.single} />
+        <Sidebar data={this.state.data} />
         </div>
         </>
       );

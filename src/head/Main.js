@@ -9,12 +9,6 @@ import Lede from "./components/Lede";
 import Logo from "./components/Logo";
 
 class Main extends Component {
-  constructor() {
-    super();
-    this.state = {
-      data: {}
-    };
-  }
 
   render() {
     const data = this.props.data;

@@ -48,7 +48,6 @@ class Toc extends Component {
             </a>
             {/* displayed on top menu? */}
             <a className="toc__series" href="#0 ">
-              {data.eqAssetClass}
             </a>
           </div>
 
