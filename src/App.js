@@ -8,6 +8,7 @@ import Sidebar from "./sidebar/Sidebar";
 // duplicated in Head
 import multiData from "./data/eq-multicompany-head.js";
 import singleData from "./data/eq-singlecompany-head.js";
+import multiSector from "./data/eq-mutisector-head.js";
 import companyData from "./data/eq-companydata.js";
 
 class App extends Component {

@@ -4,6 +4,7 @@ import Main from "./Main";
 
 import multiData from "../data/eq-multicompany-head.js";
 import singleData from "../data/eq-singlecompany-head.js";
+import multiSector from "../data/eq-mutisector-head.js";
 import companyData from "../data/eq-companydata.js";
 
 class Head extends Component {
