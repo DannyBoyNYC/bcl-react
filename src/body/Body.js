@@ -7,6 +7,7 @@ import Paragraph from "./components/Paragraph";
 import ParagraphFootnote from "./components/ParagraphFootnote";
 import Table from "./components/Table";
 import TableBig from "./components/TableBig";
+import EqSingleCoDataTable from "./components/EqSingleCoDataTable";
 import Header2 from "./components/Header2";
 import Header3 from "./components/Header3";
 import Header3figure from "./components/Header3figure";
@@ -39,7 +40,7 @@ class Body extends Component {
         <Paragraph />
         <Paragraph />
         {/* <Table /> */}
-        {/* <EqDataTable /> */}
+        <EqSingleCoDataTable />
         <Header3 />
         <Paragraph />
         {/* <Header4 /> */}
