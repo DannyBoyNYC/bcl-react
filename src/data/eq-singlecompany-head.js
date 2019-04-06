@@ -11,5 +11,22 @@ module.exports = {
   brandingtype: ['FOCUS'],
   toc: {
     head: 'Equity Research',
-  }
+  },
+  authors: [
+    {
+      name: 'Paul Y.Cheng, CFA',
+      affiliation: 'BCI, US',
+      tel: '+1 212 526 1884',
+    },
+    {
+      name: 'Lydia Rainforth, CFA',
+      affiliation: 'Barclays, UK',
+      tel: '+1 212 526 1884',
+    },
+    {
+      name: 'Joshua Stone',
+      affiliation: 'Barclays, UK',
+      tel: '+1 212 526 1884',
+    },
+  ],
 };
