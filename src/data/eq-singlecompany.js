@@ -1,13 +1,13 @@
 module.exports = {
   assetClass: ['Equity Research'],
-  eqAssetClass: ['U.S. Payments, Processors & IT Services'],
+  eqAssetClass: ['Consumer | U.S. Food'],
   date: ['30 July 2019'],
-  series: ['U.S. Payments, Processors & IT Services'],
-  headline: ['A Look at the Week Ahead'],
+  series: ['Mondelez International (MDLZ)'],
+  headline: ['Good Things Come In Threes (%)'],
   lede: [
-    'We will be hosting Payments industry expert Steve Mott on Thursday, March 28th at 6pm ET at Barclays’ New York headquarters. We are adjusting our estimates for WEX following their earnings report this week; raising our PT to $222 from $182.',
+    'With MDLZ trading at a ~+30% premium to the food group (and shares +20% YTD), we often hear from investors that the stock is already well owned.',
   ],
-  hashtag: ['#multicompany'],
+  hashtag: '#singlecompany',
   brandingtype: ['FOCUS'],
   toc: {
     head: 'Equity Research',

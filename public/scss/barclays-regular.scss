@@ -28,88 +28,43 @@ html.zoomed {
   font-size: 120%;
 }
 
-// ratings inpage
+// global ratings > all three components
 
 .ratings {
-  h3.header {
-    font-size: 1rem;
-    margin-top: 0;
-    font-weight: 500;
-    color: #666;
-    display: none;
-  }
-  ul {
-    list-style: none;
+  > ul {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     padding: 0;
   }
-
-  ul li:nth-child(n+4) {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-  }  
-  .sector {
-    margin-bottom: 0;
-    margin-top: 0;
-    font-weight: 600;
+  p {
+    margin:0;
+    line-height: 1.1;
+  }
+  .datum {
+    font-weight: 500;
     color: #444;
     font-size: 0.875rem;
   }
-  .sector-rating {
+  .rating {
     font-size: 0.875rem;
-    margin-bottom: 0;
+    text-align: right;
   }
   .status {
     font-size: 0.75rem;
     color: #666;
+    grid-column: 1 / span 2;
+    text-align: right;
+    padding-top: 0.25rem;
   }
-}
-
-
-
-
-ul.showit li:nth-child(n+4) {
-  opacity: 1;
-  max-height: 23rem;
-  transition: all cubic-bezier(0.64, 0, 1, 0.33) 0.25s; 
-}
-
-.stuck {
-  position: fixed !important;
-  top: 80px;
-  width: 260px;
-}
-
-
-// equities sidebar
-
-.eqdata.ratings {
-  margin-top: 1rem;
-  padding-left: 0.5rem;
-  padding-right: 0.75rem;
-  padding-bottom: 0.5rem;
-
-  ul li:nth-child(n+4){
-    opacity: 1;
-    max-height: 300px;
-    overflow: auto;
-    grid-template-rows: auto;
-  }
-  ul li:nth-child(4),
-  ul li:nth-child(7),
-  ul li:nth-child(16) {
+  button {
     margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px dashed #999;
-  }
-  p {
-    margin: 0;
-    line-height: 1.1;
-  }
-  p.full-ratings {
-    font-size: 0.75rem;
-    padding: 0.5rem 0;
-    line-height: 1.4;
+    background-color: $link;
+    color: #fff;
+    padding: 0.35rem;
+    border-radius: 3px;
+    border: none;
+    font-weight: 700;
   }
   li {
     display: grid;
@@ -117,80 +72,55 @@ ul.showit li:nth-child(n+4) {
     grid-template-rows: auto 20px;
     margin-bottom: 0.5rem;
   }
-  .sector-rating {
-    text-align: right;
-  }
-  .status {
-    grid-column: 1 / span 2;
-    text-align: right;
-    padding-top: 0.25rem;
-  }
-  .source {
+}
+
+// data-block
+.data-block {
+  li.sources {
+    display: block;
     font-size: 0.75rem;
-    padding-bottom: 1rem;
   }
-  ul li:nth-child(19) {
+  li:nth-child(n+4){
+    opacity: 1;
+    max-height: 300px;
+    overflow: auto;
+    grid-template-rows: auto;
+  }
+  li:nth-child(4),
+  li:nth-child(7),
+  li:nth-child(16) {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #999;
+  }
+  li:nth-child(19) {
     margin-bottom: 1rem;
+    padding-bottom: 1rem;
     border-bottom: 1px solid #999;
   }
 }
 
-.eqdata.ratings.multi {
-  ul li:nth-child(4),
-  ul li:nth-child(7),
-  ul li:nth-child(16) {
-    margin-top: 0;
-    padding-top: 0;
-    border: none;
+// multi
+.data-block__multi li {
+  border-bottom: 0;
+  border-top: 0;
+  margin-bottom: 0.5rem;
+  .full-ratings {
+    font-size: 0.875rem;
   }
 }
-
-.eqdata__ratings {
-  border-bottom: 1px solid $gray-040;
-  padding-bottom: 10px;
-}
-.eqdata__eqassetclass {
-  border-bottom: 1px dashed $gray-040;
-  padding-bottom: 10px;
-}
-
-// eq sidebar stats pop
-.eqdata.multi .sub-stats {
+li.stats .data-block {
   display: none;
   padding-bottom: 1rem;
-  &.stats__open {
-    display: block;
-  }
-
-  table {
-    font-size: 0.75rem;
-    border: 1px solid #eee;
-    margin-bottom: 0.5rem;
-    th {
-      padding: 0.125rem;
-    }
-    button {
-      background-color: $link;
-      color: #fff;
-      padding: 0.25rem;
-      border-radius: 3px;
-      border: none;
-      font-weight: 700;
-    }
-  }
 }
-
-// .shower {
-//   padding: 0.25rem;
-//   cursor: pointer;
-//   font-size: 0.5rem;
-//   font-weight: 700;
-//   color: white;
-//   background-color: #007eb6;
-//   border: none;
-//   border-radius: 4px;
-//   outline: none;
-// }
+li.stats__open .data-block {
+    display: block;
+    margin-top: 0;
+}
+.data-block__multi li.stats  {
+  display: block;
+  margin-bottom: 0;
+}
 
 /// table bull
 .table-container table {

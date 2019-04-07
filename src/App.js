@@ -5,15 +5,18 @@ import Meta from './meta/Meta';
 import Body from './body/Body';
 import Sidebar from './sidebar/Sidebar';
 
-import multiCompany from './data/eq-multicompany-head.js';
-import singleCompany from './data/eq-singlecompany-head.js';
-import multiSector from './data/eq-mutisector-head.js';
+// hashtag #singlecompany IN SIDEBAR
+import singleCompany from './data/eq-singlecompany.js';
+// hashtag #multicompany
+import multiCompany from './data/eq-multicompany.js';
+// hashtag #multisector
+import multiSector from './data/eq-mutisector.js';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: { ...multiSector },
+      data: { ...multiCompany },
     };
   }
 
