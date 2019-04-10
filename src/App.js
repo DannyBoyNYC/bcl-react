@@ -16,7 +16,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: { ...multiSector },
+      data: { ...multiCompany },
     };
   }
 
@@ -28,7 +28,7 @@ class App extends Component {
           <div className="content__main-column">
             <div className="content__article-body">
               <Meta data={this.state.data} />
-              <Body />
+              <Body data={this.state.data} />
             </div>
           </div>
           <Sidebar data={this.state.data} />

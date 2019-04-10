@@ -1,17 +1,17 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class EqSingleCoDataTable extends Component {
   render() {
     return (
-      <div className='table-container' id='eqdatatable'>
-        <div className='figure-header table-xl'>
-          <span className='table-xl--btn'>
-            <svg className='icn'>
+      <div className="table-container eqdatatable" id="eqdatatable">
+        <div className="figure-header table-xl">
+          <span className="table-xl--btn">
+            <svg className="icn">
               <title>Open table</title>
-              <use xlinkHref='#arrows-open' />
+              <use xlinkHref="#arrows-open" />
             </svg>
           </span>
-          <span className='fig-number'>
+          <span className="fig-number">
             FIGURE 1. Equities single company ratings table.
           </span>
         </div>
@@ -19,8 +19,8 @@ class EqSingleCoDataTable extends Component {
         <table
           style={{
             borderTopWeight: 2,
-            BorderTopStyle: "solid",
-            borderTopColor: "#007eb6"
+            BorderTopStyle: 'solid',
+            borderTopColor: '#007eb6',
           }}
         >
           <thead>
@@ -28,14 +28,14 @@ class EqSingleCoDataTable extends Component {
               <th colSpan="2">2018</th>
               <th colSpan="3">2019</th>
               <th colSpan="3">2020</th>
-              <th colSpan="3">2021</th>        
+              <th colSpan="3">2021</th>
               <th colSpan="3">Change Y/Y</th>
             </tr>
           </thead>
           <thead>
             <tr>
               <th>FY Dec</th>
-              <th>Actual</th>              
+              <th>Actual</th>
               <th>Old</th>
               <th>New</th>
               <th>Cons</th>
@@ -149,8 +149,8 @@ class EqSingleCoDataTable extends Component {
             </tr>
           </tbody>
         </table>
-        <p className='caption source'>Source: Barclays Research</p>
-        <p className='caption source'>
+        <p className="caption source">Source: Barclays Research</p>
+        <p className="caption source">
           Consensus numbers are from Refinitiv received on 18-Mar-2019; 13:35
           GMT
         </p>
