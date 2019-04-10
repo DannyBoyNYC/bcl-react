@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 
-import EqDatablock from './EqDatablock';
+import EqCompany from './EqCompany';
 
-class EqCompany extends Component {
+class EqSector extends Component {
   constructor(props) {
     super(props);
     this.state = {
       showSubStats: false,
     };
-    this.openStats = this.openStats.bind(this);
+    this.openCompanies = this.openCompanies.bind(this);
   }
 
-  openStats(event) {
+  openCompanies(event) {
     event.preventDefault();
     const tocRef = this.refs.stats;
-    const companyRef = this.refs.companyblock;
+    const sectorRef = this.refs.sectorblock;
     tocRef.classList.toggle('stats__open');
-    companyRef.classList.toggle('company__open');
+    sectorRef.classList.toggle('sector__open');
     this.setState(state => ({
       showMenu: !state.showSubStats,
     }));
@@ -24,23 +24,26 @@ class EqCompany extends Component {
 
   render() {
     return (
-      <ul className="company-block" ref="companyblock">
-        <li className="company__header" onClick={this.openStats}>
+      <ul className="sector-block" ref="sectorblock">
+        <li onClick={this.openCompanies}>
           <p className="datum">
-            <a href="#!">Fleetcor Technologies (FLT)</a>
+            <a href="!0">Americas Integrated Oil</a>
           </p>
           <p className="rating">
-            <a href="#0">NEUTRAL</a>
+            <a href="#0">POSITIVE</a>
           </p>
           <p className="status">Unchanged</p>
         </li>
         {/* hidden activated by link above */}
         <li className="stats" ref="stats">
-          <EqDatablock />
+          <EqCompany />
+          <EqCompany />
+          <EqCompany />
+          <EqCompany />
         </li>
       </ul>
     );
   }
 }
 
-export default EqCompany;
+export default EqSector;

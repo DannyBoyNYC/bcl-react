@@ -30,11 +30,13 @@ html.zoomed {
 
 // global ratings > all three components
 
+$sidebar: rgba(229,248,255,05);
+
 .ratings {
   > ul {
     margin-top: 1rem;
     margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-right: 0.25rem;
     padding: 0;
   }
   p {
@@ -70,7 +72,7 @@ html.zoomed {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto 20px;
-    margin-bottom: 0.5rem;
+    // margin-bottom: 0.5rem;
   }
 }
 
@@ -94,37 +96,89 @@ html.zoomed {
     border-top: 1px dashed #999;
   }
   li:nth-child(19) {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    // margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid #999;
   }
 }
 
-// multi
-.data-block__multi li {
-  border-bottom: 0;
-  border-top: 0;
-  margin-bottom: 0.5rem;
-  .full-ratings {
-    font-size: 0.875rem;
-  }
+li.stats {
+  display: block;
 }
+
 li.stats .data-block {
   display: none;
   padding-bottom: 1rem;
 }
 li.stats__open .data-block {
-    display: block;
-    margin-top: 0;
+  display: block;
+  margin-top: 0;
+  padding: 0.25rem;
+  background: lighten( $sidebar, 2%);
 }
-.data-block__multi li.stats  {
+
+// multi company
+.company-block {
+  padding: 0.25rem;
+  &:hover {
+    border-left: 1px solid $link;
+    background: lighten( $sidebar, 2%);
+  }
+  &.company__open {
+    border-left: 1px solid $link;
+    background: lighten( $sidebar, 2%);
+  }
+  .company-header {
+    padding-bottom: 0.5rem;
+  }
+}
+.data-block__multicompany li {
+  border-bottom: 0;
+  border-top: 0;
+  margin-bottom: 0.5rem;
+}
+p.full-ratings {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.data-block__multicompany li.stats  {
   display: block;
   margin-bottom: 0;
 }
 
+// multi sector
+.sector-block {
+  padding-left: 0;
+  padding: 0.25rem;
+  cursor: pointer;
+  border-left: 1px solid #fff;
+  &:hover {
+    background: lighten( $sidebar, 2%);
+    border-left: 1px solid $link;
+  }
+  &.sector__open {
+    background: lighten( $sidebar, 2%);
+    border-left: 1px solid $link;
+  }
+}
+.sector-block > li > .datum {
+  font-size: 1rem;
+}
+.sector-block li.stats {
+  display: none;
+  // padding-bottom: 1rem;
+}
+.sector-block li.stats__open {
+  display: block;
+  margin-top: 0;
+  // padding-left: 0.5rem;
+  background-color: $sidebar;
+}
+
 /// table bull
 .table-container table {
-  border-top: 1px solid #007eb6;
+  border-top: 1px solid $link;
   border-bottom: 1px solid #999;
   font-size: 0.75rem;
   th {
