@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class BylineLarge extends Component {
   render() {
+    const data = this.props.data;
     return (
       <div className="byline-lg byline">
         <ul>
@@ -19,8 +20,10 @@ class BylineLarge extends Component {
                 alt="analyst"
               />
               <div className="analyst-deets">
-                <span itemProp="name">Harry Mateer</span>
-                <span itemProp="affiliation">BCI, US</span>
+                <span itemProp="name">{data.authors[0].name}</span>
+                <span itemProp="affiliation">
+                  {data.authors[0].affiliation}
+                </span>
               </div>
             </a>
           </li>
@@ -39,8 +42,10 @@ class BylineLarge extends Component {
                 alt="analyst"
               />
               <div className="analyst-deets">
-                <span itemProp="name">Lhamsuren Sharavdemberel, CFA</span>
-                <span itemProp="affiliation">BCI, US</span>
+                <span itemProp="name">{data.authors[1].name}</span>
+                <span itemProp="affiliation">
+                  {data.authors[1].affiliation}
+                </span>
               </div>
             </a>
           </li>
@@ -59,8 +64,10 @@ class BylineLarge extends Component {
                 alt="analyst"
               />
               <div className="analyst-deets">
-                <span itemProp="name">Yung Chuan Koh</span>
-                <span itemProp="affiliation">BCI, US</span>
+                <span itemProp="name">{data.authors[2].name}</span>
+                <span itemProp="affiliation">
+                  {data.authors[2].affiliation}
+                </span>
               </div>
             </a>
           </li>
