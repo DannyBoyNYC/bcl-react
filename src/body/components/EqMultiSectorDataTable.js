@@ -18,13 +18,7 @@ class EqDataTable extends Component {
           </span>
         </div>
 
-        <table
-          style={{
-            borderTopWeight: 2,
-            BorderTopStyle: 'solid',
-            borderTopColor: '#007eb6',
-          }}
-        >
+        <table>
           <thead>
             <tr>
               <th>Company</th>
@@ -53,8 +47,8 @@ class EqDataTable extends Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>U.S. Payments, Processors &amp; IT Services</td>
+            <tr className="sector">
+              <td>Americas Integrated Oil</td>
               <td>POS</td>
               <td>POS</td>
               <td>&nbsp;</td>
@@ -143,8 +137,8 @@ class EqDataTable extends Component {
               <td>1.00</td>
               <td>1.00</td>
             </tr>
-            <tr>
-              <td>U.S. Payments, Processors &amp; IT Services</td>
+            <tr className="sector">
+              <td>Americas Integrated Oil</td>
               <td>POS</td>
               <td>POS</td>
               <td>&nbsp;</td>
@@ -233,8 +227,8 @@ class EqDataTable extends Component {
               <td>1.00</td>
               <td>1.00</td>
             </tr>
-            <tr>
-              <td>U.S. Payments, Processors &amp; IT Services</td>
+            <tr className="sector">
+              <td>Americas Integrated Oil</td>
               <td>POS</td>
               <td>POS</td>
               <td>&nbsp;</td>

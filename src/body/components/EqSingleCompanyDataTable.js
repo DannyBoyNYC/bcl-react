@@ -16,13 +16,7 @@ class EqSingleCoDataTable extends Component {
           </span>
         </div>
 
-        <table
-          style={{
-            borderTopWeight: 2,
-            BorderTopStyle: 'solid',
-            borderTopColor: '#007eb6',
-          }}
-        >
+        <table>
           <thead>
             <tr>
               <th colSpan="2">2018</th>

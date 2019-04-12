@@ -2032,13 +2032,20 @@ p.full-ratings {
   background-color: #e5f8ff;
 }
 
-.table-container table {
+.eqdatatable table {
   border-top: 1px solid #007eb6;
   border-bottom: 1px solid #999;
   font-size: 0.75rem;
 }
-.table-container table th {
+.eqdatatable table th {
   font-weight: 600;
+}
+.eqdatatable table .sector {
+  background: #effbff;
+}
+.eqdatatable table .sector td:first-child {
+  padding-left: 0.25rem;
+  border-left: 1px solid #007eb6;
 }
 
 /*# sourceMappingURL=barclays-regular.min.css.map */

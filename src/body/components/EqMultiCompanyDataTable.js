@@ -17,13 +17,7 @@ class EqDataTable extends Component {
           </span>
         </div>
 
-        <table
-          style={{
-            borderTopWeight: 2,
-            BorderTopStyle: 'solid',
-            borderTopColor: '#007eb6',
-          }}
-        >
+        <table>
           <thead>
             <tr>
               <th>Company</th>

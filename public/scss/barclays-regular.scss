@@ -177,11 +177,18 @@ p.full-ratings {
 }
 
 /// table bull
-.table-container table {
+.eqdatatable table {
   border-top: 1px solid $link;
   border-bottom: 1px solid #999;
   font-size: 0.75rem;
   th {
     font-weight: 600;
+  }
+  .sector {
+    background: lighten( $sidebar, 2%);
+  }
+  .sector td:first-child {
+    padding-left: 0.25rem;
+    border-left: 1px solid $link;
   }
 }
