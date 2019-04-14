@@ -85,7 +85,7 @@ $sidebar: rgba(229,248,255,05);
   li:nth-child(n+4){
     opacity: 1;
     max-height: 300px;
-    overflow: auto;
+    // overflow: auto;
     grid-template-rows: auto;
   }
   li:nth-child(4),

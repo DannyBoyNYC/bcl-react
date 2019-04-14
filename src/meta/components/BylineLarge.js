@@ -1,92 +1,37 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Analyst from "./sub/Analyst";
 
 class BylineLarge extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showAuthor: false,
+      tocCoords: ""
+    };
+    this.openAuthor = this.openAuthor.bind(this);
+  }
+
+  openAuthor(event) {
+    event.preventDefault();
+    // const tocRef = this.refs.menu;
+    // const tocContainer = this.refs.tocContainer;
+    // const coords = ReactDOM.findDOMNode(tocContainer).getBoundingClientRect().height;
+    // tocRef.style.top = coords + 'px';
+    // tocRef.classList.toggle('toc__open');
+    // this.setState(state => ({
+    //   showMenu: !state.showMenu,
+    //   tocCoords: coords,
+    // }));
+  }
+
   render() {
     const data = this.props.data;
     return (
-      <div className="byline-lg byline">
+      <div className='byline-lg byline'>
         <ul>
-          <li
-            className="analyst"
-            rel="author"
-            itemScope=""
-            itemType="http://schema.org/Person"
-            itemProp="author"
-          >
-            <a className="analyst-link" href="#single">
-              <img
-                className="analyst-photo"
-                src="https://myqa.barcapint.com/publiccp/RUD/234/LB02732_round.png"
-                alt="analyst"
-              />
-              <div className="analyst-deets">
-                <span itemProp="name">{data.authors[0].name}</span>
-                <span itemProp="affiliation">
-                  {data.authors[0].affiliation}
-                </span>
-              </div>
-            </a>
-          </li>
-
-          <li
-            className="analyst"
-            rel="author"
-            itemScope=""
-            itemType="http://schema.org/Person"
-            itemProp="author"
-          >
-            <a className="analyst-link" href="#single">
-              <img
-                className="analyst-photo"
-                src="https://liveqa.barcap.com/publiccp/RUD/812/LB04489_round.png"
-                alt="analyst"
-              />
-              <div className="analyst-deets">
-                <span itemProp="name">{data.authors[1].name}</span>
-                <span itemProp="affiliation">
-                  {data.authors[1].affiliation}
-                </span>
-              </div>
-            </a>
-          </li>
-
-          <li
-            className="analyst"
-            rel="author"
-            itemScope=""
-            itemType="http://schema.org/Person"
-            itemProp="author"
-          >
-            <a className="analyst-link" href="#single">
-              <img
-                className="analyst-photo"
-                src="img/analyst-2.gif"
-                alt="analyst"
-              />
-              <div className="analyst-deets">
-                <span itemProp="name">{data.authors[2].name}</span>
-                <span itemProp="affiliation">
-                  {data.authors[2].affiliation}
-                </span>
-              </div>
-            </a>
-          </li>
-
-          <li
-            className="analyst"
-            rel="author"
-            itemScope=""
-            itemType="http://schema.org/Person"
-            itemProp="author"
-          >
-            <a className="analyst-link" href="#single">
-              <div className="analyst-photo">WW</div>
-              <div className="analyst-deets">
-                <span itemProp="name">Hale Holden</span>
-                <span itemProp="affiliation">BCI, US</span>
-              </div>
-            </a>
-          </li>
+          {Object.keys(data.analysts).map(key => (
+            <Analyst key={key} index={key} analyst={data.analysts[key]} />
+          ))}
         </ul>
       </div>
     );

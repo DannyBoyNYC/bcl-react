@@ -1941,7 +1941,6 @@ html.zoomed {
 .data-block li:nth-child(n+4) {
   opacity: 1;
   max-height: 300px;
-  overflow: auto;
   grid-template-rows: auto;
 }
 .data-block li:nth-child(4),
