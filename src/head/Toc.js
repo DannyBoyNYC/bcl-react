@@ -8,9 +8,10 @@ import ReactDOM from 'react-dom';
 class Toc extends Component {
   constructor(props) {
     super(props);
-    this.state = { 
-      showMenu: true, 
-      tocCoords: '' };
+    this.state = {
+      showMenu: true,
+      tocCoords: '',
+    };
     this.openMenu = this.openMenu.bind(this);
   }
 
@@ -18,7 +19,8 @@ class Toc extends Component {
     event.preventDefault();
     const tocRef = this.refs.menu;
     const tocContainer = this.refs.tocContainer;
-    const coords = ReactDOM.findDOMNode(tocContainer).getBoundingClientRect().height;
+    const coords = ReactDOM.findDOMNode(tocContainer).getBoundingClientRect()
+      .height;
     tocRef.style.top = coords + 'px';
     tocRef.classList.toggle('toc__open');
     this.setState(state => ({
@@ -31,7 +33,7 @@ class Toc extends Component {
     const data = this.props.data;
     return (
       <div className="toc">
-      {/* tocContainer ref */}
+        {/* tocContainer ref */}
         <div className="toc-container" ref="tocContainer">
           <a className="menu-bug" href="#!" onClick={this.openMenu}>
             <svg className="icn">
@@ -47,8 +49,7 @@ class Toc extends Component {
               {data.hashtag}
             </a>
             {/* displayed on top menu? */}
-            <a className="toc__series" href="#0 ">
-            </a>
+            <a className="toc__series" href="#0 " />
           </div>
 
           {/* menu ref */}
