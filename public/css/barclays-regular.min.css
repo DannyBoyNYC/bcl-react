@@ -2031,6 +2031,11 @@ p.full-ratings {
   background-color: #e5f8ff;
 }
 
+.data-block__multisector .company-block li,
+.data-block__multisector .stats {
+  margin-bottom: 0;
+}
+
 .eqdatatable table {
   border-top: 1px solid #007eb6;
   border-bottom: 1px solid #999;

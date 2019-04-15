@@ -176,6 +176,11 @@ p.full-ratings {
   background-color: $sidebar;
 }
 
+.data-block__multisector .company-block li,
+.data-block__multisector .stats {
+  margin-bottom: 0;
+}
+
 /// table bull
 .eqdatatable table {
   border-top: 1px solid $link;
