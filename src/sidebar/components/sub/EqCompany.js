@@ -27,7 +27,7 @@ class EqCompany extends Component {
       <ul className="company-block" ref="companyblock">
         <li className="company__header" onClick={this.openStats}>
           <p className="datum">
-            <a href="#!">{this.props.name}</a>
+            <a  href="#!">{this.props.name}</a>
           </p>
           <p className="rating">
             <a href="#0">NEUTRAL</a>

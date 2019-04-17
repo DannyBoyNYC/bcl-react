@@ -4,6 +4,7 @@ import EqCompany from './sub/EqCompany';
 
 class MultiCompanyData extends Component {
   render() {
+
     return (
       <div className="ratings multicompany">
         <ul className="data-block__multi">
@@ -15,10 +16,10 @@ class MultiCompanyData extends Component {
             <p className="status">Unchanged</p>
           </li>
 
-          <EqCompany />
-          <EqCompany />
-          <EqCompany />
-          <EqCompany />
+          <EqCompany name={'Fleetcor Technologies (FLT)'} />
+          <EqCompany name={'Global Payments Inc. (GPN)'} />
+          <EqCompany name={'MasterCard (MA)'} />
+          <EqCompany name={'PayChex Inc. (PAYX)'} />
 
           <li>
             <p className="full-ratings">
