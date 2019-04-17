@@ -1984,33 +1984,38 @@ html.zoomed {
 }
 
 .ratings > ul {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   margin-left: 0.5rem;
-  margin-right: 0.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+.ratings ul {
+  list-style: none;
   padding: 0;
 }
-.ratings p {
-  margin: 0;
-  line-height: 1.1;
+.ratings li {
+  margin-bottom: 0;
 }
 .ratings .datum {
+  grid-area: company;
   font-weight: 500;
   color: #444;
   font-size: 0.875rem;
+  line-height: 1.3;
 }
 .ratings .rating {
+  grid-area: rating;
   font-size: 0.875rem;
   text-align: right;
 }
 .ratings .status {
+  grid-area: status;
   font-size: 0.75rem;
   color: #666;
   grid-column: 1/span 2;
   text-align: right;
-  padding-top: 0.25rem;
 }
 .ratings button {
-  margin-top: 1rem;
   background-color: #007eb6;
   color: #fff;
   padding: 0.35rem;
@@ -2018,51 +2023,75 @@ html.zoomed {
   border: none;
   font-weight: 700;
 }
-.ratings li {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: auto 20px;
-}
 
+.data-block ul {
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "company rating" "company status";
+}
+.data-block ul.price-target {
+  grid-template-areas: "company rating" "status status";
+}
 .data-block li.sources {
   display: block;
   font-size: 0.75rem;
 }
-.data-block li:nth-child(n+4) {
+.data-block ul:nth-child(n+4) {
   opacity: 1;
   max-height: 300px;
   grid-template-rows: auto;
 }
-.data-block li:nth-child(4),
-.data-block li:nth-child(7),
-.data-block li:nth-child(16) {
+.data-block ul:nth-child(4),
+.data-block ul:nth-child(7),
+.data-block ul:nth-child(16) {
   margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px dashed #999;
 }
-.data-block li:nth-child(19) {
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid #999;
+
+.stats {
+  grid-column: 1/3;
 }
 
-li.stats {
-  display: block;
-}
-
-li.stats .data-block {
+.stats .data-block {
   display: none;
   padding-bottom: 1rem;
 }
 
-li.stats__open .data-block {
+.stats__open .data-block {
   display: block;
   margin-top: 0;
-  padding: 0.25rem;
   background: #effbff;
 }
 
+.data-block__multi {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "company rating" "company status";
+}
+.data-block__multi .datum {
+  color: #2b2b2b;
+}
+.data-block__multi .rating {
+  padding: 0;
+}
+.data-block__multi .status {
+  padding: 0;
+}
+
 .company-block {
+  margin-bottom: 0 !important;
+  cursor: pointer;
+  border-left: 1px solid #fff;
   padding: 0.25rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "company rating" "company status";
+}
+.company-block .datum {
+  padding-left: 0.25rem;
 }
 .company-block:hover {
   border-left: 1px solid #007eb6;
@@ -2076,54 +2105,52 @@ li.stats__open .data-block {
   padding-bottom: 0.5rem;
 }
 
-.data-block__multicompany li {
-  border-bottom: 0;
-  border-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-p.full-ratings {
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
-
-.data-block__multicompany li.stats {
-  display: block;
-  margin-bottom: 0;
-}
-
 .sector-block {
-  padding-left: 0;
-  padding: 0.25rem;
+  margin-bottom: 0.75rem;
   cursor: pointer;
   border-left: 1px solid #fff;
+  padding: 0.25rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "company rating" "company status";
+}
+.sector-block > .datum {
+  font-size: 0.9rem;
+}
+.sector-block .datum {
+  padding-left: 0.25rem;
+}
+.sector-block > li > .datum {
+  font-size: 1rem;
 }
 .sector-block:hover {
-  background: #effbff;
   border-left: 1px solid #007eb6;
+  background: #effbff;
 }
 .sector-block.sector__open {
   background: #effbff;
   border-left: 1px solid #007eb6;
 }
-
-.sector-block > li > .datum {
-  font-size: 1rem;
+.sector-block.company__open {
+  border-left: 1px solid #007eb6;
+  background: #effbff;
 }
-
+.sector-block .company-header {
+  padding-bottom: 0.5rem;
+}
 .sector-block li.stats {
   display: none;
 }
-
 .sector-block li.stats__open {
   display: block;
   margin-top: 0;
   background-color: #e5f8ff;
 }
 
-.data-block__multisector .company-block li,
-.data-block__multisector .stats {
-  margin-bottom: 0;
+.full-ratings {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0.25rem 0.5rem;
 }
 
 .eqdatatable table {

@@ -8,9 +8,9 @@ class MultiSectorData extends Component {
     return (
       <div className="ratings multisector">
         <ul className="data-block__multisector">
-          <EqSector data={data} />
-          <EqSector data={data} />
-          <EqSector data={data} />
+          <EqSector data={data} temp="Americans Integrated Oil" />
+          <EqSector data={data} temp="European Integrated Oil &amp; Refining" />
+          <EqSector data={data} temp="U.S. Independent Refiners" />
           <li>
             <p className="full-ratings">
               For a full list of our ratings, price target and earnings changes

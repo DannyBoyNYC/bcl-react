@@ -4,126 +4,82 @@ class EqDatablock extends Component {
   render() {
     return (
       <ul className="data-block">
-        <li>
-          <p className="datum">MDLZ</p>
-          <p className="rating">
-            <a href="#0">OVERWEIGHT</a>
-          </p>
-          <p className="status">Unchanged</p>
-        </li>
-
-        <li>
-          <p className="datum">Industry View</p>
-          <p className="rating">
-            <a href="#0">NEUTRAL</a>
-          </p>
-          <p className="status">Unchanged</p>
-        </li>
-
-        <li>
-          <p className="datum">Price Target</p>
-          <p className="rating">
-            <a href="#0">USD 51.00</a>
-          </p>
-          <p className="status">Raised 4% from USD 49.00</p>
-        </li>
+        <ul>
+          <li className="datum">MDLZ</li>
+          <li className="rating"><a href="#0">OVERWEIGHT</a></li>
+          <li className="status">Unchanged</li>
+        </ul>
+        <ul>
+          <li className="datum">Industry View</li>
+          <li className="rating"><a href="#0">NEUTRAL</a></li>
+          <li className="status">Unchanged</li>
+        </ul>
+        <ul className="price-target">
+          <li className="datum">Price Target</li>
+          <li className="rating"><a href="#0">USD 51.00</a></li>
+          <li className="status">Raised 4% from USD 49.00</li>
+        </ul>
+        
         {/* end 3 */}
-        <li>
-          <p className="datum">Price (23-Jan-2019)</p>
-          <p className="rating">
-            <a href="#0">USD 48.34</a>
-          </p>
-        </li>
-
-        <li>
-          <p className="datum">Potential Upside/Downside</p>
-          <p className="rating">
-            <a href="#0">+6.2%</a>
-          </p>
-        </li>
-
-        <li>
-          <p className="datum">Tickers</p>
-          <p className="rating">
-            <a href="#0">MDLZ</a>
-          </p>
-        </li>
+        <ul>
+          <li className="datum">Price (23-Jan-2019</li>
+          <li className="rating"><a href="#0">USD 48.34</a></li>
+        </ul>
+        <ul>
+          <li className="datum">Potential Upside/Downside</li>
+          <li className="rating"><a href="#0">+6.2%</a></li>
+        </ul>
+        <ul>
+          <li className="datum">Tickers</li>
+          <li className="rating"><a href="#0">MDLZ</a></li>
+        </ul>
         {/* end 6 */}
-        <li>
-          <p className="datum">Market Cap (USD mn)</p>
-          <p className="rating">
-            <a href="#0">69378</a>
-          </p>
-        </li>
-
-        <li>
-          <p className="datum">Shares Outstanding (mn)</p>
-          <p className="rating">
-            <a href="#0">1444.17</a>
-          </p>
-        </li>
-
-        <li>
-          <p className="datum">Free Float (%)</p>
-          <p className="rating">
-            <a href="#0">99.65</a>
-          </p>
-        </li>
-
-        <li>
-          <p className="datum">52 Wk Avg Daily Volume (mn)</p>
-          <p className="rating">
-            <a href="#0">7.9</a>
-          </p>
-        </li>
-
-        <li>
-          <p className="datum">52 Wk Avg Daily Value (USD mn)</p>
-          <p className="rating">
-            <a href="#0">N/A</a>
-          </p>
-        </li>
-
-        <li>
-          <p className="datum">Dividend Yield (%)</p>
-          <p className="rating">
-            <a href="#0">2.2</a>
-          </p>
-        </li>
+        <ul>
+          <li className="datum">Market Cap (USD mn)</li>
+          <li className="rating"><a href="#0">69378</a></li>
+        </ul>
+        <ul>
+          <li className="datum">Shares Outstanding (mn)</li>
+          <li className="rating"><a href="#0">1444.17</a></li>
+        </ul>
+        <ul>
+          <li className="datum">Free Float (%)</li>
+          <li className="rating"><a href="#0">99.65</a></li>
+        </ul>
+        <ul>
+          <li className="datum">52 Wk Avg Daily Volume (mn)</li>
+          <li className="rating"><a href="#0">7.9</a></li>
+        </ul>
+        <ul>
+          <li className="datum">52 Wk Avg Daily Value (USD mn)</li>
+          <li className="rating"><a href="#0">N/A</a></li>
+        </ul>
+        <ul>
+          <li className="datum">Dividend Yield (%)</li>
+          <li className="rating"><a href="#0">2.2</a></li>
+        </ul>
         {/* end 12 */}
-        <li>
-          <p className="datum">Return on Equity TTM (%)</p>
-          <p className="rating">
-            <a href="#0">2.2</a>
-          </p>
-        </li>
-        <li>
-          <p className="datum">Current BVPS (USD)</p>
-          <p className="rating">
-            <a href="#0">17.67</a>
-          </p>
-        </li>
+        <ul>
+          <li className="datum">Return on Equity TTM (%)</li>
+          <li className="rating"><a href="#0">2.2</a></li>
+        </ul>
+        <ul>
+          <li className="datum">Current BVPS (USD)</li>
+          <li className="rating"><a href="#0">17.67</a></li>
+        </ul>
 
         <li className="sources">Source: Refinitiv</li>
 
         {/* end 15 */}
-
-        <li>
-          <p className="datum">Price Performance</p>
-          <p className="rating">
-            <a href="#0">Exchange-Nasdaq</a>
-          </p>
-        </li>
-        <li>
-          <p className="datum">52 Week range</p>
-          <p className="rating">
-            <a href="#0">USD 48.46-37.42</a>
-          </p>
-        </li>
-
-        <li className="eqchart">
-          <img src="img/eqchart.png" alt="" />
-        </li>
+        <ul>
+          <li className="datum">Price Performance</li>
+          <li className="rating"><a href="#0">Exchange-Nasdaq</a></li>
+        </ul>
+        <ul>
+          <li className="datum">52 Week range</li>
+          <li className="rating"><a href="#0">USD 48.46-37.42</a></li>
+        </ul>
+        <img src="img/eqchart.png" alt="" />
 
         <li className="sources">
           <p>

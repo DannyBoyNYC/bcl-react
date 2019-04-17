@@ -3,42 +3,39 @@ import React, { Component } from 'react';
 import EqDatablock from './EqDatablock';
 
 class EqCompany extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showSubStats: false,
-    };
+  constructor() {
+    super();
     this.openStats = this.openStats.bind(this);
   }
 
   openStats(event) {
     event.preventDefault();
     const tocRef = this.refs.stats;
-    const companyRef = this.refs.companyblock;
     tocRef.classList.toggle('stats__open');
-    companyRef.classList.toggle('company__open');
-    this.setState(state => ({
-      showMenu: !state.showSubStats,
-    }));
+    this.refs.companyblock.classList.toggle('company__open');
   }
 
   render() {
     return (
-      <ul className="company-block" ref="companyblock">
-        <li className="company__header" onClick={this.openStats}>
-          <p className="datum">
+
+        <ul className="company-block" ref="companyblock" onClick={this.openStats}>
+          <li className="datum">
             <a  href="#!">{this.props.name}</a>
-          </p>
-          <p className="rating">
+          </li>
+          <li className="rating">
             <a href="#0">NEUTRAL</a>
-          </p>
-          <p className="status">Unchanged</p>
-        </li>
+          </li>
+          <li className="status">
+            Unchanged
+          </li>
+
         {/* hidden activated by link above */}
         <li className="stats" ref="stats">
           <EqDatablock />
-        </li>
-      </ul>
+            </li>
+
+          </ul>
+
     );
   }
 }

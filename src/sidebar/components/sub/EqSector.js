@@ -25,15 +25,14 @@ class EqSector extends Component {
   render() {
     const data = this.props.data;
     return (
-      <ul className="sector-block" ref="sectorblock">
-        <li onClick={this.openCompanies}>
-          <p className="datum">
-            <a href="!0">Americas Integrated Oil</a>
-          </p>
-          <p className="rating">
+      <ul className="sector-block" ref="sectorblock" >
+        <li className="datum" onClick={this.openCompanies}>
+          <a href="!0">{this.props.temp}</a>
+          </li>
+          <li className="rating">
             <a href="#0">POSITIVE</a>
-          </p>
-          <p className="status">Unchanged</p>
+          </li>
+          <li className="status">Unchanged
         </li>
         {/* hidden activated by link above */}
         <li className="stats" ref="stats">

@@ -34,33 +34,38 @@ $sidebar: rgba(229,248,255,05);
 
 .ratings {
   > ul {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     margin-left: 0.5rem;
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style: none;
     padding: 0;
   }
-  p {
-    margin:0;
-    line-height: 1.1;
+  li {
+    margin-bottom: 0;
   }
   .datum {
+    grid-area: company;
     font-weight: 500;
     color: #444;
     font-size: 0.875rem;
+    line-height: 1.3;
   }
   .rating {
+    grid-area: rating;
     font-size: 0.875rem;
     text-align: right;
   }
   .status {
+    grid-area: status;
     font-size: 0.75rem;
     color: #666;
     grid-column: 1 / span 2;
     text-align: right;
-    padding-top: 0.25rem;
   }
   button {
-    margin-top: 1rem;
     background-color: $link;
     color: #fff;
     padding: 0.35rem;
@@ -68,58 +73,86 @@ $sidebar: rgba(229,248,255,05);
     border: none;
     font-weight: 700;
   }
-  li {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: auto 20px;
-    // margin-bottom: 0.5rem;
-  }
 }
 
 // data-block
 .data-block {
+  ul {
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "company rating"
+      "company status";
+  }
+  ul.price-target {
+    grid-template-areas:
+    "company rating"
+    "status status";
+  }
   li.sources {
     display: block;
     font-size: 0.75rem;
   }
-  li:nth-child(n+4){
+  ul:nth-child(n+4){
     opacity: 1;
     max-height: 300px;
-    // overflow: auto;
     grid-template-rows: auto;
   }
-  li:nth-child(4),
-  li:nth-child(7),
-  li:nth-child(16) {
+  ul:nth-child(4),
+  ul:nth-child(7),
+  ul:nth-child(16) {
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px dashed #999;
   }
-  li:nth-child(19) {
-    // margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #999;
-  }
 }
-
-li.stats {
-  display: block;
+// when the company data is displayed
+.stats {
+  grid-column: 1/3;
 }
-
-li.stats .data-block {
+.stats .data-block {
   display: none;
   padding-bottom: 1rem;
 }
-li.stats__open .data-block {
+.stats__open .data-block {
   display: block;
   margin-top: 0;
-  padding: 0.25rem;
   background: lighten( $sidebar, 2%);
 }
 
 // multi company
+.data-block__multi {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "company rating"
+    "company status";
+  .datum {
+    color: darken($text, 10%);
+  }
+  .rating {
+    padding: 0;
+  }
+  .status {
+    padding: 0;
+  }
+
+}
 .company-block {
+  margin-bottom: 0 !important;
+  cursor: pointer;
+  border-left: 1px solid #fff;
   padding: 0.25rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "company rating"
+    "company status";
+  .datum {
+    padding-left: 0.25rem;
+  }
   &:hover {
     border-left: 1px solid $link;
     background: lighten( $sidebar, 2%);
@@ -132,53 +165,55 @@ li.stats__open .data-block {
     padding-bottom: 0.5rem;
   }
 }
-.data-block__multicompany li {
-  border-bottom: 0;
-  border-top: 0;
-  margin-bottom: 0.5rem;
-}
-p.full-ratings {
-  font-size: 0.875rem;
-  line-height: 1.5;
-}
 
-.data-block__multicompany li.stats  {
-  display: block;
-  margin-bottom: 0;
-}
-
-// multi sector
 .sector-block {
-  padding-left: 0;
-  padding: 0.25rem;
+  margin-bottom: 0.75rem;
   cursor: pointer;
   border-left: 1px solid #fff;
+  padding: 0.25rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "company rating"
+    "company status";
+  > .datum {
+    font-size: 0.9rem;
+  }
+  .datum {
+    padding-left: 0.25rem;
+  }
+  > li > .datum {
+    font-size: 1rem;
+  }
   &:hover {
-    background: lighten( $sidebar, 2%);
     border-left: 1px solid $link;
+    background: lighten( $sidebar, 2%);
   }
   &.sector__open {
     background: lighten( $sidebar, 2%);
     border-left: 1px solid $link;
   }
-}
-.sector-block > li > .datum {
-  font-size: 1rem;
-}
-.sector-block li.stats {
-  display: none;
-  // padding-bottom: 1rem;
-}
-.sector-block li.stats__open {
-  display: block;
-  margin-top: 0;
-  // padding-left: 0.5rem;
-  background-color: $sidebar;
+  &.company__open {
+    border-left: 1px solid $link;
+    background: lighten( $sidebar, 2%);
+  }
+  .company-header {
+    padding-bottom: 0.5rem;
+  }
+  li.stats {
+    display: none;
+  }
+  li.stats__open {
+    display: block;
+    margin-top: 0;
+    background-color: $sidebar;
+  }
 }
 
-.data-block__multisector .company-block li,
-.data-block__multisector .stats {
-  margin-bottom: 0;
+.full-ratings {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 0.25rem 0.5rem;
 }
 
 /// table bull ///////
