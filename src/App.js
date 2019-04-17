@@ -15,7 +15,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: { ...singleCompany, ...companies },
+      data: { ...multiSector, ...companies },
     };
   }
 
