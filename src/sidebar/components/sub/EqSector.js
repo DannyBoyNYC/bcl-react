@@ -23,6 +23,7 @@ class EqSector extends Component {
   }
 
   render() {
+    const data = this.props.data;
     return (
       <ul className="sector-block" ref="sectorblock">
         <li onClick={this.openCompanies}>
@@ -36,10 +37,13 @@ class EqSector extends Component {
         </li>
         {/* hidden activated by link above */}
         <li className="stats" ref="stats">
-          <EqCompany />
-          <EqCompany />
-          <EqCompany />
-          <EqCompany />
+        {/* {Object.keys(data.companies).map(key => (
+            <EqCompany key={key} index={key} company={data.company[key]} />
+          ))} */}
+          <EqCompany name={data.companies[0].name} />
+          <EqCompany name={data.companies[1].name} />
+          <EqCompany name={data.companies[2].name} />
+          <EqCompany name={data.companies[3].name} />
         </li>
       </ul>
     );

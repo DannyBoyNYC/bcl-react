@@ -2142,4 +2142,9 @@ p.full-ratings {
   border-left: 1px solid #007eb6;
 }
 
+.sidenav.related svg .icn-stroke {
+  stroke: #f58420;
+  fill: red;
+}
+
 /*# sourceMappingURL=barclays-regular.css.map */

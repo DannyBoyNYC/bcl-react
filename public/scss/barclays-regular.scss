@@ -181,7 +181,7 @@ p.full-ratings {
   margin-bottom: 0;
 }
 
-/// table bull
+/// table bull ///////
 .eqdatatable table {
   border-top: 1px solid $link;
   border-bottom: 1px solid #999;
@@ -196,4 +196,10 @@ p.full-ratings {
     padding-left: 0.25rem;
     border-left: 1px solid $link;
   }
+}
+
+/// svg bull /////////
+.sidenav.related svg .icn-stroke {
+  stroke: $orange;
+  fill: red;
 }

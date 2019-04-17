@@ -13,7 +13,7 @@ class Sidebar extends Component {
     if (hashtag === '#multisector') {
       return (
         <div className="content__secondary-column">
-          <EqMultiSectorData />
+          <EqMultiSectorData data={this.props.data} />
           <Certifications />
           {/* <Related /> */}
         </div>
@@ -31,7 +31,7 @@ class Sidebar extends Component {
         <div className="content__secondary-column">
           <EqSingleCompanyData />
           <Certifications />
-          {/* <Related /> */}
+          <Related />
         </div>
       );
     } else return "something f'ed up";
