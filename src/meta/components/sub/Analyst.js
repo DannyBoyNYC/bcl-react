@@ -10,7 +10,6 @@ class Analyst extends Component {
   analystPopover(event) {
     event.preventDefault();
     const popover = this.refs.popover;
-    // const popLink = this.refs.popLink;
     popover.style.top = "58px";
     popover.classList.toggle("show");
   }
@@ -18,6 +17,7 @@ class Analyst extends Component {
   render() {
     const data = this.props;
     return (
+      
       <li
         style={{ position: "relative" }}
         className='analyst'
@@ -26,6 +26,7 @@ class Analyst extends Component {
         itemType='http://schema.org/Person'
         itemProp='author'
       >
+        
         <a
           className='analyst-link'
           href='#single'
