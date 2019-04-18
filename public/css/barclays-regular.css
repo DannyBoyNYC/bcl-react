@@ -1983,6 +1983,22 @@ html.zoomed {
   font-size: 120%;
 }
 
+.data-block ul,
+.data-block__multi,
+.company-block,
+.sector-block {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "company rating" "company status";
+}
+.data-block ul.company__open,
+.data-block__multi.company__open,
+.company-block.company__open,
+.sector-block.company__open {
+  border-left: 1px solid #b6e9ff;
+  background: #f9fdff;
+}
+
 .ratings > ul {
   margin-top: 0.75rem;
   margin-left: 0.5rem;
@@ -1992,6 +2008,8 @@ html.zoomed {
 .ratings ul {
   list-style: none;
   padding: 0;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
 }
 .ratings li {
   margin-bottom: 0;
@@ -2026,28 +2044,25 @@ html.zoomed {
 
 .data-block ul {
   margin-bottom: 0.5rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "company rating" "company status";
 }
 .data-block ul.price-target {
   grid-template-areas: "company rating" "status status";
 }
-.data-block li.sources {
-  display: block;
+.data-block .sources {
   font-size: 0.75rem;
+  padding-left: 0.5rem;
 }
-.data-block ul:nth-child(n+4) {
-  opacity: 1;
-  max-height: 300px;
-  grid-template-rows: auto;
+.data-block img {
+  border: 1px solid #d0d2d3;
+  margin: 0.25rem;
+  max-width: 94%;
 }
 .data-block ul:nth-child(4),
 .data-block ul:nth-child(7),
 .data-block ul:nth-child(16) {
-  margin-top: 1rem;
-  padding-top: 1rem;
-  border-top: 1px dashed #999;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #d0d2d3;
 }
 
 .stats {
@@ -2056,23 +2071,21 @@ html.zoomed {
 
 .stats .data-block {
   display: none;
-  padding-bottom: 1rem;
+  transition: all 0.25s linear;
+  padding-bottom: 0.5rem;
 }
 
 .stats__open .data-block {
   display: block;
-  margin-top: 0;
-  background: #effbff;
+  margin-top: 0.5rem;
+  background: #f9fdff;
 }
 
 .data-block__multi {
   margin-top: 0.5rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "company rating" "company status";
 }
 .data-block__multi .datum {
-  color: #2b2b2b;
+  color: #111111;
 }
 .data-block__multi .rating {
   padding: 0;
@@ -2082,69 +2095,49 @@ html.zoomed {
 }
 
 .company-block {
-  margin-bottom: 0 !important;
   cursor: pointer;
   border-left: 1px solid #fff;
-  padding: 0.25rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "company rating" "company status";
-}
-.company-block .datum {
-  padding-left: 0.25rem;
 }
 .company-block:hover {
   border-left: 1px solid #007eb6;
   background: #effbff;
 }
-.company-block.company__open {
-  border-left: 1px solid #007eb6;
-  background: #effbff;
-}
-.company-block .company-header {
-  padding-bottom: 0.5rem;
+
+.ratings .data-block__multisector {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.sector-block {
+.data-block__multisector .sector-block {
   margin-bottom: 0.75rem;
   cursor: pointer;
   border-left: 1px solid #fff;
   padding: 0.25rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "company rating" "company status";
-}
-.sector-block > .datum {
-  font-size: 0.9rem;
-}
-.sector-block .datum {
   padding-left: 0.25rem;
 }
-.sector-block > li > .datum {
+.data-block__multisector .sector-block > .datum {
+  font-size: 0.9rem;
+}
+.data-block__multisector .sector-block .datum {
+  padding-left: 0.25rem;
+}
+.data-block__multisector .sector-block > li > .datum {
   font-size: 1rem;
 }
-.sector-block:hover {
+.data-block__multisector .sector-block:hover, .data-block__multisector .sector-block.sector__open {
   border-left: 1px solid #007eb6;
   background: #effbff;
 }
-.sector-block.sector__open {
-  background: #effbff;
-  border-left: 1px solid #007eb6;
-}
-.sector-block.company__open {
-  border-left: 1px solid #007eb6;
-  background: #effbff;
-}
-.sector-block .company-header {
-  padding-bottom: 0.5rem;
-}
-.sector-block li.stats {
+.data-block__multisector .sector-block li.stats {
   display: none;
 }
-.sector-block li.stats__open {
+.data-block__multisector .sector-block li.stats__open {
   display: block;
   margin-top: 0;
-  background-color: #e5f8ff;
+  padding-top: 0.5rem;
+}
+.data-block__multisector .sector-block li.stats__open .company-block {
+  padding-bottom: 0.5rem;
 }
 
 .full-ratings {
@@ -2167,11 +2160,6 @@ html.zoomed {
 .eqdatatable table .sector td:first-child {
   padding-left: 0.25rem;
   border-left: 1px solid #007eb6;
-}
-
-.sidenav.related svg .icn-stroke {
-  stroke: #f58420;
-  fill: red;
 }
 
 /*# sourceMappingURL=barclays-regular.css.map */

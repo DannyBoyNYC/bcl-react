@@ -67,9 +67,9 @@ class EqDatablock extends Component {
           <li className="datum">Current BVPS (USD)</li>
           <li className="rating"><a href="#0">17.67</a></li>
         </ul>
-
+          <ul>
         <li className="sources">Source: Refinitiv</li>
-
+        </ul>
         {/* end 15 */}
         <ul>
           <li className="datum">Price Performance</li>

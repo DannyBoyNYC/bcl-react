@@ -32,6 +32,24 @@ html.zoomed {
 
 $sidebar: rgba(229,248,255,05);
 
+// single company grid
+.data-block ul,
+// header data block ONLY in multi company
+.data-block__multi,
+// company header data block in multi company
+.company-block,
+.sector-block {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+  "company rating"
+  "company status";
+  &.company__open {
+    border-left: 1px solid lighten( $link, 50%);
+    background: lighten( $sidebar, 4%);
+  }
+}
+
 .ratings {
   > ul {
     margin-top: 0.75rem;
@@ -42,6 +60,8 @@ $sidebar: rgba(229,248,255,05);
   ul {
     list-style: none;
     padding: 0;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
   }
   li {
     margin-bottom: 0;
@@ -75,36 +95,31 @@ $sidebar: rgba(229,248,255,05);
   }
 }
 
-// data-block
+// company data-block
 .data-block {
   ul {
     margin-bottom: 0.5rem;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas:
-      "company rating"
-      "company status";
   }
   ul.price-target {
     grid-template-areas:
     "company rating"
     "status status";
   }
-  li.sources {
-    display: block;
+  .sources {
     font-size: 0.75rem;
+    padding-left: 0.5rem;
   }
-  ul:nth-child(n+4){
-    opacity: 1;
-    max-height: 300px;
-    grid-template-rows: auto;
+  img {
+    border: 1px solid $gray25;
+    margin: 0.25rem;
+    max-width: 94%;
   }
   ul:nth-child(4),
   ul:nth-child(7),
   ul:nth-child(16) {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px dashed #999;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed $gray25;
   }
 }
 // when the company data is displayed
@@ -113,24 +128,24 @@ $sidebar: rgba(229,248,255,05);
 }
 .stats .data-block {
   display: none;
-  padding-bottom: 1rem;
+  // opacity: 0;
+  // max-height: 0px;
+  transition: all 0.25s linear;
+  padding-bottom: 0.5rem;
 }
 .stats__open .data-block {
   display: block;
-  margin-top: 0;
-  background: lighten( $sidebar, 2%);
+  // opacity: 1;
+  // max-height: 2000px;
+  margin-top: 0.5rem;
+  background: lighten( $sidebar, 4%);
 }
 
-// multi company
+// multi company topmost
 .data-block__multi {
   margin-top: 0.5rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas:
-    "company rating"
-    "company status";
   .datum {
-    color: darken($text, 10%);
+    color: darken($text, 20%);
   }
   .rating {
     padding: 0;
@@ -138,44 +153,29 @@ $sidebar: rgba(229,248,255,05);
   .status {
     padding: 0;
   }
-
 }
+
 .company-block {
-  margin-bottom: 0 !important;
   cursor: pointer;
   border-left: 1px solid #fff;
-  padding: 0.25rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas:
-    "company rating"
-    "company status";
-  .datum {
-    padding-left: 0.25rem;
-  }
   &:hover {
     border-left: 1px solid $link;
     background: lighten( $sidebar, 2%);
   }
-  &.company__open {
-    border-left: 1px solid $link;
-    background: lighten( $sidebar, 2%);
-  }
-  .company-header {
-    padding-bottom: 0.5rem;
-  }
 }
 
-.sector-block {
+.ratings .data-block__multisector {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.data-block__multisector {
+  .sector-block {
   margin-bottom: 0.75rem;
   cursor: pointer;
   border-left: 1px solid #fff;
   padding: 0.25rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas:
-    "company rating"
-    "company status";
+  padding-left: 0.25rem;
   > .datum {
     font-size: 0.9rem;
   }
@@ -185,20 +185,10 @@ $sidebar: rgba(229,248,255,05);
   > li > .datum {
     font-size: 1rem;
   }
-  &:hover {
-    border-left: 1px solid $link;
-    background: lighten( $sidebar, 2%);
-  }
+  &:hover,
   &.sector__open {
-    background: lighten( $sidebar, 2%);
-    border-left: 1px solid $link;
-  }
-  &.company__open {
     border-left: 1px solid $link;
     background: lighten( $sidebar, 2%);
-  }
-  .company-header {
-    padding-bottom: 0.5rem;
   }
   li.stats {
     display: none;
@@ -206,10 +196,15 @@ $sidebar: rgba(229,248,255,05);
   li.stats__open {
     display: block;
     margin-top: 0;
-    background-color: $sidebar;
+    padding-top: 0.5rem;
+    .company-block {
+      padding-bottom: 0.5rem;
+    }
   }
 }
+}
 
+// para at bottom pointing to full ratings
 .full-ratings {
   font-size: 0.875rem;
   line-height: 1.5;
@@ -231,11 +226,4 @@ $sidebar: rgba(229,248,255,05);
     padding-left: 0.25rem;
     border-left: 1px solid $link;
   }
-}
-
-/// svg bull /////////
-// doesnt work
-.sidenav.related svg .icn-stroke {
-  stroke: $orange;
-  fill: red;
 }
