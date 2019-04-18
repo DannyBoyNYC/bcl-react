@@ -68,6 +68,7 @@ class Analyst extends Component {
                 {data.analyst.department}
               </span>
             </div>
+            <div className="eq-unit" style={{fontWeight: '600', marginBottom: '10px'}}>Americas Integrated Oil &amp; U.S. Independent Refiners</div>
             <ul style={{ flexDirection: "row", marginTop: "0" }}>
               <li style={{ display: "flex", lineHeight: "1.5" }}>
                 <svg className='icn'>
