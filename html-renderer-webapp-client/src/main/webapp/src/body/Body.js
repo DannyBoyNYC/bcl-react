@@ -32,8 +32,7 @@ import MultipartList from "./components/MultipartList";
 import DisclosuresBottom from "./components/DisclosuresBottom";
 // testing overlay popable
 import FigureSingle from "./components/FigureSingle";
-import Overlay from "../overlay/Overlay";
-import Popable from "../overlay/Popable";
+import FigureFullSize from "./components/FigureFullSize";
 
 class Body extends Component {
   render() {
@@ -45,7 +44,6 @@ class Body extends Component {
         <Paragraph />
         <FigureSingle />
         <Paragraph />
-        <Popable />
         {/* <TableImage /> */}
         {hashtag ? <EqMultiSectorDataTable /> : <EqMultiCompanyDataTable />}
         <EqSingleCompanyDataTable />

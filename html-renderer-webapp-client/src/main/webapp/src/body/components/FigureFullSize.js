@@ -3,11 +3,12 @@ import React, { Component } from "react";
 class Overlay extends Component {
   render() {
     return (
-      <div className='overlay gallery-lightbox gallery-lightbox--open'>
+      <div className='full-size-comp overlay gallery-lightbox gallery-lightbox--open'>
         <div className='gallery-lightbox__sidebar'>
           <div className='gallery-lightbox__btn gallery-lightbox__btn--close'>
             <button className='gallery-lightbox__btn-body'>
-              <i />close
+              <i />
+              close
             </button>
           </div>
 
@@ -19,18 +20,21 @@ class Overlay extends Component {
 
           <div className='gallery-lightbox__btn gallery-lightbox__btn--next'>
             <button className='gallery-lightbox__btn-body'>
-              <i />next
+              <i />
+              next
             </button>
           </div>
 
           <div className='gallery-lightbox__btn gallery-lightbox__btn--prev js-gallery-prev'>
             <button className='gallery-lightbox__btn-body'>
-              <i />previous
+              <i />
+              previous
             </button>
           </div>
           <div className='gallery-lightbox__btn gallery-lightbox__btn--info-button'>
             <button className='gallery-lightbox__btn-body'>
-              <i />info
+              <i />
+              info
             </button>
           </div>
         </div>

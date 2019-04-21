@@ -20,7 +20,6 @@
 @import "imports/toc";
 @import "imports/timeline";
 @import "imports/multipart-list";
-
 @import "imports/multimedia";
 @import "imports/related-research";
 
@@ -29,3 +28,9 @@ html.zoomed {
 }
 
 @import "imports/equities";
+
+.has-overlay {
+  article{
+    display: none !important;
+  } 
+}

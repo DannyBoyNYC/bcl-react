@@ -3,9 +3,26 @@ document.addEventListener("mouseover", handleMouseOvers);
 document.addEventListener("mouseout", handleMouseOuts);
 
 function handleClicks() {
-  console.log(event.target);
   if (event.target.closest(".table-container")) {
-    console.log("test", event.target);
+    event.preventDefault();
+    var container = event.target.closest(".table-container");
+    var itemToPop = container.querySelector("a img");
+    // grab node content before cloning
+    var figureHeader = container.querySelector(".figure-header");
+    var headerText = figureHeader.innerText;
+    var captionContent = container.querySelector(".caption").innerText;
+
+    if (container.querySelector(".source")) {
+      var sourceText = container.querySelector(".source").innerText;
+    }
+    // alter the node before cloning
+    // document.querySelector(".expand-image").style.display = "none";
+    // clone the node
+    var node = itemToPop.cloneNode(true);
+    console.log(itemToPop);
+    // var expandIcon = itemToPop.querySelector(".expand-image");
+    // console.log(expandIcon);
+    document.querySelector("body").classList.add("has-overlay");
   }
 }
 
@@ -16,7 +33,7 @@ function handleMouseOvers() {
       .closest(".table-container")
       .querySelector(".expand-image")
       .classList.add("hovered");
-  }
+  } else return;
 }
 
 function handleMouseOuts() {
