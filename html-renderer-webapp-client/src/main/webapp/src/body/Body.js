@@ -31,6 +31,7 @@ import ChapterTextLinks from "./components/ChapterTextLinks";
 import MultipartList from "./components/MultipartList";
 import DisclosuresBottom from "./components/DisclosuresBottom";
 // testing overlay popable
+import FigureSingle from "./components/FigureSingle";
 import Overlay from "../overlay/Overlay";
 import Popable from "../overlay/Popable";
 
@@ -42,7 +43,7 @@ class Body extends Component {
       <>
         {/* <Aside /> */}
         <Paragraph />
-        <Popable />
+        <FigureSingle />
         <Paragraph />
         <Popable />
         {/* <TableImage /> */}

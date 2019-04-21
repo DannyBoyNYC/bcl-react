@@ -4,20 +4,27 @@ document.addEventListener("mouseout", handleMouseOuts);
 
 function handleClicks() {
   console.log(event.target);
-  if (event.target.closest(".popable")) {
+  if (event.target.closest(".table-container")) {
     console.log("test", event.target);
   }
 }
 
 function handleMouseOvers() {
-  if (event.target.closest(".popable")) {
-    document.querySelector(".expand-image").classList.add("hovered");
+  // console.log(event.target);
+  if (event.target.closest(".table-container")) {
+    event.target
+      .closest(".table-container")
+      .querySelector(".expand-image")
+      .classList.add("hovered");
   }
 }
 
 function handleMouseOuts() {
-  if (event.target.closest(".popable")) {
-    document.querySelector(".expand-image").classList.remove("hovered");
+  if (event.target.closest(".table-container")) {
+    event.target
+      .closest(".table-container")
+      .querySelector(".expand-image")
+      .classList.remove("hovered");
   }
 }
 

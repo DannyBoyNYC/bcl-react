@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Certifications extends Component {
   render() {
     return (
-      <div className='table-container popable'>
+      <div className='table-container'>
         <figure className='figure-container'>
           <h3 className='figure-header'>
             Figure 1. An eccentric view of the USA
