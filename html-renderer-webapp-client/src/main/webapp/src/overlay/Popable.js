@@ -11,7 +11,7 @@ class Certifications extends Component {
           <a href='#img-1'>
             <img src='img/nomophobia.png' />
             <span className='expand-image'>
-              <svg className='icn' style='fill: #fff;'>
+              <svg className='icn' style={{ fill: "#fff" }}>
                 <title>Expand</title>
                 <use xlinkHref='#arrows-open' />
               </svg>
