@@ -41,6 +41,7 @@ class Body extends Component {
     return (
       <>
         {/* <Aside /> */}
+        
         <Paragraph />
         <FigureSingle />
         <Paragraph />
@@ -63,8 +64,6 @@ class Body extends Component {
         <Paragraph />
         <ListUnordered />
         <ListOrdered />
-        <Header3figure />
-        <Image />
         <Caption />
         <CaptionSource />
         <Paragraph />

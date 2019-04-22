@@ -4,8 +4,7 @@ class Header3figure extends Component {
   render() {
     return (
       <h3 className="figure-header">
-        <span>FIGURE 1.</span> Russia Slowdown in inflation supports key rate
-        cuts
+        <span>FIGURE 1.</span> Header three for figures.
       </h3>
     );
   }
