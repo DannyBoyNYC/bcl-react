@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header3figure from './Header3figure';
 
 class EqSingleCoDataTable extends Component {
   render() {
@@ -11,9 +12,7 @@ class EqSingleCoDataTable extends Component {
               <use xlinkHref="#arrows-open" />
             </svg>
           </span>
-          <span className="fig-number">
-            FIGURE 1. Equities single company ratings table.
-          </span>
+          <Header3figure />
         </div>
 
         <table>

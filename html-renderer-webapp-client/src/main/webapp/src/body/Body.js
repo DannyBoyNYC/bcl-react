@@ -12,7 +12,6 @@ import EqMultiCompanyDataTable from "./components/EqMultiCompanyDataTable";
 import EqMultiSectorDataTable from "./components/EqMultiSectorDataTable";
 import Header2 from "./components/Header2";
 import Header3 from "./components/Header3";
-import Header3figure from "./components/Header3figure";
 import Header4 from "./components/Header4";
 import Header6 from "./components/Header6";
 import Multimedia from "./components/Multimedia";
@@ -20,7 +19,7 @@ import MultimediaVideo from "./components/MultimediaVideo";
 import PopableTable from "./components/PopableTable";
 import ListUnordered from "./components/ListUnordered";
 import ListOrdered from "./components/ListOrdered";
-import Image from "./components/Image";
+import ImageSingle from "./components/ImageSingle";
 import Caption from "./components/Caption";
 import CaptionSource from "./components/CaptionSource";
 import Blockquote from "./components/Blockquote";
@@ -64,13 +63,8 @@ class Body extends Component {
         <Paragraph />
         <ListUnordered />
         <ListOrdered />
-        <Caption />
-        <CaptionSource />
         <Paragraph />
-        <Header3figure />
-        <Image />
-        <Caption />
-        <CaptionSource />
+        <ImageSingle />
         <Header6 />
         {/* <AsidePull /> */}
         <Paragraph />

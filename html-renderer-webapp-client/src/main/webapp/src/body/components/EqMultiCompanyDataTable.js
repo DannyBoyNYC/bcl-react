@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header3figure from './Header3figure';
 
 class EqDataTable extends Component {
   render() {
@@ -11,10 +12,7 @@ class EqDataTable extends Component {
               <use xlinkHref="#arrows-open" />
             </svg>
           </span>
-          <span className="fig-number">
-            FIGURE 1. Multi Company Summary of our Ratings, Price Targets and
-            Earnings Changes in this Report (all changes are shown in bold)
-          </span>
+          <Header3figure />
         </div>
 
         <table>

@@ -2,13 +2,14 @@ document.addEventListener('click', handleClicks);
 document.addEventListener('mouseover', handleMouseOvers);
 document.addEventListener('mouseout', handleMouseOuts);
 
-function handleClicks() {
-  if (event.target.closest('.table-container')) {
+function handleClicks(event) {
+  if (event.target.closest('figure')) {
     event.preventDefault();
-    buildPopover();
-  } else if (event.target.matches('.expand-close')) {
+    buildPopover(event);
+  }
+  else if (event.target.matches('.expand-close')) {
     event.preventDefault();
-    destroyPopover();
+    destroyPopover(event);
   }
 }
 
@@ -17,9 +18,9 @@ function destroyPopover() {
   document.querySelector('body').classList.remove('has-overlay');
 }
 
-function buildPopover() {
-  var container = event.target.closest('.table-container');
-  var imgSrc = container.querySelector('a img').getAttribute('src');
+function buildPopover(event) {
+  var container = event.target.closest('figure');
+  var imgSrc = container.querySelector('img').getAttribute('src');
   var figureHeader = container.querySelector('.figure-header').innerText;
   var caption = container.querySelector('.caption').innerText;
 
@@ -40,19 +41,18 @@ function buildPopover() {
 }
 
 function handleMouseOvers() {
-  // console.log(event.target);
-  if (event.target.closest('.table-container')) {
+    if (event.target.closest('figure')) {
     event.target
-      .closest('.table-container')
+      .closest('figure')
       .querySelector('.expand-image')
       .classList.add('hovered');
-  } else return;
+  }
 }
 
 function handleMouseOuts() {
-  if (event.target.closest('.table-container')) {
+  if (event.target.closest('figure')) {
     event.target
-      .closest('.table-container')
+      .closest('figure')
       .querySelector('.expand-image')
       .classList.remove('hovered');
   }

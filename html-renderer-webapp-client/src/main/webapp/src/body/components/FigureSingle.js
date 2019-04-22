@@ -8,7 +8,6 @@ class SingleFigure extends Component {
     return (
       <div className="table-container">
         <Figure />
-        <Caption />
       </div>
     );
   }
