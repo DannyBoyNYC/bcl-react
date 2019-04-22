@@ -1,0 +1,83 @@
+<configuration debug="true">
+	<contextName>html-renderer</contextName>
+
+	<property name="LOG_ROOT_DIR" value="${research.app.rootDir}/logs/html-renderer" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<withJansi>false</withJansi>
+		<target>System.out</target>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %X{reqIdRaw}
+				%X{userBclIdRaw} %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+
+	<appender name="FILE-OUT"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_ROOT_DIR}/html-renderer-out.log</file>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %X{reqIdRaw}
+					%X{userBclIdRaw} %logger{36} - %msg%n</pattern>
+			</Pattern>
+		</encoder>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${LOG_ROOT_DIR}/html-renderer-out.%d{yyyyMMdd}.%i.log
+			</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+	</appender>
+
+	<appender name="FILE-ERROR"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOG_ROOT_DIR}/html-renderer-error.log</file>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %X{reqIdRaw}
+					%X{userBclIdRaw} %logger{36} - %msg%n</pattern>
+			</Pattern>
+		</encoder>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${LOG_ROOT_DIR}/html-renderer-error.%d{yyyyMMdd}.%i.log
+			</fileNamePattern>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+	</appender>
+
+
+	<!-- REDUCE LOGGING -->
+	<logger name="org.dozer" level="INFO" />
+	<logger name="org.hibernate" level="INFO" />
+	<logger name="org.apache.commons" level="INFO" />
+	<logger name="org.springframework.web" level="INFO" />
+	<logger name="org.springframework.core" level="INFO" />
+	<logger name="org.springframework.jndi" level="INFO" />
+	<logger name="org.springframework.beans" level="INFO" />
+	<logger name="org.springframework.context" level="INFO" />
+	<logger name="springfox.documentation" level="INFO" />
+	<logger name="org.apache" level="INFO" />
+
+	<!-- DEFAULT LOGGING -->
+	<root level="DEBUG">
+		<appender-ref ref="FILE-OUT" />
+		<appender-ref ref="FILE-ERROR" />
+	</root>
+
+</configuration>
