@@ -6,7 +6,6 @@ class Caption extends Component {
       <p className="caption">
         Caption for chart above. Made extra long for multiple line testing. Made
         extra long for multiple line testing. Lorem ipsum dolor sit amet.
-        Source: Barclays Live
       </p>
     );
   }

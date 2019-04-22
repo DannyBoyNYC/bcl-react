@@ -9,6 +9,7 @@ const Figure = () => {
     <figure className='figure-container'>
       <Header3figure />
       <img src='img/map1.svg' alt='map' />
+      {/* <img src="img/chart-1.svg" alt="chart" /> */}
       {/* <img src='img/nomophobia.png' alt="info graphic" /> */}
       <ImageExpandIcon />
       <Caption />

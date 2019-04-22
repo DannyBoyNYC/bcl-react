@@ -31,16 +31,17 @@ function buildPopover(event) {
       <div class="expand-close">✖</div>
       <h3 class="header-text">${figureHeader}</h3>
       <p class="source-text">${caption}</p>
-      
     </div>
-    <div><img class="img-responsive img-rounded" src="${imgSrc}" style="width:85%px;"></div>
+    <div>
+      <img class="img-responsive img-rounded" src="${imgSrc}" style="width:85%px;">
+    </div>
   `;
   div.innerHTML = elem;
   document.querySelector('body').appendChild(div);
   document.querySelector('body').classList.add('has-overlay');
 }
 
-function handleMouseOvers() {
+function handleMouseOvers(event) {
     if (event.target.closest('figure')) {
     event.target
       .closest('figure')
@@ -49,7 +50,7 @@ function handleMouseOvers() {
   }
 }
 
-function handleMouseOuts() {
+function handleMouseOuts(event) {
   if (event.target.closest('figure')) {
     event.target
       .closest('figure')

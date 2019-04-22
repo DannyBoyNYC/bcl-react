@@ -16,7 +16,7 @@ import Header4 from "./components/Header4";
 import Header6 from "./components/Header6";
 import Multimedia from "./components/Multimedia";
 import MultimediaVideo from "./components/MultimediaVideo";
-import PopableTable from "./components/PopableTable";
+
 import ListUnordered from "./components/ListUnordered";
 import ListOrdered from "./components/ListOrdered";
 import ImageSingle from "./components/ImageSingle";
@@ -53,7 +53,6 @@ class Body extends Component {
         {/* <Multimedia /> */}
         {/* <Header4 /> */}
         {/* <MultimediaVideo /> */}
-        {/* <PopableTable /> */}
         <Header2 />
         <Paragraph />
         {/* <TableBig /> */}
@@ -66,7 +65,6 @@ class Body extends Component {
         <Paragraph />
         <ImageSingle />
         <Header6 />
-        {/* <AsidePull /> */}
         <Paragraph />
         <AsidePull />
         <Paragraph />
