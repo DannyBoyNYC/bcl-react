@@ -1,6 +1,42 @@
 document.addEventListener('click', handleClicks);
 document.addEventListener('mouseover', handleMouseOvers);
 document.addEventListener('mouseout', handleMouseOuts);
+document.addEventListener('scroll', handleScroll);
+window.addEventListener('load', init);
+
+setup = {};
+
+function init() {
+  const toc = document.querySelector('.toc');
+  const tocCoords = toc.getBoundingClientRect();
+  setup.bottom = tocCoords.bottom;
+  const header = document.querySelector('.content__header');
+  setup.headerHeight = header.getBoundingClientRect().height + 500;
+  setup.pageWrap = document.querySelector('article');
+  setup.lastScrollTop = 0;
+  // setUp.
+  console.log(setup);
+}
+
+function handleScroll() {
+  let el = document.querySelector('article');
+  let y = el.scrollTop;
+  // console.log(y);
+  // let isScrollingDown = currScrollTop > lastScrollTop;
+  console.log(window.scrollY);
+  // let isHeaderVisible = currScrollTop < headerHeight;
+  // // console.log(isHeaderVisible);
+  if (window.scrollY > setup.bottom) {
+    //   // console.log(window.scrollY)
+    document.querySelector('.toc').classList.add('fix-top');
+    //   setTimeout(function() {
+    //     toc.classList.add('fix-top-open');
+    //   }, 0);
+    // } else if (window.scrollY < coords.bottom) {
+    //   toc.classList.remove('fix-top');
+    //   toc.classList.remove('fix-top-open');
+  }
+}
 
 function handleClicks(event) {
   if (event.target.closest('figure')) {
@@ -9,6 +45,24 @@ function handleClicks(event) {
   } else if (event.target.matches('.expand-close')) {
     event.preventDefault();
     destroyPopover(event);
+  }
+}
+
+function handleMouseOvers(event) {
+  if (event.target.closest('figure')) {
+    event.target
+      .closest('figure')
+      .querySelector('.expand-image')
+      .classList.add('hovered');
+  }
+}
+
+function handleMouseOuts(event) {
+  if (event.target.closest('figure')) {
+    event.target
+      .closest('figure')
+      .querySelector('.expand-image')
+      .classList.remove('hovered');
   }
 }
 
@@ -38,24 +92,6 @@ function buildPopover(event) {
   div.innerHTML = elem;
   document.querySelector('body').appendChild(div);
   document.querySelector('body').classList.add('has-overlay');
-}
-
-function handleMouseOvers(event) {
-  if (event.target.closest('figure')) {
-    event.target
-      .closest('figure')
-      .querySelector('.expand-image')
-      .classList.add('hovered');
-  }
-}
-
-function handleMouseOuts(event) {
-  if (event.target.closest('figure')) {
-    event.target
-      .closest('figure')
-      .querySelector('.expand-image')
-      .classList.remove('hovered');
-  }
 }
 
 // css grid sniffer
