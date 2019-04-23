@@ -47,6 +47,7 @@ class Overlay extends Component {
                 <img
                   className='gallery-lightbox__img'
                   src='img/nomophobia.png'
+                  alt="alt"
                 />
               </div>
               {/* info  */}

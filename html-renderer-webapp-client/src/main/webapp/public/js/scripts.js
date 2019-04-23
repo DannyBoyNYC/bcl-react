@@ -1,41 +1,16 @@
+window.addEventListener('load', handleLoad);
 document.addEventListener('click', handleClicks);
 document.addEventListener('mouseover', handleMouseOvers);
 document.addEventListener('mouseout', handleMouseOuts);
 document.addEventListener('scroll', handleScroll);
-window.addEventListener('load', init);
 
 setup = {};
 
-function init() {
+function handleLoad() {
   const toc = document.querySelector('.toc');
+  setup.toc = toc;
   const tocCoords = toc.getBoundingClientRect();
   setup.bottom = tocCoords.bottom;
-  const header = document.querySelector('.content__header');
-  setup.headerHeight = header.getBoundingClientRect().height + 500;
-  setup.pageWrap = document.querySelector('article');
-  setup.lastScrollTop = 0;
-  // setUp.
-  console.log(setup);
-}
-
-function handleScroll() {
-  let el = document.querySelector('article');
-  let y = el.scrollTop;
-  // console.log(y);
-  // let isScrollingDown = currScrollTop > lastScrollTop;
-  console.log(window.scrollY);
-  // let isHeaderVisible = currScrollTop < headerHeight;
-  // // console.log(isHeaderVisible);
-  if (window.scrollY > setup.bottom) {
-    //   // console.log(window.scrollY)
-    document.querySelector('.toc').classList.add('fix-top');
-    //   setTimeout(function() {
-    //     toc.classList.add('fix-top-open');
-    //   }, 0);
-    // } else if (window.scrollY < coords.bottom) {
-    //   toc.classList.remove('fix-top');
-    //   toc.classList.remove('fix-top-open');
-  }
 }
 
 function handleClicks(event) {
@@ -66,9 +41,16 @@ function handleMouseOuts(event) {
   }
 }
 
-function destroyPopover() {
-  document.querySelector('.expanded-item').remove();
-  document.querySelector('body').classList.remove('has-overlay');
+function handleScroll() {
+  if (window.scrollY > setup.bottom) {
+    setup.toc.classList.add('fix-top');
+      setTimeout(function() {
+        setup.toc.classList.add('fix-top-open');
+      }, 0);
+    } else if (window.scrollY < setup.bottom) {
+      setup.toc.classList.remove('fix-top');
+      setup.toc.classList.remove('fix-top-open');
+  }
 }
 
 function buildPopover(event) {
@@ -92,6 +74,11 @@ function buildPopover(event) {
   div.innerHTML = elem;
   document.querySelector('body').appendChild(div);
   document.querySelector('body').classList.add('has-overlay');
+}
+
+function destroyPopover() {
+  document.querySelector('.expanded-item').remove();
+  document.querySelector('body').classList.remove('has-overlay');
 }
 
 // css grid sniffer
