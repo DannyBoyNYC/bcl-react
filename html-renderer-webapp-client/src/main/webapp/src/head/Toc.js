@@ -49,7 +49,7 @@ class Toc extends Component {
               {data.hashtag}
             </a>
             {/* displayed on top menu? */}
-            <a className="toc__series" href="#0">Series</a>
+            <a className="toc__series" href="#0">Energy</a>
           </div>
 
           {/* menu ref */}

@@ -10,6 +10,7 @@ import TableBig from "./components/TableBig";
 import EqSingleCompanyDataTable from "./components/EqSingleCompanyDataTable";
 import EqMultiCompanyDataTable from "./components/EqMultiCompanyDataTable";
 import EqMultiSectorDataTable from "./components/EqMultiSectorDataTable";
+import EqPageTwo from "./components/EqPageTwo";
 import Header2 from "./components/Header2";
 import Header3 from "./components/Header3";
 import Header4 from "./components/Header4";
@@ -40,7 +41,7 @@ class Body extends Component {
     return (
       <>
         {/* <Aside /> */}
-        
+        <EqPageTwo />
         <Paragraph />
         <FigureSingle />
         <Paragraph />

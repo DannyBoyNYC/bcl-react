@@ -1,6 +1,9 @@
+// comment before push
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i');
+
 @import "imports/variables";
-@import "imports/fonts-local";
+// uncomment before push
+// @import "imports/fonts-local";
 @import "imports/mixins";
 @import "imports/elements";
 @import "imports/structure";
@@ -27,6 +30,7 @@ html.zoomed {
   font-size: 120%;
 }
 
+// comment everything below before push
 @import "imports/equities";
 
 .has-overlay {

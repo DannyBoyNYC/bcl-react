@@ -170,7 +170,10 @@ body.signature .content__header {
       line-height: 1.2;}
     date {
       display: block;
-      // margin-top: 0.25rem;
+      font-size: 0.875rem;
+    }
+    .date {
+      display: block;
       font-size: 0.875rem;
     }
   }

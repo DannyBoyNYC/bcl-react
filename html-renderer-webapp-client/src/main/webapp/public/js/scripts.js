@@ -4,7 +4,7 @@ document.addEventListener('mouseover', handleMouseOvers);
 document.addEventListener('mouseout', handleMouseOuts);
 document.addEventListener('scroll', handleScroll);
 
-setup = {};
+var setup = {};
 
 function handleLoad() {
   const toc = document.querySelector('.toc');

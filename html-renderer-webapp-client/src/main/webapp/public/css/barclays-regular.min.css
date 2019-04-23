@@ -1,53 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i");
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-bold-webfont.woff2") format("woff2"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-bold-webfont.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Bold Italic"), local("SourceSansPro-BoldItalic"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-boldit-webfont.woff2") format("woff2"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-boldit-webfont.woff") format("woff");
-  font-weight: 700;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-light-webfont.woff2") format("woff2"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-light-webfont.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Light Italic"), local("SourceSansPro-LightItalic"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-lightit-webfont.woff2") format("woff2"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-lightit-webfont.woff") format("woff");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-regular-webfont.woff2") format("woff2"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-regular-webfont.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro Italic"), local("SourceSansPro-Italic"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-it-webfont.woff2") format("woff2"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-it-webfont.woff") format("woff");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro SemiBold"), local("SourceSansPro-SemiBold"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-semibold-webfont.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Source Sans Pro";
-  src: local("Source Sans Pro SemiBold Italic"), local("SourceSansPro-SemiBoldItalic"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-semiboldit-webfont.woff2") format("woff2"), url("/BC_S/bl_rebrand/css/fonts/sourcesanspro-semiboldit-webfont.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
-}
 html {
   font-size: 100%;
   font-family: "Source Sans Pro", Helvetica, Clean, sans-serif;
@@ -400,6 +352,10 @@ body.signature .content__header {
   line-height: 1.2;
 }
 .header__sub .asset-class date {
+  display: block;
+  font-size: 0.875rem;
+}
+.header__sub .asset-class .date {
   display: block;
   font-size: 0.875rem;
 }
