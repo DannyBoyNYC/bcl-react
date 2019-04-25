@@ -41,6 +41,8 @@ class Body extends Component {
     return (
       <>
         {/* <Aside /> */}
+        <Paragraph />
+        <Paragraph />
         <EqPageTwo />
         <Paragraph />
         <FigureSingle />

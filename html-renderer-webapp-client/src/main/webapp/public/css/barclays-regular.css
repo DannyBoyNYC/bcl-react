@@ -2118,4 +2118,74 @@ html.zoomed {
   border-left: 1px solid #007eb6;
 }
 
+.eqchart-page {
+  font-size: 0.875rem;
+}
+.eqchart-page .header,
+.eqchart-page .subheader {
+  font-size: 0.875rem;
+  padding: 0.25rem;
+}
+.eqchart-page .header span,
+.eqchart-page .subheader span {
+  float: right;
+}
+.eqchart-page .header {
+  font-weight: 700;
+  color: #fff;
+  background-color: #00aeef;
+}
+.eqchart-page .subheader {
+  background-color: #f4f1ef;
+}
+.eqchart-page thead {
+  border-top: 0.75rem solid #fff;
+}
+.eqchart-page th, .eqchart-page td {
+  text-align: right;
+}
+.eqchart-page th {
+  color: #444;
+}
+.eqchart-page td:first-child {
+  text-align: left;
+}
+.eqchart-page th:first-child {
+  text-align: left;
+}
+.eqchart-page .curr {
+  background-color: #f4f1ef;
+}
+
+.eq-page-two-side .img {
+  width: 240px;
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+.eq-page-two-side .img p {
+  margin-bottom: 0.5rem;
+}
+.eq-page-two-side .testlist:first-child {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0 0.25rem;
+}
+.eq-page-two-side .testlist {
+  padding: 0.25rem;
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+.eq-page-two-side .testlist li {
+  padding-right: 1rem;
+  margin-bottom: 0;
+}
+.eq-page-two-side p {
+  margin: 0;
+}
+
 /*# sourceMappingURL=barclays-regular.css.map */
