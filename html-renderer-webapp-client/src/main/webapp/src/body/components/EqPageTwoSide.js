@@ -16,7 +16,7 @@ const EqPageTwoSide = () => {
         <img src="/img/eqchart.svg" alt="" />
         </div>
 
-      <p>Why Equal Weight? Sharp share price outperformance has made CVI's risk/reward ratio unattractive compared to the other refiners in our research coverage, in our opinion.</p>
+      <p><strong>Why Equal Weight?</strong> Sharp share price outperformance has made CVI's risk/reward ratio unattractive compared to the other refiners in our research coverage, in our opinion.</p>
       
       <ul className="testlist">
         <li><strong>Upside case</strong></li>

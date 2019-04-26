@@ -43,9 +43,12 @@ class Body extends Component {
         {/* <Aside /> */}
         <Paragraph />
         <Paragraph />
+        <FigureSingle />
+        <Paragraph />
+        <Paragraph />
         <EqPageTwo />
         <Paragraph />
-        <FigureSingle />
+        
         <Paragraph />
         {/* <TableImage /> */}
         {hashtag ? <EqMultiSectorDataTable /> : <EqMultiCompanyDataTable />}
