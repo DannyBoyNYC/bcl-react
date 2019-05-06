@@ -49,17 +49,23 @@ class Toc extends Component {
               {data.hashtag}
             </a>
             {/* displayed on top menu? */}
-            <a className="toc__series" href="#0">Energy</a>
+            <a className="toc__series" href="#0">
+              Energy
+            </a>
           </div>
 
           {/* menu ref */}
           <div className="toc__toc" ref="menu">
             <ul>
               <li className="sect">
-                <a href="#0">{data.assetClass}</a>
+                <a href="#0">
+                  {data.series}
+                </a>
               </li>
               <li>
-                <a href="#0">{data.headline}</a>
+                <a href="#0" className="toc__chapter-link">
+                  {data.headline}
+                </a>
               </li>
 
               <li>

@@ -1432,13 +1432,13 @@ svg .icn-stroke {
   margin-bottom: 0.25rem;
   line-height: 1.2;
 }
-.toc .toc__toc .sect {
-  margin-bottom: 0rem;
-}
 .toc .toc__toc .sect a {
   font-weight: 700;
   color: #fff;
   margin-top: 0.75rem;
+}
+.toc .toc__toc .toc__chapter-link {
+  font-weight: 700;
 }
 @media (min-width: 61.25em) {
   .toc {
