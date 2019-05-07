@@ -1863,6 +1863,7 @@ svg .icn-stroke {
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
   background-size: 14%;
+  position: relative;
 }
 .sidenav .main h1 {
   padding-top: 0.3rem;
@@ -1877,9 +1878,10 @@ svg .icn-stroke {
   height: 2.25rem;
   padding-right: 0.5rem;
 }
-.sidenav .main svg circle {
-  fill: #f58420;
+.sidenav .main .circle {
+  fill: transparent;
   stroke: #f58420;
+  position: absolute;
 }
 .sidenav ul {
   list-style: none;

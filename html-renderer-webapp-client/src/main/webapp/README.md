@@ -17,3 +17,10 @@ bcl-react
 
 ### Sub directory - NPM:
 html-renderer-webapp-client/src/main/webapp
+
+
+## Circle Jerk
+
+index - new symbol
+related.js - separate circle, uses new books symbol
+styles - sidebar position rel, circle - pos abs etc.
