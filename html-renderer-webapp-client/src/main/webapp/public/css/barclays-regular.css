@@ -1691,37 +1691,55 @@ svg .icn-stroke {
   height: 0.9em;
 }
 
+.multipart-list {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+}
+.multipart-list .circle {
+  fill: transparent;
+  position: absolute;
+}
+
 .core .multipart-list {
-  border-top: 3px solid #00aeef;
-  border-bottom: 3px solid #00aeef;
+  border-top-color: #00aeef;
+  border-bottom-color: #00aeef;
 }
 .core .multipart-list .multipart-head h1 a {
   color: #00aeef;
 }
-.core .multipart-list .multipart-head svg {
+.core .multipart-list .multipart-head svg.icn {
   fill: #00aeef;
+}
+.core .multipart-list .multipart-head svg.circle {
+  stroke: #00aeef;
 }
 
 .focus .multipart-list {
-  border-top: 3px solid #009e9e;
-  border-bottom: 3px solid #009e9e;
+  border-top-color: #009e9e;
+  border-bottom-color: #009e9e;
 }
 .focus .multipart-list .multipart-head h1 a {
   color: #009e9e;
 }
-.focus .multipart-list .multipart-head svg {
+.focus .multipart-list .multipart-head svg.icn {
   fill: #009e9e;
+}
+.focus .multipart-list .multipart-head svg.circle {
+  stroke: #009e9e;
 }
 
 .signature .multipart-list {
-  border-top: 3px solid #1d4d99;
-  border-bottom: 3px solid #1d4d99;
+  border-top-color: #1d4d99;
+  border-bottom-color: #1d4d99;
 }
 .signature .multipart-list .multipart-head h1 a {
   color: #1d4d99;
 }
-.signature .multipart-list .multipart-head svg {
+.signature .multipart-list .multipart-head svg.icn {
   fill: #1d4d99;
+}
+.signature .multipart-list .multipart-head svg.circle {
+  stroke: #1d4d99;
 }
 
 .multipart-list {
@@ -1751,6 +1769,7 @@ svg .icn-stroke {
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
   line-height: 1.1;
+  position: relative;
 }
 .multipart-list .multipart-head svg {
   width: 2.25rem;
@@ -1778,7 +1797,9 @@ svg .icn-stroke {
   padding: 0;
   box-sizing: border-box;
 }
-.multipart-list .art, .multipart-list .art-link, .multipart-list .art-sublink {
+.multipart-list .art,
+.multipart-list .art-link,
+.multipart-list .art-sublink {
   font-size: 0.875rem;
   line-height: 1.1;
   margin-bottom: 0.25rem;

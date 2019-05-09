@@ -1,91 +1,90 @@
 .sidenav {
-	line-height: 1.35;
-	margin-top: 3rem;
-	padding-top: 0.25rem;
-	padding-bottom: 0.875rem;
-	margin-right: 1rem;
-	border-top: 3px solid $focus;
-    border-bottom: 3px solid $focus;
-    
-	&.related {
-		border-color: $orange;
+  line-height: 1.35;
+  margin-top: 3rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.875rem;
+  margin-right: 1rem;
+  border-top: 3px solid $focus;
+  border-bottom: 3px solid $focus;
+
+  &.related {
+    border-color: $orange;
+  }
+
+  .main {
+    display: flex;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    background-size: 14%;
+    position: relative;
+
+    h1 {
+      padding-top: 0.3rem;
+      padding-bottom: 0.25rem;
+      color: $orange;
+      font-weight: 600;
+      font-size: 1.15rem;
     }
-    
-	.main {
-        display: flex;
-		padding-bottom: 0.25rem;
-		padding-top: 0.25rem;
-        background-size: 14%;
 
-        h1 {
-            padding-top: 0.3rem;
-            padding-bottom: 0.25rem;
-            color: $orange;
-            font-weight: 600;
-            font-size: 1.15rem;
-        }
+    svg {
+      fill: $orange;
+      width: 2.25rem;
+      height: 2.25rem;
+      padding-right: 0.5rem;
+    }
 
-        svg {  // the hand
-            fill: $orange;
-            // stroke: $orange;
-            width: 2.25rem;
-            height: 2.25rem;
-            padding-right: 0.5rem;
+    .circle {
+      fill: transparent;
+      stroke: $orange;
+      position: absolute;
+    }
+  }
 
-            circle {  // the circle
-                fill: $orange;
-                stroke: $orange;
-            }
-
-        }
-	}
-
-	ul {
-		list-style: none;
-		padding: 0;
-	}
-	.art {
-		margin-top: 1rem;
-		margin-bottom: 0;
-        font-weight: 600;
-        color: $text;
-        font-size: 0.875rem;
-	}
-	.art-link {
-		font-size: 0.875rem;
-		margin-bottom: 0;
-	}
-	date {
-		font-size: 0.75rem;
-		color: #666;
-	}
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  .art {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: $text;
+    font-size: 0.875rem;
+  }
+  .art-link {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+  date {
+    font-size: 0.75rem;
+    color: #666;
+  }
 }
 
 .sidenav.bottom {
-	margin-right: 0;
-	.related-items {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: baseline;
-		// justify-content: space-between;
-		.related-item {
-			@include box-model;
-			width: 50%;
-			padding-right: 0.5rem;
-			padding-bottom: 0.5rem;
-			@media (min-width: $break-two){
-				width: 33.3%;
-			}
-		}
-		.related-item:last-child {
-			padding-right: 0;
-		}
-	}
-	.art {
-		padding-right: 0.5rem;
-	}
-	.art-link {
-		padding-right: 1.5rem;
-	}
+  margin-right: 0;
+  .related-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    .related-item {
+      @include box-model;
+      width: 50%;
+      padding-right: 0.5rem;
+      padding-bottom: 0.5rem;
+      @media (min-width: $break-two) {
+        width: 33.3%;
+      }
+    }
+    .related-item:last-child {
+      padding-right: 0;
+    }
+  }
+  .art {
+    padding-right: 0.5rem;
+  }
+  .art-link {
+    padding-right: 1.5rem;
+  }
 }

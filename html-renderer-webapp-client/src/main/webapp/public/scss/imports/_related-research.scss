@@ -68,7 +68,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-    // justify-content: space-between;
     .related-item {
       @include box-model;
       width: 50%;

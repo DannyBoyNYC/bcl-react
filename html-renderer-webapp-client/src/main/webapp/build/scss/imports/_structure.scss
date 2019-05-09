@@ -72,6 +72,7 @@ article {
     margin-right: 17rem; 
     min-height: 8rem;
     padding-right: 2rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -167,7 +168,6 @@ body.signature .content__header {
       padding-right: 1rem; 
       margin-bottom: 0.5rem; 
       line-height: 1.2;}
-      // twice - first for compatibility, second for correctness
     date {
       display: block;
       font-size: 0.875rem;
@@ -184,6 +184,8 @@ body.signature .content__header {
     }
   }
 }
+
+
 
 // header styles
 
