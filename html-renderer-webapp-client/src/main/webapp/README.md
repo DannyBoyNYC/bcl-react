@@ -24,3 +24,6 @@ html-renderer-webapp-client/src/main/webapp
 index - new symbol
 related.js - separate circle, uses new books symbol
 styles - sidebar position rel, circle - pos abs etc.
+
+### for the multipart list too?
+
