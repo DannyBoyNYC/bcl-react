@@ -15,7 +15,7 @@
     display: flex;
     padding-bottom: 0.25rem;
     padding-top: 0.25rem;
-    background-size: 14%;
+    // background-size: 14%;
     position: relative;
 
     h1 {
@@ -56,6 +56,10 @@
     margin-bottom: 0;
   }
   date {
+    font-size: 0.75rem;
+    color: #666;
+  }
+  .date {
     font-size: 0.75rem;
     color: #666;
   }

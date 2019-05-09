@@ -17,7 +17,7 @@ class MultipartList extends Component {
             <h1>
               <a href="#0">Global Economics Weekly</a>
             </h1>
-            <date>04 June 2018</date>
+            <date class="date">04 June 2018</date>
           </div>
         </div>
 

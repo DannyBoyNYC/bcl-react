@@ -1883,7 +1883,6 @@ svg .icn-stroke {
   display: flex;
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
-  background-size: 14%;
   position: relative;
 }
 .sidenav .main h1 {
@@ -1920,6 +1919,10 @@ svg .icn-stroke {
   margin-bottom: 0;
 }
 .sidenav date {
+  font-size: 0.75rem;
+  color: #666;
+}
+.sidenav .date {
   font-size: 0.75rem;
   color: #666;
 }
