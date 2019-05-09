@@ -5,15 +5,19 @@ class MultipartList extends Component {
     return (
       <div className="multipart-list">
         <div className="multipart-head">
+          <svg className="circle" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="15" />
+          </svg>
+
           <svg className="icn">
             <title>Related</title>
-            <use xlinkHref="#book" />
+            <use xlinkHref="#books" />
           </svg>
           <div>
             <h1>
               <a href="#0">Global Economics Weekly</a>
             </h1>
-            <date>04 June 2018</date>
+            <date class="date">04 June 2018</date>
           </div>
         </div>
 

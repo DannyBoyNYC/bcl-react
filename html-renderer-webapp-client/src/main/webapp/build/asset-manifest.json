@@ -1,11 +1,11 @@
 {
-  "main.js": "/static/js/main.c18c0a6e.chunk.js",
-  "main.js.map": "/static/js/main.c18c0a6e.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.805d26c2.chunk.js": "/static/js/2.805d26c2.chunk.js",
-  "static/js/2.805d26c2.chunk.js.map": "/static/js/2.805d26c2.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.c361343a73490591bee1a096ee418bc2.js": "/precache-manifest.c361343a73490591bee1a096ee418bc2.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/ILIAD/daniel/_equities-composer/murugavel/static/js/main.ab27366d.chunk.js",
+  "main.js.map": "/ILIAD/daniel/_equities-composer/murugavel/static/js/main.ab27366d.chunk.js.map",
+  "runtime~main.js": "/ILIAD/daniel/_equities-composer/murugavel/static/js/runtime~main.f875fc01.js",
+  "runtime~main.js.map": "/ILIAD/daniel/_equities-composer/murugavel/static/js/runtime~main.f875fc01.js.map",
+  "static/js/2.b6d69b94.chunk.js": "/ILIAD/daniel/_equities-composer/murugavel/static/js/2.b6d69b94.chunk.js",
+  "static/js/2.b6d69b94.chunk.js.map": "/ILIAD/daniel/_equities-composer/murugavel/static/js/2.b6d69b94.chunk.js.map",
+  "index.html": "/ILIAD/daniel/_equities-composer/murugavel/index.html",
+  "precache-manifest.1a434644c90e7dc4173e60b93753e55a.js": "/ILIAD/daniel/_equities-composer/murugavel/precache-manifest.1a434644c90e7dc4173e60b93753e55a.js",
+  "service-worker.js": "/ILIAD/daniel/_equities-composer/murugavel/service-worker.js"
 }

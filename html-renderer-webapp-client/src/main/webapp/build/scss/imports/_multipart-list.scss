@@ -1,143 +1,165 @@
+.multipart-list {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+
+  .circle {
+    fill: transparent;
+    position: absolute;
+  }
+}
+// branding categories
 .core .multipart-list {
-	border-top: 3px solid $core;
-	border-bottom: 3px solid $core;
-	.multipart-head {
-		h1 a {
-			color: $core;
-		}
-		svg {
-			fill: $core;
-		}
-	}
+  border-top-color: $core;
+  border-bottom-color: $core;
+  .multipart-head {
+    h1 a {
+      color: $core;
+    }
+    svg.icn {
+      fill: $core;
+    }
+    svg.circle {
+      stroke: $core;
+    }
+  }
 }
 
 .focus .multipart-list {
-	border-top: 3px solid $focus;
-	border-bottom: 3px solid $focus;
-	.multipart-head {
-		h1 a {
-			color: $focus;
-		}
-		svg {
-			fill: $focus;
-		}
-	}
+  border-top-color: $focus;
+  border-bottom-color: $focus;
+  .multipart-head {
+    h1 a {
+      color: $focus;
+    }
+    svg.icn {
+      fill: $focus;
+    }
+    svg.circle {
+      stroke: $focus;
+    }
+  }
 }
 
 .signature .multipart-list {
-	border-top: 3px solid $signature;
-	border-bottom: 3px solid $signature;
-	.multipart-head {
-		h1 a {
-			color: $signature;
-		}
-		svg {
-			fill: $signature;
-		}
-	}
+  border-top-color: $signature;
+  border-bottom-color: $signature;
+  .multipart-head {
+    h1 a {
+      color: $signature;
+    }
+    svg.icn {
+      fill: $signature;
+    }
+    svg.circle {
+      stroke: $signature;
+    }
+  }
 }
 
 .multipart-list {
-	line-height: 1.35;
-	margin-top: 3rem;
-	padding-top: 0.25rem;
-	padding-bottom: 0.5rem;
-	padding-right: 1rem;
-	
-	&.yml {
-		border-color: $orange;
-		h1 {
-			color: $orange;
-		}
-	}
-	&.gew {
-		border-color: #009e9e;
-		h1 {
-			color: #009e9e;
-		}
-	}
-	//header
-	.multipart-head {
-		display: flex; 
-		align-items: center;
-		padding-bottom: 0.25rem;
-		padding-top: 0.25rem;
-		line-height: 1.1;
-		@media (min-width: $break-two){
-			// align-items: flex-start;
-			// flex-direction: column;
-		}
-		svg { 
-			width: 2.25rem;
-			height: 2.25rem;
-			padding-right: 0.25rem;
-		}
-		date {
-			display: inline-block;
-			font-size: 0.75rem;
-			margin-left: auto; 
-			@media (min-width: $break-two){
-				width: 100%;
-			}
-		}
-		h1 {
-			padding-top: 0.3rem;
-			color: $focus;
-			font-weight: 600;
-			font-size: 1.15rem;
-		}
-	}
-	// lists
-	ul {
-		list-style: none;
-		padding: 0;
-		box-sizing: border-box;
-	}
-	.art, .art-link, .art-sublink {
-		font-size: 0.875rem;
-		line-height: 1.1;
-		margin-bottom: 0.25rem;;
-	}
-	.art {
-		font-size: 0.925rem;
-		margin-top: 1rem;
-		margin-bottom: 0.25rem;
-		font-weight: 600;
-		color: $text;
-	}
-	.art-link {
-		font-weight: 600;
-	}
-	.art-sublink {
-		a {
-			color: $text;
-		}
-	}
+  line-height: 1.35;
+  margin-top: 3rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+
+  &.yml {
+    border-color: $orange;
+    h1 {
+      color: $orange;
+    }
+  }
+  &.gew {
+    border-color: #009e9e;
+    h1 {
+      color: #009e9e;
+    }
+  }
+  //header
+  .multipart-head {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    line-height: 1.1;
+    position: relative;
+    @media (min-width: $break-two) {
+      // align-items: flex-start;
+      // flex-direction: column;
+    }
+    svg {
+      width: 2.25rem;
+      height: 2.25rem;
+      padding-right: 0.25rem;
+    }
+    date {
+      display: inline-block;
+      font-size: 0.75rem;
+      margin-left: auto;
+      @media (min-width: $break-two) {
+        width: 100%;
+      }
+    }
+    h1 {
+      padding-top: 0.3rem;
+      color: $focus;
+      font-weight: 600;
+      font-size: 1.15rem;
+    }
+  }
+  // lists
+  ul {
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .art,
+  .art-link,
+  .art-sublink {
+    font-size: 0.875rem;
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+  }
+  .art {
+    font-size: 0.925rem;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    color: $text;
+  }
+  .art-link {
+    font-weight: 600;
+  }
+  .art-sublink {
+    a {
+      color: $text;
+    }
+  }
 }
 
 .content__article-body .multipart-list {
-	.multipart-head {
-		margin-bottom: 0.75rem;
-	}
-	.art {
-		margin-top: 0;
-	}
-	
-	.multipart-items {
-		ul {
-			break-inside: avoid;
-			margin-bottom: 0.75rem;
-		}
-		@media (min-width: $break-one){
-			columns: 1;
-		}
-		@media (min-width: $break-two){
-			columns: 2;
-			column-gap: 1.75rem;
-		}
-		@media (min-width: $break-three){
-			columns: 3;
-			column-gap: 1.75rem;
-		}
-	}
+  .multipart-head {
+    margin-bottom: 0.75rem;
+  }
+  .art {
+    margin-top: 0;
+  }
+
+  .multipart-items {
+    ul {
+      break-inside: avoid;
+      margin-bottom: 0.75rem;
+    }
+    @media (min-width: $break-one) {
+      columns: 1;
+    }
+    @media (min-width: $break-two) {
+      columns: 2;
+      column-gap: 1.75rem;
+    }
+    @media (min-width: $break-three) {
+      columns: 3;
+      column-gap: 1.75rem;
+    }
+  }
 }

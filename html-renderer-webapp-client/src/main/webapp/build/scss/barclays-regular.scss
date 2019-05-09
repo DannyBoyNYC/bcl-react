@@ -1,5 +1,9 @@
+// comment before push
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i');
+
 @import "imports/variables";
-@import "imports/fonts-local";
+// uncomment before push
+// @import "imports/fonts-local";
 @import "imports/mixins";
 @import "imports/elements";
 @import "imports/structure";
@@ -19,13 +23,90 @@
 @import "imports/toc";
 @import "imports/timeline";
 @import "imports/multipart-list";
-/* multimedia - experimental */
 @import "imports/multimedia";
-/* to demo multichapter switching */
-// @import "imports/switching";
 @import "imports/related-research";
 
 html.zoomed {
-    font-size: 120%;
+  font-size: 120%;
 }
 
+// comment everything below before push
+@import "imports/equities";
+
+.has-overlay {
+  article{
+    // display: none !important;
+  } 
+}
+
+.eqchart-page {
+  font-size: 0.875rem;
+  .header,
+  .subheader {
+    font-size: 0.875rem;
+    padding: 0.25rem;
+    span {
+      float: right;
+    }
+  }
+  .header {
+    font-weight: 700;
+    color: #fff;
+    background-color: $cyan;
+  }
+  .subheader {
+    background-color: #f4f1ef;
+  }
+  thead {
+    border-top: 0.75rem solid #fff;
+  }
+  th, td {
+    text-align: right;
+  }
+  th {
+    color: $text;
+  }
+  td:first-child {
+    text-align: left;
+  }
+  th:first-child {
+    text-align: left;
+  }
+ .curr {
+  background-color: #f4f1ef
+  }
+}
+
+.eq-page-two-side {
+  .img {
+    width: 240px;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+  img {
+    // border: 1px solid $gray25;
+  }
+  .testlist:first-child {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0 0.25rem;
+  }
+  .testlist {
+    padding: 0.25rem;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    li {
+      padding-right: 1rem;
+      margin-bottom: 0;
+    }
+  }
+  p {
+    margin: 0;
+  }
+}
