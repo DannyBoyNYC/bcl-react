@@ -41,14 +41,14 @@ class Body extends Component {
     return (
       <>
         {/* <Aside /> */}
+        <Multimedia />
         <Paragraph />
         <Paragraph />
         <FigureSingle />
         <Paragraph />
         <Paragraph />
-        <EqPageTwo />
+        {/* <EqPageTwo /> */}
         <Paragraph />
-        
         <Paragraph />
         {/* <TableImage /> */}
         {hashtag ? <EqMultiSectorDataTable /> : <EqMultiCompanyDataTable />}
@@ -56,7 +56,6 @@ class Body extends Component {
         <Header3 />
         <Paragraph />
         {/* <Header4 /> */}
-        {/* <Multimedia /> */}
         {/* <Header4 /> */}
         {/* <MultimediaVideo /> */}
         <Header2 />
@@ -66,8 +65,8 @@ class Body extends Component {
         <Paragraph />
         <AsideAttachment />
         <Paragraph />
-        <ListUnordered />
-        <ListOrdered />
+        {/* <ListUnordered /> */}
+        {/* <ListOrdered /> */}
         <Paragraph />
         <ImageSingle />
         <Header6 />
@@ -77,13 +76,13 @@ class Body extends Component {
         <ParagraphFootnote />
         <Blockquote />
         <Paragraph />
-        <SideBySide />
+        {/* <SideBySide /> */}
         <Paragraph />
         <Header4 />
         <Paragraph />
-        <Quicktake />
+        {/* <Quicktake /> */}
         <Paragraph />
-        <EqMultiCompanyDataTable />
+        {/* <EqMultiCompanyDataTable /> */}
         {/* <ChapterLinks /> */}
         {/* <ChapterTextLinks /> */}
         <MultipartList />

@@ -2,10 +2,10 @@ module.exports = {
   assetClass: ['Equity Research'],
   eqAssetClass: ['Consumer | U.S. Food'],
   date: ['30 July 2019'],
-  series: ['Mondelez International (MDLZ)'],
-  headline: ['Good Things Come In Threes (%)'],
+  series: ['Audio Test File'],
+  headline: ['Autoplay Enabled'],
   lede: [
-    'With MDLZ trading at a ~+30% premium to the food group (and shares +20% YTD), we often hear from investors that the stock is already well owned.',
+    'The audio file below should begin playing with no user intervention.',
   ],
   hashtag: '#singlecompany',
   brandingtype: ['FOCUS'],
