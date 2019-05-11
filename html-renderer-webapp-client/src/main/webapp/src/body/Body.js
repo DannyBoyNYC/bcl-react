@@ -36,6 +36,32 @@ import FigureSingle from './components/FigureSingle';
 import FigureFullSize from './components/FigureFullSize';
 
 class Body extends Component {
+  constructor() {
+    super();
+    this.audioAutoplay = this.audioAutoplay.bind(this);
+    this.audioStatus = 'boo';
+  }
+  componentDidMount() {
+    this.audioAutoplay();
+  }
+
+  audioAutoplay() {
+    var el = document.querySelector('audio');
+    // console.log(el);
+    var promise = el.play();
+    if (promise !== undefined) {
+      promise
+        .then(_ => {
+          console.log('MultimediaAudio.js: Autoplay started!');
+          this.audioStatus = 'and autoplay has started.';
+        })
+        .catch(error => {
+          console.log('MultimediaAudio.js: Autoplay was prevented.');
+          this.audioStatus = 'and autoplay was prevented.';
+        });
+    }
+  }
+
   render() {
     const data = this.props.data;
     const hashtag = data.hashtag === '#multisector';
@@ -43,7 +69,11 @@ class Body extends Component {
     return (
       <>
         {/* <Aside /> */}
-        {autoPlay ? <MultimediaAudio /> : <MultimediaAudioNoautoplay />}
+        {autoPlay ? (
+          <MultimediaAudio status={this.audioStatus} />
+        ) : (
+          <MultimediaAudioNoautoplay status={this.audioStatus} />
+        )}
         <Paragraph />
         <Paragraph />
         <FigureSingle />

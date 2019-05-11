@@ -11,7 +11,7 @@ class MultimediaAudio extends Component {
           controls
           autoPlay
         />
-        <p>Auto play</p>
+        <p>Autoplay enabled and {this.props.status}</p>
       </div>
     );
   }

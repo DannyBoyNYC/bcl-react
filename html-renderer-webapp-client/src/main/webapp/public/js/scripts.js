@@ -99,16 +99,18 @@ if (testElem.style.fontKerning) {
 var audioAutoplay = function() {
   // var c = window.location.search.substr(1);
   // console.log(c);
-
+  var audioStatus = '';
   var promise = document.querySelector('audio').play();
   if (promise !== undefined) {
     promise
       .then(_ => {
         // Autoplay started!
         console.log('scripts.js: Autoplay started!');
+        audioStatus = 'and autoplay has started.';
       })
       .catch(error => {
         console.log('scripts.js: Autoplay was prevented.');
+        audioStatus = 'and autoplay was prevented.';
         // Autoplay was prevented.
         // Show a "Play" button so that user can start playback.
       });
