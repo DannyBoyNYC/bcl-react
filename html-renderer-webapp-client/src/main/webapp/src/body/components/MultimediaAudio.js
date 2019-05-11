@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Paragraph extends Component {
+class MultimediaAudio extends Component {
   render() {
     return (
       <div className="multimedia">
@@ -9,10 +9,12 @@ class Paragraph extends Component {
           className="audio-frame"
           width="100%"
           controls
+          autoPlay
         />
+        <p>Auto play</p>
       </div>
     );
   }
 }
 
-export default Paragraph;
+export default MultimediaAudio;

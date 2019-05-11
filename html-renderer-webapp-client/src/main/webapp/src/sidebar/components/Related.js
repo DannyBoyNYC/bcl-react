@@ -22,7 +22,7 @@ class Certifications extends Component {
             <p className="art-link">
               <a href="#sidenav">June 2018 Performance</a>
             </p>
-            <date>19 Jun 2018</date>
+            <div className="date">19 Jun 2018</div>
           </div>
 
           <div className="related-item">
@@ -30,7 +30,7 @@ class Certifications extends Component {
             <p className="art-link">
               <a href="#sidenav">The arrival of fiscal stimulus</a>
             </p>
-            <date>16 Jun 2018</date>
+            <div className="date">16 Jun 2018</div>
           </div>
 
           <div className="related-item">
@@ -38,7 +38,7 @@ class Certifications extends Component {
             <p className="art-link">
               <a href="#sidenav">US GDP: Q2 Tracking at 3.4%</a>
             </p>
-            <date>11 Jun 2018</date>
+            <div className="date">11 Jun 2018</div>
           </div>
 
           <div className="related-item">
@@ -46,7 +46,7 @@ class Certifications extends Component {
             <p className="art-link">
               <a href="#sidenav">Italy has a government!</a>
             </p>
-            <date>10 Jun 2018</date>
+            <div className="date">10 Jun 2018</div>
           </div>
 
           <div className="related-item">
@@ -54,7 +54,7 @@ class Certifications extends Component {
             <p className="art-link">
               <a href="#sidenav">Vocal perhaps, but not too loud</a>
             </p>
-            <date>09 Jun 2018</date>
+            <div className="date">09 Jun 2018</div>
           </div>
 
           <div className="related-item">
@@ -62,7 +62,7 @@ class Certifications extends Component {
             <p className="art-link">
               <a href="#sidenav">Trade frictions dampen expectations</a>
             </p>
-            <date>09 Jun 2018</date>
+            <div className="date">09 Jun 2018</div>
           </div>
         </div>
       </div>

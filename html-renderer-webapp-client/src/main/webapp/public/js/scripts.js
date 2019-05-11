@@ -11,6 +11,7 @@ function handleLoad() {
   setup.toc = toc;
   const tocCoords = toc.getBoundingClientRect();
   setup.bottom = tocCoords.bottom;
+  audioAutoplay();
 }
 
 function handleClicks(event) {
@@ -44,12 +45,12 @@ function handleMouseOuts(event) {
 function handleScroll() {
   if (window.scrollY > setup.bottom) {
     setup.toc.classList.add('fix-top');
-      setTimeout(function() {
-        setup.toc.classList.add('fix-top-open');
-      }, 0);
-    } else if (window.scrollY < setup.bottom) {
-      setup.toc.classList.remove('fix-top');
-      setup.toc.classList.remove('fix-top-open');
+    setTimeout(function() {
+      setup.toc.classList.add('fix-top-open');
+    }, 0);
+  } else if (window.scrollY < setup.bottom) {
+    setup.toc.classList.remove('fix-top');
+    setup.toc.classList.remove('fix-top-open');
   }
 }
 
@@ -94,3 +95,22 @@ if (testElem.style.fontKerning) {
 } else {
   el.classList.add('no-kern');
 }
+
+var audioAutoplay = function() {
+  // var c = window.location.search.substr(1);
+  // console.log(c);
+
+  var promise = document.querySelector('audio').play();
+  if (promise !== undefined) {
+    promise
+      .then(_ => {
+        // Autoplay started!
+        console.log('scripts.js: Autoplay started!');
+      })
+      .catch(error => {
+        console.log('scripts.js: Autoplay was prevented.');
+        // Autoplay was prevented.
+        // Show a "Play" button so that user can start playback.
+      });
+  }
+};
