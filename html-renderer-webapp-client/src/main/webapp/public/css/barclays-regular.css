@@ -765,7 +765,8 @@ table {
   font-size: 0.875rem;
   border-collapse: collapse;
 }
-table th, table td {
+table th,
+table td {
   line-height: 1.1;
   padding: 0.25rem;
   padding-left: 0;
@@ -824,7 +825,8 @@ table th {
 .table-container.table-xl .table-xl--btn.hilite {
   background-color: #fff;
 }
-.table-container.table-xl table, .table-container.table-xl .caption {
+.table-container.table-xl table,
+.table-container.table-xl .caption {
   display: none;
 }
 .table-container.table-xl img + .caption {
@@ -914,7 +916,6 @@ table th {
   -webkit-align-self: flex-start;
           align-self: flex-start;
   width: 80vw;
-  max-height: 100vh;
   object-fit: contain;
   margin: 1rem;
 }
