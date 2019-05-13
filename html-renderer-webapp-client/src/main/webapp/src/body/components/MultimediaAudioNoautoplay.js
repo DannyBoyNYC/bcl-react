@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class MultimediaAudioNoautoplay extends Component {
   render() {
     return (
-      <div className="multimedia">
+      <div className='multimedia'>
         <audio
-          src="media/monstermash.mp3"
-          className="audio-frame"
-          width="100%"
+          src='media/monstermash.mp3'
+          className='audio-frame'
+          width='100%'
           controls
           autoPlay
         />
-        <p>No auto play</p>
+        <p>Autoplay not enabled and {this.props.testAudio()}</p>
       </div>
     );
   }

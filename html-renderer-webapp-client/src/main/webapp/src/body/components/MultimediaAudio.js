@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class MultimediaAudio extends Component {
   render() {
     return (
-      <div className="multimedia">
+      <div className='multimedia'>
         <audio
-          src="media/monstermash.mp3"
-          className="audio-frame"
-          width="100%"
+          src='media/monstermash.mp3'
+          className='audio-frame'
+          width='100%'
           controls
           autoPlay
         />
