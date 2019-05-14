@@ -29,6 +29,7 @@ import Quicktake from "./components/Quicktake";
 import ChapterLinks from "./components/ChapterLinks";
 import ChapterTextLinks from "./components/ChapterTextLinks";
 import MultipartList from "./components/MultipartList";
+import Related from './components/Related';
 import DisclosuresBottom from "./components/DisclosuresBottom";
 // testing overlay popable
 import FigureSingle from "./components/FigureSingle";
@@ -87,6 +88,7 @@ class Body extends Component {
         {/* <ChapterLinks /> */}
         {/* <ChapterTextLinks /> */}
         <MultipartList />
+        <Related />
         <DisclosuresBottom />
       </>
     );

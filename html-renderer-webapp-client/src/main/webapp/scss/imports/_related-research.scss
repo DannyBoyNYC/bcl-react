@@ -54,6 +54,9 @@
   .art-link {
     font-size: 0.875rem;
     margin-bottom: 0;
+    p {
+      margin-top: 0;
+    }
   }
   date {
     font-size: 0.75rem;
@@ -76,7 +79,7 @@
       @include box-model;
       width: 50%;
       padding-right: 0.5rem;
-      padding-bottom: 0.5rem;
+      // padding-bottom: 0.5rem;
       @media (min-width: $break-two) {
         width: 33.3%;
       }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Related from './components/Related';
+import Multipart from './components/Multipart';
 import EqSingleCompanyData from './components/EqSingleCompanyData';
 import EqMultiSectorData from './components/EqMultiSectorData';
 import EqMultiCompanyData from './components/EqMultiCompanyData';
@@ -15,7 +16,7 @@ class Sidebar extends Component {
         <div className="content__secondary-column">
           <EqMultiSectorData data={this.props.data} />
           <Certifications />
-          {/* <Related /> */}
+          <Multipart />
         </div>
       );
     } else if (hashtag === '#multicompany') {
@@ -30,8 +31,11 @@ class Sidebar extends Component {
       return (
         <div className="content__secondary-column">
           <EqSingleCompanyData />
+          {/* <div className="certifications-disclosures"> */}
           <Certifications />
+          <Multipart />
           <Related />
+          {/* </div> */}
         </div>
       );
     } else return "something f'ed up";

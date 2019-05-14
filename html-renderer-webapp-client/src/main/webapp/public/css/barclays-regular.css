@@ -176,7 +176,8 @@ h6 + p {
   clear: both;
 }
 
-.u-cf:after, .u-cf:before {
+.u-cf:after,
+.u-cf:before {
   content: "";
   display: table;
 }
@@ -186,7 +187,8 @@ h6 + p {
   margin: 0 auto;
 }
 
-.content .gs-container, .content-footer .gs-container {
+.content .gs-container,
+.content-footer .gs-container {
   box-sizing: border-box;
   padding: 0 0.825rem;
 }
@@ -213,12 +215,13 @@ h6 + p {
   }
 }
 @media (min-width: 30em) {
-  .content .gs-container, .content-footer .gs-container {
+  .content .gs-container,
+.content-footer .gs-container {
     padding: 0 1.25rem;
   }
 }
 article {
-  background: #f5f5f8;
+  background: linear-gradient(#f5f5f5 86%, #fff 100%);
 }
 
 .content__main-column {
@@ -248,7 +251,7 @@ article {
 @media (min-width: 61.25em) {
   .content__article-body {
     margin-left: 12rem;
-    width: calc( 100% - 12rem);
+    width: calc(100% - 12rem);
     position: relative;
   }
 }
@@ -1748,7 +1751,7 @@ svg .icn-stroke {
   margin-top: 3rem;
   padding-top: 0.25rem;
   padding-bottom: 0.5rem;
-  padding-right: 1rem;
+  margin-right: 1rem;
 }
 .multipart-list.yml {
   border-color: #f58420;
@@ -1765,8 +1768,8 @@ svg .icn-stroke {
 .multipart-list .multipart-head {
   display: -webkit-flex;
   display: flex;
-  -webkit-align-items: center;
-          align-items: center;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
   line-height: 1.1;
@@ -1788,7 +1791,6 @@ svg .icn-stroke {
   }
 }
 .multipart-list .multipart-head h1 {
-  padding-top: 0.3rem;
   color: #009e9e;
   font-weight: 600;
   font-size: 1.15rem;
@@ -1806,14 +1808,15 @@ svg .icn-stroke {
   margin-bottom: 0.25rem;
 }
 .multipart-list .art {
-  font-size: 0.925rem;
+  font-size: 0.875rem;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
   font-weight: 600;
   color: #444;
 }
-.multipart-list .art-link {
-  font-weight: 600;
+.multipart-list .date {
+  font-size: 0.75rem;
+  color: #666;
 }
 .multipart-list .art-sublink a {
   color: #444;
@@ -1828,7 +1831,7 @@ svg .icn-stroke {
 .content__article-body .multipart-list .multipart-items ul {
   -webkit-column-break-inside: avoid;
           break-inside: avoid;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 22.5em) {
   .content__article-body .multipart-list .multipart-items {
@@ -1919,6 +1922,9 @@ svg .icn-stroke {
   font-size: 0.875rem;
   margin-bottom: 0;
 }
+.sidenav .art-link p {
+  margin-top: 0;
+}
 .sidenav date {
   font-size: 0.75rem;
   color: #666;
@@ -1945,7 +1951,6 @@ svg .icn-stroke {
   box-sizing: border-box;
   width: 50%;
   padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 @media (min-width: 46.25em) {
   .sidenav.bottom .related-items .related-item {

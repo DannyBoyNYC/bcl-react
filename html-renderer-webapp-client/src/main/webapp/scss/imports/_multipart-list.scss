@@ -61,7 +61,8 @@
   margin-top: 3rem;
   padding-top: 0.25rem;
   padding-bottom: 0.5rem;
-  padding-right: 1rem;
+  // not when inside certs-disclosures div
+  margin-right: 1rem;
 
   &.yml {
     border-color: $orange;
@@ -78,7 +79,7 @@
   //header
   .multipart-head {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 0.25rem;
     padding-top: 0.25rem;
     line-height: 1.1;
@@ -101,7 +102,7 @@
       }
     }
     h1 {
-      padding-top: 0.3rem;
+      // padding-top: 0.3rem;
       color: $focus;
       font-weight: 600;
       font-size: 1.15rem;
@@ -121,14 +122,18 @@
     margin-bottom: 0.25rem;
   }
   .art {
-    font-size: 0.925rem;
+    font-size: 0.875rem;
     margin-top: 1rem;
     margin-bottom: 0.25rem;
     font-weight: 600;
     color: $text;
   }
   .art-link {
-    font-weight: 600;
+    // font-weight: 600;
+  }
+  .date {
+    font-size: 0.75rem;
+    color: #666;
   }
   .art-sublink {
     a {
@@ -148,7 +153,7 @@
   .multipart-items {
     ul {
       break-inside: avoid;
-      margin-bottom: 0.75rem;
+      margin-bottom: 1rem;
     }
     @media (min-width: $break-one) {
       columns: 1;

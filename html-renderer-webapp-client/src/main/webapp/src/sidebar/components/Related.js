@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Certifications extends Component {
+class Related extends Component {
   render() {
     return (
       <div className="sidenav related">
@@ -70,4 +70,4 @@ class Certifications extends Component {
   }
 }
 
-export default Certifications;
+export default Related;

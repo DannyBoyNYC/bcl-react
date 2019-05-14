@@ -1,16 +1,17 @@
 /* begin gs-container */
-.content { 
+.content {
   border-top: 0.0625rem solid #ffffff;
   padding-top: 0;
   padding-bottom: 2.25rem;
-  padding-top: 1rem; 
+  padding-top: 1rem;
 }
 .content:after {
   content: '';
   display: block;
   clear: both;
 }
-.u-cf:after, .u-cf:before {
+.u-cf:after,
+.u-cf:before {
   content: '';
   display: table;
 }
@@ -18,7 +19,8 @@
   position: relative;
   margin: 0 auto;
 }
-.content .gs-container, .content-footer .gs-container {
+.content .gs-container,
+.content-footer .gs-container {
   @include box-model;
   padding: 0 0.825rem;
 }
@@ -46,15 +48,15 @@
   }
 }
 @media (min-width: 30em) {
-  .content .gs-container, .content-footer .gs-container {
+  .content .gs-container,
+  .content-footer .gs-container {
     padding: 0 1.25rem;
   }
 }
 // end gs-container
 
 article {
-  background: rgb(245, 245, 248);
-  // height: 100vh;
+  background: linear-gradient(#f5f5f5 86%, #fff 100%);
 }
 
 .content__main-column {
@@ -66,10 +68,10 @@ article {
   padding-left: 1rem;
   padding-bottom: 2rem;
   @include box-model;
-  @media (min-width: $break-three){
+  @media (min-width: $break-three) {
     padding-top: 0.25rem;
     margin-left: 0;
-    margin-right: 17rem; 
+    margin-right: 17rem;
     min-height: 8rem;
     padding-right: 2rem;
     padding-bottom: 1rem;
@@ -78,20 +80,20 @@ article {
 
 .content__article-body {
   width: 100%;
-  @media (min-width: $break-three){
+  @media (min-width: $break-three) {
     margin-left: 12rem;
-    width: calc( 100% - 12rem);
+    width: calc(100% - 12rem);
     position: relative;
   }
 }
 .content__header {
-  @media (min-width: $break-three){
+  @media (min-width: $break-three) {
     padding-top: 3rem;
     background: $link;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position:  50% 50%;
+    background-position: 50% 50%;
   }
 }
 
@@ -119,7 +121,7 @@ body.signature .content__header {
     font-size: 0.875rem;
     padding: 0.25rem 0.5rem;
   }
-  @media (min-width: $break-three){
+  @media (min-width: $break-three) {
     display: block;
   }
 }
@@ -128,7 +130,7 @@ body.signature .content__header {
   .logo-ref {
     display: block;
     padding-top: 1rem;
-    @media (min-width: $break-three){
+    @media (min-width: $break-three) {
       display: none;
     }
   }
@@ -141,15 +143,15 @@ body.signature .content__header {
 }
 
 .header__sub {
-  display:flex;
+  display: flex;
   flex-direction: column;
   @media (min-width: $break-three) {
     flex-direction: row;
   }
-  
+
   .asset-class {
     display: none;
-    @media (min-width: $break-three){
+    @media (min-width: $break-three) {
       display: block;
       flex: 0 0 12rem;
       padding-top: 1rem;
@@ -164,10 +166,11 @@ body.signature .content__header {
       padding-bottom: 0.25rem;
     }
     p {
-      font-size: 0.875rem; 
-      padding-right: 1rem; 
-      margin-bottom: 0.5rem; 
-      line-height: 1.2;}
+      font-size: 0.875rem;
+      padding-right: 1rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
     date {
       display: block;
       font-size: 0.875rem;
@@ -177,15 +180,13 @@ body.signature .content__header {
       font-size: 0.875rem;
     }
   }
-  
+
   .main {
-    @media (min-width: $break-three){
+    @media (min-width: $break-three) {
       padding-right: 1rem;
     }
   }
 }
-
-
 
 // header styles
 
@@ -199,7 +200,7 @@ body.signature .content__header {
   font-size: 1.125rem;
   font-weight: 400;
   padding-top: 1rem;
-  @media (min-width: $break-three){
+  @media (min-width: $break-three) {
     padding-top: 1rem;
   }
 }
@@ -219,8 +220,8 @@ body.signature .content__header {
   line-height: 1.25;
   margin: 0;
   padding-bottom: 1rem;
-  @media (min-width: $break-two){
-    // 10/24/18 changed to remove white space under lede 
+  @media (min-width: $break-two) {
+    // 10/24/18 changed to remove white space under lede
     min-height: 2rem;
   }
 }
@@ -239,17 +240,15 @@ body.signature .content__header {
 }
 
 .main__logo-date {
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 
 .main__date {
-  font-size: 0.875rem; 
-  padding-top: 0.5rem; 
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
   margin-left: auto;
-  @media (min-width: $break-three){
+  @media (min-width: $break-three) {
     display: none;
   }
 }
-
-
