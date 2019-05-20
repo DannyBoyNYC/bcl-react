@@ -11,6 +11,7 @@ function handleLoad() {
   setup.toc = toc;
   const tocCoords = toc.getBoundingClientRect();
   setup.bottom = tocCoords.bottom;
+  // setToc();
 }
 
 function handleClicks(event) {
@@ -42,14 +43,18 @@ function handleMouseOuts(event) {
 }
 
 function handleScroll() {
+  setToc();
+}
+
+function setToc() {
   if (window.scrollY > setup.bottom) {
     setup.toc.classList.add('fix-top');
-      setTimeout(function() {
-        setup.toc.classList.add('fix-top-open');
-      }, 0);
-    } else if (window.scrollY < setup.bottom) {
-      setup.toc.classList.remove('fix-top');
-      setup.toc.classList.remove('fix-top-open');
+    setTimeout(function() {
+      setup.toc.classList.add('fix-top-open');
+    }, 0);
+  } else if (window.scrollY < setup.bottom) {
+    setup.toc.classList.remove('fix-top');
+    setup.toc.classList.remove('fix-top-open');
   }
 }
 
