@@ -179,8 +179,8 @@ table {
   img {
     align-self: flex-start;
     width: 80vw;
-    // max-height: 100vh;
-    // added Dec 19 to constrain image in pop overs
+    max-height: 100vh;
+    // above was deleted, rolled back May 29-19
     object-fit: contain;
     margin: 1rem;
   }

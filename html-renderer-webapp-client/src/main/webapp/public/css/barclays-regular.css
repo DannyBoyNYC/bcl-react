@@ -919,6 +919,7 @@ table th {
   -webkit-align-self: flex-start;
           align-self: flex-start;
   width: 80vw;
+  max-height: 100vh;
   object-fit: contain;
   margin: 1rem;
 }

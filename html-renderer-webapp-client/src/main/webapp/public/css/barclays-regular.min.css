@@ -883,6 +883,7 @@ table th {
 .expanded-item img {
   align-self: flex-start;
   width: 80vw;
+  max-height: 100vh;
   object-fit: contain;
   margin: 1rem;
 }
