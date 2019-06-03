@@ -35,60 +35,20 @@ import DisclosuresBottom from "./components/DisclosuresBottom";
 import FigureSingle from "./components/FigureSingle";
 import FigureFullSize from "./components/FigureFullSize";
 
+import PremierEvent from './components/PremierEvent'
+
 class Body extends Component {
   render() {
     const data = this.props.data;
     const hashtag = data.hashtag === "#multisector";
     return (
       <>
-        <Aside />
+        <PremierEvent />
         <Paragraph />
         <Paragraph />
-        <FigureSingle />
-        <Paragraph />
-        <Paragraph />
-        <EqPageTwo />
-        <Paragraph />
-        
-        <Paragraph />
-        {/* <TableImage /> */}
-        {hashtag ? <EqMultiSectorDataTable /> : <EqMultiCompanyDataTable />}
-        <EqSingleCompanyDataTable />
-        <Header3 />
-        <Paragraph />
-        {/* <Header4 /> */}
-        {/* <Multimedia /> */}
-        {/* <Header4 /> */}
-        {/* <MultimediaVideo /> */}
-        <Header2 />
-        <Paragraph />
-        {/* <TableBig /> */}
-        <Header4 />
-        <Paragraph />
-        <AsideAttachment />
-        <Paragraph />
-        <ListUnordered />
-        <ListOrdered />
-        <Paragraph />
-        <ImageSingle />
-        <Header6 />
-        <Paragraph />
-        <AsidePull />
-        <Paragraph />
-        <ParagraphFootnote />
-        <Blockquote />
-        <Paragraph />
-        <SideBySide />
-        <Paragraph />
-        <Header4 />
-        <Paragraph />
-        <Quicktake />
-        <Paragraph />
-        <EqMultiCompanyDataTable />
-        {/* <ChapterLinks /> */}
-        {/* <ChapterTextLinks /> */}
-        <MultipartList />
-        <Related />
+
+
+
         <DisclosuresBottom />
       </>
     );

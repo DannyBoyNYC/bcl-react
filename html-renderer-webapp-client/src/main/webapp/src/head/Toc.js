@@ -43,11 +43,11 @@ class Toc extends Component {
           </a>
           <div className="toc__elements">
             <a className="toc__branding-type" href="#0 ">
-              {data.brandingtype}
+              Premier Event
             </a>
-            <a className="toc__theme" href="#0 ">
+            {/* <a className="toc__theme" href="#0 ">
               {data.hashtag}
-            </a>
+            </a> */}
             {/* displayed on top menu? */}
             <a className="toc__series" href="#0">
               Energy

@@ -30,12 +30,9 @@ class Sidebar extends Component {
     } else if (hashtag === '#singlecompany') {
       return (
         <div className="content__secondary-column">
-          <EqSingleCompanyData />
-          {/* <div className="certifications-disclosures"> */}
+          {/* <EqSingleCompanyData /> */}
           <Certifications />
-          <Multipart />
-          <Related />
-          {/* </div> */}
+          {/* <Related /> */}
         </div>
       );
     } else return "something f'ed up";

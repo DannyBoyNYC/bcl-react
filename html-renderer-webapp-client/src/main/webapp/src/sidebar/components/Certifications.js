@@ -15,17 +15,11 @@ class Certifications extends Component {
         </p>
 
         <p>
-          For analyst certification(s) and important disclosures, please{' '}
+          For analyst certification(s) and important disclosures, including the
+          date and time when the production of each recommendation was completed
+          and first disseminated, please{' '}
           <a href="#main-certifications-disclosures">click here.</a>
         </p>
-
-        <p>
-          Completed 12 Nov 2019, 12:00 GMT
-          <br />
-          Released 13 Nov 2019, 0600 GMT.
-        </p>
-
-        <p>Barclays Classification: Restricted - External</p>
       </div>
     );
   }

@@ -2084,7 +2084,8 @@ html.zoomed {
 .eqchart-page thead {
   border-top: 0.75rem solid #fff;
 }
-.eqchart-page th, .eqchart-page td {
+.eqchart-page th,
+.eqchart-page td {
   text-align: right;
 }
 .eqchart-page th {
@@ -2127,6 +2128,15 @@ html.zoomed {
 }
 .eq-page-two-side p {
   margin: 0;
+}
+
+button {
+  background-color: #007eb6;
+  color: #fff;
+  padding: 0.35rem;
+  border-radius: 3px;
+  border: none;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=barclays-regular.min.css.map */
