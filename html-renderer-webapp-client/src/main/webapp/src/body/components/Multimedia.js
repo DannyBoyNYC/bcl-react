@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Paragraph extends Component {
   render() {
     return (
-      <div className="multimedia" id="#audioAsset">
+      <div className="multimedia" id="audioAsset">
         <audio
           src="media/monstermash.mp3"
           className="audio-frame"

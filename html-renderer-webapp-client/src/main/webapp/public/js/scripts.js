@@ -99,3 +99,17 @@ if (testElem.style.fontKerning) {
 } else {
   el.classList.add('no-kern');
 }
+
+var simulateClick = function(elem) {
+  // Create our event (with options)
+  var evt = new MouseEvent('click', {
+    bubbles: true,
+    cancelable: true,
+    view: window,
+  });
+  // If cancelled, don't dispatch our event
+  var canceled = !elem.dispatchEvent(evt);
+};
+
+var someLink = document.querySelector('.lede a');
+simulateClick(someLink);
