@@ -41,17 +41,13 @@ class Body extends Component {
     const hashtag = data.hashtag === "#multisector";
     return (
       <>
-        <Aside />
         <Paragraph />
         <Paragraph />
-        <FigureSingle />
         <Paragraph />
         <Paragraph />
-        <EqPageTwo />
         <Paragraph />
-        
         <Paragraph />
-        {/* <TableImage /> */}
+        <Multimedia />
         {hashtag ? <EqMultiSectorDataTable /> : <EqMultiCompanyDataTable />}
         <EqSingleCompanyDataTable />
         <Header3 />
@@ -59,7 +55,7 @@ class Body extends Component {
         {/* <Header4 /> */}
         {/* <Multimedia /> */}
         {/* <Header4 /> */}
-        {/* <MultimediaVideo /> */}
+        <MultimediaVideo />
         <Header2 />
         <Paragraph />
         {/* <TableBig /> */}
@@ -87,7 +83,7 @@ class Body extends Component {
         <EqMultiCompanyDataTable />
         {/* <ChapterLinks /> */}
         {/* <ChapterTextLinks /> */}
-        <MultipartList />
+        {/* <MultipartList /> */}
         <Related />
         <DisclosuresBottom />
       </>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Series extends Component {
   render() {
-    return <h1 className="series">{this.props.series}</h1>;
+    return <h1 className="series">Multimedia Test - Audio in Report</h1>;
   }
 }
 
