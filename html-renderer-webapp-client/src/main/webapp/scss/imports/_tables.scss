@@ -179,7 +179,7 @@ table {
   img {
     align-self: flex-start;
     width: 80vw;
-    max-height: 100vh;
+    max-height: calc(100vh - 120px);
     // above was deleted, rolled back May 29-19
     object-fit: contain;
     margin: 1rem;
