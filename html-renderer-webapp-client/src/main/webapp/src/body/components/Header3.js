@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Header3 extends Component {
   render() {
-    return <h3>Header Three</h3>;
+    return <h3 id="audioAsset">Multimedia Asset</h3>;
   }
 }
 

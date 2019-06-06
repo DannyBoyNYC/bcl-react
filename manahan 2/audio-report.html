@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="EN">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Audio - Composer Template</title>
+  <style type="text/css">
+    * {
+      font-family: "Source Sans Pro", Calibri, Arial, sans-serif;
+    }
+
+    body {
+      margin: 0px !important;
+      padding: 0px !important;
+      color: #333333;
+    }
+
+    .logo-position {
+      padding: 15px 0 15px 25px;
+    }
+
+    .date {
+      font-size: 14px;
+      mso-line-height-rule: exactly;
+      line-height: 18px;
+      margin: 0px 25px 0px 0;
+    }
+
+    .category-label {
+      font-size: 14px;
+      color: #ffffff;
+      mso-line-height-rule: exactly;
+      line-height: 20px;
+      margin: 10px 25px 10px 0px;
+    }
+
+    .category-color,
+    .category-color-wall {
+      background-color: #00aeef;
+    }
+
+    .category-color-text {
+      color: #00aeef;
+    }
+
+    .page-background-color {
+      background-color: #f2f2f2;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+    }
+
+    a,
+    a:active,
+    a:visited {
+      color: #007eb6;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: #007eb6;
+      text-decoration: underline;
+    }
+
+    a,
+    img {
+      text-decoration: none;
+      outline: none;
+    }
+
+    p {
+      margin: 10px 25px;
+      font-size: 16px;
+      mso-line-height-rule: exactly;
+      line-height: 24px;
+      color: #585858;
+    }
+
+    p.l1 {
+      margin: 10px 25px 5px 25px;
+      font-size: 18px;
+      mso-line-height-rule: exactly;
+      line-height: 22px;
+      font-weight: 400;
+    }
+
+    p.l2 {
+      margin: 0px 25px 0 25px;
+      font-size: 30px;
+      mso-line-height-rule: exactly;
+      line-height: 36px;
+      font-weight: 300;
+      color: #007eb6;
+    }
+
+    p.lead {
+      font-size: 20px;
+      mso-line-height-rule: exactly;
+      line-height: 26px;
+      font-weight: 300;
+    }
+
+    p.contact-text {
+      margin: 0 10px 10px 10px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    h1 {
+      padding: 0;
+      margin: 10px 0;
+      font-size: 20px;
+      mso-line-height-rule: exactly;
+      line-height: 26px;
+      font-weight: 300;
+    }
+
+    img.posterframe {
+      margin: 10px 25px;
+      width: 92%;
+      text-align: left;
+    }
+
+    table.button {
+      width: 120px;
+      margin: 0px 25px;
+      border-radius: 4px;
+    }
+
+    a.button-text {
+      margin: 0;
+      color: #ffffff;
+      font-size: 1.1em;
+    }
+
+    table.contacts {
+      margin: 10px 25px;
+    }
+
+    p.contact-text {
+      margin: 0 10px 10px 10px;
+    }
+
+    .disclaimerComposer p {
+      font-size: 13px;
+      line-height: 18px;
+      margin: 10px auto;
+      width: 93%;
+      max-width: 600px;
+    }
+
+    /* DEVICE MEDIA QUERIES START */
+    @media only screen and (max-width: 480px) {
+      .logo-position {
+        padding: 0px 0px 0px 5px;
+      }
+
+      .category-color-wall {
+        background-color: #ffffff;
+      }
+
+      .date {
+        margin: 20px 5px 20px 0;
+      }
+
+      .category-label {
+        margin: 5px 5px 5px 40px;
+      }
+
+      img.posterframe {
+        margin: 10px 5px 10px 5px;
+        width: 98%;
+        text-align: left;
+      }
+
+      p {
+        margin: 10px 5px 10px 5px;
+      }
+
+      p.l1 {
+        margin: 0px 5px 4px 5px;
+        font-size: 16px;
+        mso-line-height-rule: exactly;
+        line-height: 20px;
+        font-weight: 400;
+      }
+
+      p.l2 {
+        margin: 10px 5px 0 5px;
+        font-size: 26px;
+        mso-line-height-rule: exactly;
+        line-height: 32px;
+        font-weight: 300;
+      }
+
+      p.lead {
+        font-size: 18px;
+        mso-line-height-rule: exactly;
+        line-height: 24px;
+        font-weight: 300;
+      }
+
+      table.button {
+        width: 100px;
+        margin: 0 0 0 5px;
+      }
+
+      a.button-text {
+        margin: 5px;
+        color: #ffffff;
+        font-size: 1em;
+      }
+
+      table.contacts {
+        margin: 10px;
+      }
+
+      .page-background-color {
+        background-color: #ffffff;
+      }
+    }
+  </style>
+
+  <!--[if mso]>
+      <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        span,
+        td,
+        table,
+        div,
+        ul,
+        li,
+        a {
+          font-family: Calibri, Arial, sans-serif !important;
+        }
+      </style>
+    <![endif]-->
+</head>
+
+<body style="padding:0px; margin:0px; background-color:#f2f2f2" class="page-background-color">
+  <!-- /////////////////// EMAIL INTRO TEXT GOES HERE \\\\\\\\\\\\\\\\\\\ -->
+  <!-- <p style="display: none; font-size: 1px; color: #ffffff;">opening display text goes here</p> -->
+  <!-- /////////////////// END: EMAIL INTRO TEXT \\\\\\\\\\\\\\\\\\\ -->
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="0"
+    style="width:100%; margin:0px !important; padding:0px !important;">
+    <tr>
+      <td colspan="3" style="padding: 0;" class="page-background-color">
+        <!-- begin Header -->
+
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="category-color-wall" style="padding:0;">&nbsp;</td>
+            <td bgcolor="#FFFFFF" width="600" style="padding:0">
+              <!-- begin Header content -->
+
+              <table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                    <table width="100%" cellpadding="4" cellspacing="0">
+                      <tr class="category-color-wall">
+                        <td align="left" valign="middle" width="50%">&nbsp;
+                          
+                        </td>
+                        <td align="right" valign="middle">
+                          <p class="category-label" align="right"
+                            style="margin-top:3px; margin-bottom:3px; font-size:17px; color:#FFFFFF">
+                            CORE
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="middle" width="50%" class="logo-position">
+                          <img align="left" alt="Barclays" height="30"
+                            src="https://live.barcap.com/publiccp/RSR/nyfipubs/barcap-email/template/logo-barclays.png"
+                            width="168" />
+                        </td>
+
+                        <td align="right" valign="middle">
+                          <p class="category-label" align="right">
+                            <span style="color:#017EB6; font-size:14px;">Economics Research</span><br />
+                            <span style="color:#333333; font-size:14px;">27 June 2019</span>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="100%" style="min-width:300px; padding-bottom:0">
+                    <!-- <p class="l1" style="font-family: 'Source Sans Pro', Calibri, Arial, sans-serif; margin-top:10px; margin-bottom:0; color:#007eb6;">#brexit &nbsp;  #ustaxpolicy </p> -->
+                    <p class="l1"
+                      style="font-family: 'Source Sans Pro', Calibri, Arial, sans-serif; margin-top:10px; margin-bottom:0;">
+                      Audio Autoplay Test
+                    </p>
+                    <p class="l2"
+                      style="font-family: 'Source Sans Pro', Calibri, Arial, sans-serif; font-size: 30px; line-height: 36px; font-weight: 300; margin-top:5px">
+                      <a href="https://livestage.barcap.com/RSR_S/nyfipubs/multimedia/" target="_blank"
+                      style="color:#007EB6; text-decoration: none; margin-top:5px;"><img src="https://live.barcap.com/publiccp/RSR/nyfipubs/images/composer/audio-icon-linkblue.png"
+                      width="24" height="21" style="vertical-align: middle; opacity: 0.75" /> Audio: Link to Full Report - autoplay off
+                        </a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="category-color-wall" style="padding:0;">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="3" style="padding: 0;" class="page-background-color">
+        <!-- begin Header -->
+
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:0;">&nbsp;</td>
+            <td bgcolor="#FFFFFF" width="600" style="padding:0px">
+              <table cellpadding="0" cellspacing="0">
+                <tr height="20">
+                  <td width="100%" style="min-width:300px; padding-bottom:0">
+                    <!-- begin content -->
+                    <p
+                      style="font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;font-size: 20px; line-height: 26px;">
+                      See links below for notes on Autoplay behavior in Chrome. Autoplay in IE11 
+                      has no such policy settings and will simply play if autoplay is enabled. 
+                    </p>
+                    <br />
+                    <table style="border-radius: 4px; margin-bottom:0px; float: left; width:100px;"
+                      class="button category-color">
+                      <tr>
+                        <td align="center" style="padding:5px; ">
+                          <a href="http://localhost:3005/#audioAsset" target="_blank" class="button-text"
+                            style="color:#FFFFFF; text-decoration: none; font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;">
+                            <nobr><img
+                                src="https://live.barcap.com/publiccp/RSR/nyfipubs/images/composer/audio-icon-white-sm.png"
+                                width="17" height="15" style="vertical-align: middle; margin-right:7px" />Listen</nobr>
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <table style="border-radius: 4px; margin-bottom:0px; width:120px;" class="button category-color">
+                      <tr>
+                        <td align="center" style="padding:5px 10px; ">
+                          <a href="https://livestage.barcap.com/RSR_S/nyfipubs/multimedia/" target="_blank" class="button-text"
+                            style="color:#FFFFFF; text-decoration: none; font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;">
+                            <nobr>Read More 
+                            </nobr>
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <p style="font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;">
+                      <br />
+                      In this edition of US Outlook Macrocast, Michael Gapen
+                      (Head of US Economics Research) discusses his views on
+                      the April employment report and why it points to an
+                      economy in expansion, not an economy stalling amid
+                      rising recession risks. He also investigates the Fed's
+                      assertion that underperformance of core inflation this
+                      year can be explained by transitory factors.
+                      <br /><br />
+                      <strong>Testing Links</strong> <br />
+                      <a target="_blank" href="https://livestage.barcap.com/RSR_S/nyfipubs/multimedia/media/monstermash.mp3">Direct link to raw mp3 - monstermash.mp3</a><br />
+                      <a target="_blank" href="https://live.barcap.com/go/publications/link?contentDocID=FC5ccca6a4a4709e62a72f2205">Gapen's original MP3</a><br /><br />
+
+                      Audio is disabled in chrome by default for most websites
+                      unless you have a
+                      <a href="https://developers.google.com/web/updates/2017/09/autoplay-policy-changes">history of
+                        playback</a>. You can decide to disable entirely the autoplay
+                      policy by setting the Chrome flag "Autoplay Policy" to
+                      "No user gesture is required" at
+                      <a target="_blank" href="chrome://flags/#autoplay-policy">chrome://flags/#autoplay-policy</a>.
+                      This allows you to test your website as if the user
+                      were strongly engaged with your site and playback
+                      autoplay would be always allowed.
+                      <br />
+                    </p>
+
+                    <!-- CONTACT TABLE -->
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="contacts"
+                      style="margin-top:30px;">
+                      <tr>
+                        <td>
+                          <p class="lead"
+                            style="font-family: 'Source Sans Pro', Calibri, Arial, sans-serif;font-size: 20px; line-height: 26px; margin: 10px 0 5px 0;">
+                            Team Name
+                          </p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table align="left" width="48%" style="min-width:250px">
+                            <tr valign="top">
+                              <td align="left" width="38">
+                                <div style="margin-top:5px">
+                                  <a target="_blank"
+                                    href="https://livestage.barcap.com/RSL/jsp/analyst.jsp?analyst=LB01152"><img
+                                      width="38" height="38"
+                                      src="https://livestage.barcap.com/publiccp/RUD/179/LB01152_round.png"
+                                      alt="Vincent Foley" /></a>
+                                </div>
+                              </td>
+                              <td align="left" valign="top">
+                                <p class="contact-text"
+                                  style="margin: 0 10px 10px 10px; font-size: 14px; line-height: 18px;">
+                                  <a href="mailto:&#34;Vincent Foley&#34;<vincent.foley@barclays.com&gt;?subject=Bouncing%20Bs%2063"
+                                    style="text-decoration: none; color:#007EB6;">Vincent Foley</a><br />
+                                  +1 212 412 7943<br />
+                                  BCI, US
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <table align="left" width="48%" style="min-width:250px">
+                            <tr valign="top">
+                              <td align="left" width="38">
+                                <div style="margin-top:5px">
+                                  <a target="_blank"
+                                    href="https://livestage.barcap.com/RSL/jsp/analyst.jsp?analyst=LB01152"><img
+                                      width="38" height="38"
+                                      src="https://livestage.barcap.com/publiccp/RUD/179/LB01152_round.png"
+                                      alt="Vincent Foley" /></a>
+                                </div>
+                              </td>
+                              <td align="left" valign="top">
+                                <p class="contact-text"
+                                  style="margin: 0 10px 10px 10px; font-size: 14px; line-height: 18px;">
+                                  <a href="mailto:&#34;Vincent Foley&#34;<vincent.foley@barclays.com&gt;?subject=Bouncing%20Bs%2063"
+                                    style="text-decoration: none; color:#007EB6;">Vincent Foley</a><br />
+                                  +1 212 412 7943<br />
+                                  BCI, US
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table align="left" width="48%" style="min-width:250px">
+                            <tr valign="top">
+                              <td align="left" width="38">
+                                <div style="margin-top:5px">
+                                  <a target="_blank"
+                                    href="https://livestage.barcap.com/RSL/jsp/analyst.jsp?analyst=LB04220"><img
+                                      width="38" height="38"
+                                      src="https://livestage.barcap.com/publiccp/RUD/499/LB04220_round.png"
+                                      alt="Peter Troisi" class="contact-pic" /></a>
+                                </div>
+                              </td>
+                              <td align="left" valign="top">
+                                <p class="contact-text"
+                                  style="margin: 0 10px 10px 10px; font-size: 14px; line-height: 18px;">
+                                  <a href="mailto:&#34;Peter Troisi&#34;<peter.troisi@barclays.com&gt;?subject=Bouncing%20Bs%2063"
+                                    style="text-decoration: none; color:#007EB6;">Peter Troisi</a><br />
+                                  +1 212 412 3695<br />
+                                  BCI, US
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <table align="left" width="48%" style="min-width:250px">
+                            <tr valign="top">
+                              <td align="left" width="38">
+                                <div style="margin-top:5px">
+                                  <a target="_blank"
+                                    href="https://livestage.barcap.com/RSL/jsp/analyst.jsp?analyst=LB04220"><img
+                                      width="38" height="38"
+                                      src="https://livestage.barcap.com/publiccp/RUD/499/LB04220_round.png"
+                                      alt="Peter Troisi" class="contact-pic" /></a>
+                                </div>
+                              </td>
+                              <td align="left" valign="top">
+                                <p class="contact-text"
+                                  style="margin: 0 10px 10px 10px; font-size: 14px; line-height: 18px;">
+                                  <a href="mailto:&#34;Peter Troisi&#34;<peter.troisi@barclays.com&gt;?subject=Bouncing%20Bs%2063"
+                                    style="text-decoration: none; color:#007EB6;">Peter Troisi</a><br />
+                                  +1 212 412 3695<br />
+                                  BCI, US
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table align="left" width="48%" style="min-width:250px">
+                            <tr valign="top">
+                              <td align="left" width="38">
+                                <div style="margin-top:5px">
+                                  <a target="_blank"
+                                    href="https://livestage.barcap.com/RSL/jsp/analyst.jsp?analyst=LB04014"><img
+                                      width="38" height="38"
+                                      src="https://livestage.barcap.com/publiccp/RUD/552/LB04014_round.png"
+                                      alt="Srinjoy Banerjee, CFA" class="contact-pic" /></a>
+                                </div>
+                              </td>
+                              <td align="left" valign="top">
+                                <p class="contact-text"
+                                  style="margin: 0 10px 10px 10px; font-size: 14px; line-height: 18px;">
+                                  <a href="mailto:&#34;Srinjoy Banerjee, CFA&#34;<srinjoy.banerjee@barclays.com&gt;?subject=Bouncing%20Bs%2063"
+                                    style="text-decoration: none; color:#007EB6;">Srinjoy Banerjee, CFA</a><br />
+                                  +1 212 526 3521<br />
+                                  BCI, US
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <table align="left" width="48%" style="min-width:250px">
+                            <tr valign="top">
+                              <td align="left" width="38">
+                                <div style="margin-top:5px">
+                                  <a target="_blank"
+                                    href="https://livestage.barcap.com/RSL/jsp/analyst.jsp?analyst=LB04014"><img
+                                      width="38" height="38"
+                                      src="https://livestage.barcap.com/publiccp/RUD/552/LB04014_round.png"
+                                      alt="Srinjoy Banerjee, CFA" class="contact-pic" /></a>
+                                </div>
+                              </td>
+                              <td align="left" valign="top">
+                                <p class="contact-text"
+                                  style="margin: 0 10px 10px 10px; font-size: 14px; line-height: 18px;">
+                                  <a href="mailto:&#34;Srinjoy Banerjee, CFA&#34;<srinjoy.banerjee@barclays.com&gt;?subject=Bouncing%20Bs%2063"
+                                    style="text-decoration: none; color:#007EB6;">Srinjoy Banerjee, CFA</a><br />
+                                  +1 212 526 3521<br />
+                                  BCI, US
+                                </p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- end content -->
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td style="padding:0;">&nbsp;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
