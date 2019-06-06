@@ -17,6 +17,7 @@ import Header4 from './components/Header4';
 import Header6 from './components/Header6';
 import Multimedia from './components/Multimedia';
 import MultimediaVideo from './components/MultimediaVideo';
+import Header3b from './components/Header3b';
 
 import ListUnordered from './components/ListUnordered';
 import ListOrdered from './components/ListOrdered';
@@ -56,6 +57,7 @@ class Body extends Component {
         {/* <Header4 /> */}
         {/* <Multimedia /> */}
         {/* <Header4 /> */}
+        <Header3b />
         <MultimediaVideo />
         <Header2 />
         <Paragraph />
