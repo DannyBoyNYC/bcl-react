@@ -100,7 +100,16 @@ if (testElem.style.fontKerning) {
   el.classList.add('no-kern');
 }
 
+const ready = function() {
+  setTimeout(function() {
+    var someLink = document.querySelector('.lede a');
+    console.log(someLink);
+    simulateClick(someLink);
+  }, 1000);
+};
+
 var simulateClick = function(elem) {
+  // console.log(elem);
   // Create our event (with options)
   var evt = new MouseEvent('click', {
     bubbles: true,
@@ -111,5 +120,10 @@ var simulateClick = function(elem) {
   var canceled = !elem.dispatchEvent(evt);
 };
 
-var someLink = document.querySelector('.lede a');
-simulateClick(someLink);
+var params = location.search;
+
+if (params === '?audio') {
+  // console.log(params);
+  // simulateClick(`#{params}`);
+  ready();
+}

@@ -7,7 +7,7 @@ class Paragraph extends Component {
         <audio
           src="media/monstermash.mp3"
           className="audio-frame"
-          autoPlay
+          // autoPlay
           width="100%"
           controls
         />
