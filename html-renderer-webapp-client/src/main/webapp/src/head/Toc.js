@@ -45,9 +45,9 @@ class Toc extends Component {
             <a className="toc__branding-type" href="#0 ">
               {data.brandingtype}
             </a>
-            <a className="toc__theme" href="#0 ">
+            {/* <a className="toc__theme" href="#0 ">
               {data.hashtag}
-            </a>
+            </a> */}
             {/* displayed on top menu? */}
             <a className="toc__series" href="#0">
               Energy
@@ -58,9 +58,7 @@ class Toc extends Component {
           <div className="toc__toc" ref="menu">
             <ul>
               <li className="sect">
-                <a href="#0">
-                  {data.series}
-                </a>
+                <a href="#0">{data.series}</a>
               </li>
               <li>
                 <a href="#0" className="toc__chapter-link">

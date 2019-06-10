@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Header2 extends Component {
   render() {
-    return <h2 className="section">Section Header</h2>;
+    return <h2 className="section">{this.props.headerText}</h2>;
   }
 }
 

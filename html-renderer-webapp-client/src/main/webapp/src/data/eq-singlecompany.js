@@ -40,7 +40,7 @@ module.exports = {
   // ],
   analysts: {
     analyst1: {
-      name: 'Paul Y.Cheng, CFA',
+      name: 'Bradley Rogoff',
       affiliation: 'BCI, US',
       department: 'US High Grade Credit',
       email: 'paulchenge@barclays.com',
@@ -49,7 +49,7 @@ module.exports = {
       id: 1,
     },
     analyst2: {
-      name: 'Lydia Rainforth, CFA',
+      name: 'Shobit Gupta',
       affiliation: 'Barclays, UK',
       department: 'US High Grade Credit',
       email: 'lydiarainforth@barclays.com',
@@ -57,22 +57,22 @@ module.exports = {
       image: 'img/analyst-1.gif',
       id: 2,
     },
-    analyst3: {
-      name: 'Joshua Stone',
-      affiliation: 'Barclays, UK',
-      department: 'US High Grade Credit',
-      email: 'joshuastone@barclays.com',
-      tel: '+1 212 526 1884',
-      image: 'img/analyst-2.gif',
-      id: 3,
-    },
-    analyst4: {
-      name: 'Hale Holden',
-      affiliation: 'Barclays, UK',
-      department: 'US High Grade Credit',
-      email: 'haleholden@barclays.com',
-      tel: '+1 212 526 1884',
-      id: 4,
-    },
+    // analyst3: {
+    //   name: 'Joshua Stone',
+    //   affiliation: 'Barclays, UK',
+    //   department: 'US High Grade Credit',
+    //   email: 'joshuastone@barclays.com',
+    //   tel: '+1 212 526 1884',
+    //   image: 'img/analyst-2.gif',
+    //   id: 3,
+    // },
+    // analyst4: {
+    //   name: 'Hale Holden',
+    //   affiliation: 'Barclays, UK',
+    //   department: 'US High Grade Credit',
+    //   email: 'haleholden@barclays.com',
+    //   tel: '+1 212 526 1884',
+    //   id: 4,
+    // },
   },
 };

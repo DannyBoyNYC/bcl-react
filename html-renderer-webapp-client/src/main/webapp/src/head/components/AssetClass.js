@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class AssetClass extends Component {
   render() {
-    return <h1>{this.props.assetClass}</h1>;
+    return <h1>U.S. Credit</h1>;
   }
 }
 
