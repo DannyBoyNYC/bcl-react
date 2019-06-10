@@ -99,7 +99,7 @@ class Body extends Component {
         <EqMultiCompanyDataTable />
         {/* <ChapterLinks /> */}
         {/* <ChapterTextLinks /> */}
-        {/* <MultipartList /> */}
+        <MultipartList />
         <Related />
         <DisclosuresBottom />
       </>
