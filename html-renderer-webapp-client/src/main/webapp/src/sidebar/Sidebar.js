@@ -33,8 +33,8 @@ class Sidebar extends Component {
           {/* <EqSingleCompanyData /> */}
           {/* <div className="certifications-disclosures"> */}
           <Certifications />
-          {/* <Multipart /> */}
-          <Related />
+          <Multipart />
+          {/* <Related /> */}
           {/* </div> */}
         </div>
       );

@@ -44,7 +44,7 @@ class Body extends Component {
     const hashtag = data.hashtag === '#multisector';
     return (
       <>
-        {/* <Aside /> */}
+        {/* <AsideAttachment /> */}
         <Header2 headerText="Overview" />
         <Paragraph />
         <Paragraph />
@@ -58,13 +58,11 @@ class Body extends Component {
         {/* <TableImage /> */}
         {hashtag ? <EqMultiSectorDataTable /> : <EqMultiCompanyDataTable />}
         <EqSingleCompanyDataTable />
-        <Header2 headerText="Focus: CMBX Primer and Recent Trends" />
-        <BylineRogoff data={data} />
         <Paragraph />
         <Paragraph />
         <Paragraph />
-        <Header2 headerText="Investment Grade: Yields Unattractive through an International Lens" />
-        <BylineRogoff data={data} />
+        {/* <Header2 headerText="Investment Grade: Yields Unattractive through an International Lens" />
+        <BylineRogoff data={data} /> */}
         <Paragraph />
         <Paragraph />
         <Paragraph />
@@ -97,8 +95,8 @@ class Body extends Component {
         <Quicktake />
         <Paragraph /> */}
         <EqMultiCompanyDataTable />
-        {/* <ChapterLinks /> */}
-        {/* <ChapterTextLinks /> */}
+        <ChapterLinks />
+        <ChapterTextLinks />
         <MultipartList />
         <Related />
         <DisclosuresBottom />

@@ -1,5 +1,29 @@
 import React, { Component } from 'react';
 
+import styled from 'styled-components';
+
+const SingleBtn = styled.button`
+  background-color: #b2b2b2;
+  padding: 0.25rem 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+`;
+
+const SingleA = styled.a`
+  display: inline-block;
+  color: #007eb6;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: auto;
+  svg {
+    padding-right: 0.25rem;
+    width: 1em !important;
+    height: 1em !important;
+  }
+`;
+
 class MultipartList extends Component {
   render() {
     return (
@@ -8,7 +32,6 @@ class MultipartList extends Component {
           <svg className="circle" viewBox="0 0 32 32">
             <circle cx="16" cy="16" r="15" />
           </svg>
-
           <svg className="icn">
             <title>Related</title>
             <use xlinkHref="#books" />
@@ -19,6 +42,13 @@ class MultipartList extends Component {
             </h1>
             <div className="date">04 June 2018</div>
           </div>
+          <SingleA href="# ">
+            <svg className="icn">
+              <title>Excel attachment</title>
+              <use xlinkHref="#pdf" />
+            </svg>
+            <span>View as a Single Document</span>
+          </SingleA>
         </div>
 
         <ul className="multipart-items">
@@ -67,6 +97,11 @@ class MultipartList extends Component {
               <a href="#mplink">Summary</a>
             </li>
           </ul>
+          {/* <ul>
+            <li>
+              <SingleBtn>View as a Single Document</SingleBtn>
+            </li>
+          </ul> */}
         </ul>
       </div>
     );

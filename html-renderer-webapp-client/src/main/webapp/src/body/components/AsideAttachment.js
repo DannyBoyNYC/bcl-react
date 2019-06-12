@@ -7,14 +7,12 @@ class AsideAttachment extends Component {
         <a href="# ">
           <svg className="icn">
             <title>Excel attachment</title>
-            <use xlinkHref="#excel" />
+            <use xlinkHref="#pdf" />
           </svg>
 
-          <span>CDS Options.xls</span>
+          <span>View as a Single Document</span>
         </a>
-        <span>
-          The market for CDS options has experienced significant growth
-        </span>
+        <span />
       </aside>
     );
   }

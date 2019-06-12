@@ -1,5 +1,18 @@
 import React, { Component } from 'react';
 
+import styled from 'styled-components';
+
+const SingleA = styled.a`
+  margin-top: 2rem;
+  color: #007eb6;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-left: auto;
+  svg {
+    padding-right: 0.25rem;
+  }
+`;
+
 class Multipart extends Component {
   render() {
     return (
@@ -12,111 +25,69 @@ class Multipart extends Component {
             </svg>
             <div>
               <h1 comp_id="_bbb76dfb-6c95-4f48-9fc6-c3508ff89f5c">
-                <a
-                  href="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9286502f55146d4a99a&amp;amp;restriction=DEBT"
-                  className="mp-cover-pub-link"
-                  pub_id="5cd5c9286502f55146d4a99a"
-                  puburl="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9286502f55146d4a99a&amp;amp;restriction=DEBT"
-                >
-                  Global Energy Credit Top Ideas
-                </a>
+                <a href="#0">U.S. Credit Alpha</a>
               </h1>
-              <date>10 May 2019</date>
+              <date>04 June 2018</date>
             </div>
           </div>
-          <div className="multipart-items">
-            <ul>
-              <li className="art">Index Summary</li>
-              <li className="art-link">
-                <a
-                  href="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c90e6502f55146d4a979&amp;restriction=DEBT"
-                  className="mp-feature-pub-link"
-                  pub_id="5cd5c90e6502f55146d4a979"
-                  puburl="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c90e6502f55146d4a979&amp;restriction=DEBT"
-                >
-                  KP Finishing Strong
-                </a>
+          <ul className="multipart-items">
+            <ul style={{ marginTop: '0.75' + 'rem' }}>
+              <li>
+                <SingleA href="# ">
+                  <svg className="icn">
+                    <title>Excel attachment</title>
+                    <use xlinkHref="#pdf" />
+                  </svg>
+                  <span>View as a Single Document</span>
+                </SingleA>
               </li>
             </ul>
             <ul>
-              <li className="art">Oil Market Outlook</li>
+              <li className="art">Overview</li>
               <li className="art-link">
-                <a
-                  href="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9128fe3dc31e27fac3b&amp;restriction=DEBT"
-                  className="mp-feature-pub-link"
-                  pub_id="5cd5c9128fe3dc31e27fac3b"
-                  puburl="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9128fe3dc31e27fac3b&amp;restriction=DEBT"
-                >
-                  KP&nbsp;Balance is in the eyes of the beholder
-                </a>
+                <a href="#mplink">Tightening by the Minute</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li className="art">Focus</li>
+              <li className="art-link">
+                <a href="#mplink">Crossover Shopping in EM Credits</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li className="art">Investment Grade</li>
+              <li className="art-link">
+                <a href="#mplink">Juicy Grade A Banks</a>
+              </li>
+            </ul>
+
+            <ul>
+              <li className="art">High Yield</li>
+              <li className="art-link">
+                <a href="#mplink">Checking in on Fundamentals and Technicals</a>
               </li>
             </ul>
             <ul>
-              <li className="art">Natural Gas Market Outlook</li>
+              <li className="art">Leveraged Loans and CLOS</li>
               <li className="art-link">
-                <a
-                  href="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9156502f52a94fd0eb3&amp;restriction=DEBT"
-                  className="mp-feature-pub-link"
-                  pub_id="5cd5c9156502f52a94fd0eb3"
-                  puburl="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9156502f52a94fd0eb3&amp;restriction=DEBT"
-                >
-                  KP On a knife's edge
-                </a>
+                <a href="#mplink">CLO Equity: The Long and Short of It</a>
               </li>
             </ul>
             <ul>
-              <li className="art">High Yield Energy</li>
+              <li className="art">Securitized Credit</li>
               <li className="art-link">
-                <a
-                  href="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9188fe3dc31e27fac59&amp;restriction=DEBT"
-                  className="mp-feature-pub-link"
-                  pub_id="5cd5c9188fe3dc31e27fac59"
-                  puburl="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9188fe3dc31e27fac59&amp;restriction=DEBT"
-                >
-                  KP Global Energy Outlook - Chambers not available
-                </a>
+                <a href="#mplink">PACE ABS</a>
               </li>
             </ul>
             <ul>
-              <li className="art">Asia</li>
+              <li className="art">Credit Rating Changes</li>
               <li className="art-link">
-                <a
-                  href="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c91b6502f52a94fd0ed1&amp;restriction=DEBT"
-                  className="mp-feature-pub-link"
-                  pub_id="5cd5c91b6502f52a94fd0ed1"
-                  puburl="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c91b6502f52a94fd0ed1&amp;restriction=DEBT"
-                >
-                  KP China: Spending big favours service providers
-                </a>
+                <a href="#mplink">Summary</a>
               </li>
             </ul>
-            <ul>
-              <li className="art">CIS Oil and Gas</li>
-              <li className="art-link">
-                <a
-                  href="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9208fe3dc31e27fac70&amp;restriction=DEBT"
-                  className="mp-feature-pub-link"
-                  pub_id="5cd5c9208fe3dc31e27fac70"
-                  puburl="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9208fe3dc31e27fac70&amp;restriction=DEBT"
-                >
-                  KP Divergence continues in the region
-                </a>
-              </li>
-            </ul>
-            <ul>
-              <li className="art">US Investment Grade</li>
-              <li className="art-link">
-                <a
-                  href="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9238fe3dc0e19ffc81d&amp;restriction=DEBT"
-                  className="mp-feature-pub-link"
-                  pub_id="5cd5c9238fe3dc0e19ffc81d"
-                  puburl="https://livestage.barcap.com/go/publications/link?contentPubID=FC5cd5c9238fe3dc0e19ffc81d&amp;restriction=DEBT"
-                >
-                  KP Energy Outlook
-                </a>
-              </li>
-            </ul>
-          </div>
+          </ul>
         </div>
       </div>
     );

@@ -58,25 +58,25 @@ class Toc extends Component {
           <div className="toc__toc" ref="menu">
             <ul>
               <li className="sect">
-                <a href="#0">{data.series}</a>
+                <a href="#0">U.S. Credit Alpha</a>
               </li>
               <li>
                 <a href="#0" className="toc__chapter-link">
-                  {data.headline}
+                  Central Banks to the Fore
                 </a>
               </li>
 
               <li>
-                <a href="#0">Header One</a>
+                <a href="#0">Overview</a>
                 <ul className="switch-cont">
                   <li>
-                    <a href="#0">Header Level Two</a>
+                    <a href="#0">Leading Indicators</a>
                   </li>
                   <li>
-                    <a href="#0">Header Level Two</a>
+                    <a href="#0">Credit Tightens</a>
                   </li>
                   <li>
-                    <a href="#0">Header Level Two</a>
+                    <a href="#0">The Upside</a>
                   </li>
                 </ul>
                 <a href="#0">Header Two</a>
