@@ -8,6 +8,7 @@ class PremierEvent extends Component {
         <h4>12:00pm - 2:00pm</h4>
         <h4>1745 7th Avenue, New York</h4>
         <button>Request Invitation</button>
+        <p>The deadline for registering...</p>
       </div>
     );
   }
