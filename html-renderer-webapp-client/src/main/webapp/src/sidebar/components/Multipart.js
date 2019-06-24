@@ -6,10 +6,15 @@ class Multipart extends Component {
       <div className="multipart-nav-holder multipart-nav-holder-right core">
         <div className="multipart-list">
           <div className="multipart-head">
-            <svg className="icn">
-              <title>Related</title>
-              <use xlinkHref="#book" />
-            </svg>
+            <div>
+              <svg class="circle" viewBox="0 0 32 32">
+                <circle cx="16" cy="16" r="15" />
+              </svg>
+              <svg className="icn">
+                <title>Related</title>
+                <use xlinkHref="#books" />
+              </svg>
+            </div>
             <div>
               <h1 comp_id="_bbb76dfb-6c95-4f48-9fc6-c3508ff89f5c">
                 <a
