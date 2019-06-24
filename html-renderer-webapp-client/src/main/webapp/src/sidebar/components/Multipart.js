@@ -21,7 +21,7 @@ class Multipart extends Component {
                   Global Energy Credit Top Ideas
                 </a>
               </h1>
-              <date>10 May 2019</date>
+              <div className="date">10 May 2019</div>
             </div>
           </div>
           <div className="multipart-items">
