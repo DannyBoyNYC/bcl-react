@@ -52,7 +52,7 @@ class Body extends Component {
         <Paragraph />
         <EqPageTwo />
         <Paragraph />
-        <FigureFullSize />
+        {/* <FigureFullSize /> */}
         <Paragraph />
         {/* <TableImage /> */}
         {hashtag ? <EqMultiSectorDataTable /> : <EqMultiCompanyDataTable />}

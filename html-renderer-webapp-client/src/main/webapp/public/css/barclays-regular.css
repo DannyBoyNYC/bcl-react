@@ -10,6 +10,16 @@ button {
   font-weight: 700;
 }
 
+.button__sm {
+  padding: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.button__exsm {
+  padding: 0.15rem;
+  font-size: 0.675rem;
+}
+
 html {
   font-size: 100%;
   font-family: "Source Sans Pro", Helvetica, Clean, sans-serif;

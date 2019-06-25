@@ -1,32 +1,25 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 // NOTE - compromised the SASS with inline styles due to new popover method.
 
 class Analyst extends Component {
-  constructor(props) {
-    super(props);
-    this.analystPopover = this.analystPopover.bind(this);
-  }
-
-  analystPopover(event) {
+  analystPopover = event => {
     event.preventDefault();
     const popover = this.refs.popover;
-    popover.style.top = "58px";
-    popover.classList.toggle("show");
-  }
+    popover.style.top = '58px';
+    popover.classList.toggle('show');
+  };
 
   render() {
     const data = this.props;
     return (
-      
       <li
-        style={{ position: "relative" }}
+        style={{ position: 'relative' }}
         className='analyst'
         rel='author'
         itemScope=''
         itemType='http://schema.org/Person'
         itemProp='author'
       >
-        
         <a
           className='analyst-link'
           href='#single'
@@ -68,23 +61,28 @@ class Analyst extends Component {
                 {data.analyst.department}
               </span>
             </div>
-            <div className="eq-unit" style={{fontWeight: '600', marginBottom: '10px'}}>Americas Integrated Oil &amp; U.S. Independent Refiners</div>
-            <ul style={{ flexDirection: "row", marginTop: "0" }}>
-              <li style={{ display: "flex", lineHeight: "1.5" }}>
+            <div
+              className='eq-unit'
+              style={{ fontWeight: '600', marginBottom: '10px' }}
+            >
+              Americas Integrated Oil &amp; U.S. Independent Refiners
+            </div>
+            <ul style={{ flexDirection: 'row', marginTop: '0' }}>
+              <li style={{ display: 'flex', lineHeight: '1.5' }}>
                 <svg className='icn'>
                   <title>Phone number</title>
                   <use xlinkHref='#icon-phone' />
                 </svg>
                 <a href='#0'>{data.analyst.tel}</a>
               </li>
-              <li style={{ display: "flex", lineHeight: "1.5" }}>
+              <li style={{ display: 'flex', lineHeight: '1.5' }}>
                 <svg className='icn'>
                   <title>Phone number</title>
                   <use xlinkHref='#icon-person' />
                 </svg>
                 <a href='#0'>Analyst's Page</a>
               </li>
-              <li style={{ display: "flex", lineHeight: "1.5" }}>
+              <li style={{ display: 'flex', lineHeight: '1.5' }}>
                 <svg className='icn'>
                   <title>Email</title>
                   <use xlinkHref='#icon-email' />

@@ -5,21 +5,33 @@ import Meta from './meta/Meta';
 import Body from './body/Body';
 import Sidebar from './sidebar/Sidebar';
 
-import eqCompanies from './data/eqCompanies';
+import eqData from './data/eqData';
 
 import eqSingleCompany from './data/eqSingleCompany';
 import eqMultiCompany from './data/eqMultiCompany';
 import eqMultiSector from './data/eqMultiSector';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      data: { ...eqSingleCompany, ...eqCompanies }
-    };
-  }
+  state = {
+    data: { ...eqMultiSector, ...eqData }
+  };
 
   render() {
+    const {
+      analysts,
+      assetClass,
+      authors,
+      brandingType,
+      companies,
+      date,
+      eqAssetClass,
+      hashtag,
+      headline,
+      lede,
+      series,
+      toc
+    } = this.state.data;
+
     return (
       <>
         <Head data={this.state.data} />

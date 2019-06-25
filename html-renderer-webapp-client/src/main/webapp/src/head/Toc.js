@@ -6,16 +6,12 @@ import ReactDOM from 'react-dom';
 // https://www.reddit.com/r/reactjs/comments/a2ifb9/getboundingclientrect_does_not_work_on_a_react/
 
 class Toc extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showMenu: true,
-      tocCoords: '',
-    };
-    this.openMenu = this.openMenu.bind(this);
-  }
+  state = {
+    showMenu: true,
+    tocCoords: ''
+  };
 
-  openMenu(event) {
+  openMenu = event => {
     event.preventDefault();
     const tocRef = this.refs.menu;
     const tocContainer = this.refs.tocContainer;
@@ -25,89 +21,87 @@ class Toc extends Component {
     tocRef.classList.toggle('toc__open');
     this.setState(state => ({
       showMenu: !state.showMenu,
-      tocCoords: coords,
+      tocCoords: coords
     }));
-  }
+  };
 
   render() {
-    const data = this.props.data;
+    const { brandingType, hashtag, headline, series } = this.props;
     return (
-      <div className="toc">
+      <div className='toc'>
         {/* tocContainer ref */}
-        <div className="toc-container" ref="tocContainer">
-          <a className="menu-bug" href="#!" onClick={this.openMenu}>
-            <svg className="icn">
+        <div className='toc-container' ref='tocContainer'>
+          <a className='menu-bug' href='#!' onClick={this.openMenu}>
+            <svg className='icn'>
               <title>Table of contents</title>
-              <use xlinkHref="#toc" />
+              <use xlinkHref='#toc' />
             </svg>
           </a>
-          <div className="toc__elements">
-            <a className="toc__branding-type" href="#0 ">
-              {data.brandingtype}
+          <div className='toc__elements'>
+            <a className='toc__branding-type' href='#0 '>
+              {brandingType}
             </a>
-            <a className="toc__theme" href="#0 ">
-              {data.hashtag}
+            <a className='toc__theme' href='#0 '>
+              {hashtag}
             </a>
             {/* displayed on top menu? */}
-            <a className="toc__series" href="#0">
+            <a className='toc__series' href='#0'>
               Energy
             </a>
           </div>
 
           {/* menu ref */}
-          <div className="toc__toc" ref="menu">
+          <div className='toc__toc' ref='menu'>
             <ul>
-              <li className="sect">
-                <a href="#0">
-                  {data.series}
-                </a>
+              <li className='sect'>
+                <a href='#0'>{series}</a>
               </li>
               <li>
-                <a href="#0" className="toc__chapter-link">
-                  {data.headline}
+                <a href='#0' className='toc__chapter-link'>
+                  {headline}
                 </a>
               </li>
 
               <li>
-                <a href="#0">Header One</a>
-                <ul className="switch-cont">
+                <a href='#0'>Header One</a>
+                <ul className='switch-cont'>
                   <li>
-                    <a href="#0">Header Level Two</a>
+                    <a href='#0'>Header Level Two</a>
                   </li>
                   <li>
-                    <a href="#0">Header Level Two</a>
+                    <a href='#0'>Header Level Two</a>
                   </li>
                   <li>
-                    <a href="#0">Header Level Two</a>
-                  </li>
-                </ul>
-                <a href="#0">Header Two</a>
-                <ul className="switch-cont">
-                  <li>
-                    <a href="#0">Header Level Two</a>
+                    <a href='#0'>Header Level Two</a>
                   </li>
                 </ul>
+                <a href='#0'>Header Two</a>
+                <ul className='switch-cont'>
+                  <li>
+                    <a href='#0'>Header Level Two</a>
+                  </li>
+                </ul>
               </li>
-              <li className="sect">
-                <a href="#0">Section</a>
-              </li>
-              <li>
-                <a href="#0">Header Level Two</a>
-              </li>
-              <li className="sect">
-                <a href="#0">Section Two</a>
-              </li>
-              <li>
-                <a href="#0">Header Level Two?</a>
-              </li>
-              <li className="sect">
-                <a href="#0">Section</a>
+              <li className='sect'>
+                <a href='#0'>Section</a>
               </li>
               <li>
-                <a href="#0">Header Level One</a>
+                <a href='#0'>Header Level Two</a>
               </li>
-              <li className="sect">
-                <a href="#0">Disclosures</a>
+              <li className='sect'>
+                <a href='#0'>Section Two</a>
+              </li>
+              <li>
+                <a href='#0'>Header Level Two?</a>
+              </li>
+              <li className='sect'>
+                <a href='#0'>Section</a>
+              </li>
+              <li>
+                <a href='#0'>Header Level One</a>
+              </li>
+              <li className='sect'>
+                <a href='#0'>Disclosures</a>
               </li>
             </ul>
           </div>
