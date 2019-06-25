@@ -1,21 +1,21 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Head from "./head/Head";
-import Meta from "./meta/Meta";
-import Body from "./body/Body";
-import Sidebar from "./sidebar/Sidebar";
+import Head from './head/Head';
+import Meta from './meta/Meta';
+import Body from './body/Body';
+import Sidebar from './sidebar/Sidebar';
 
-import companies from "./data/eq-companies.js";
+import eqCompanies from './data/eqCompanies';
 
-import singleCompany from "./data/eq-singlecompany.js";
-import multiCompany from "./data/eq-multicompany.js";
-import multiSector from "./data/eq-mutisector.js";
+import eqSingleCompany from './data/eqSingleCompany';
+import eqMultiCompany from './data/eqMultiCompany';
+import eqMultiSector from './data/eqMultiSector';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: { ...singleCompany, ...companies },
+      data: { ...eqSingleCompany, ...eqCompanies }
     };
   }
 
