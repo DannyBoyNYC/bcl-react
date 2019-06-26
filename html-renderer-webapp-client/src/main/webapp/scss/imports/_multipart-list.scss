@@ -1,3 +1,7 @@
+.multipart-nav-holder-bottom .multipart-list {
+  margin-right: 0;
+}
+
 .multipart-list {
   border-top: 3px solid;
   border-bottom: 3px solid;
@@ -84,10 +88,10 @@
     padding-top: 0.25rem;
     line-height: 1.1;
     position: relative;
-    @media (min-width: $break-two) {
-      // align-items: flex-start;
-      // flex-direction: column;
-    }
+    // @media (min-width: $break-two) {
+    // align-items: flex-start;
+    // flex-direction: column;
+    // }
     svg {
       width: 2.25rem;
       height: 2.25rem;
@@ -128,9 +132,9 @@
     font-weight: 600;
     color: $text;
   }
-  .art-link {
-    // font-weight: 600;
-  }
+  // .art-link {
+  // font-weight: 600;
+  // }
   .date {
     font-size: 0.75rem;
     color: #666;

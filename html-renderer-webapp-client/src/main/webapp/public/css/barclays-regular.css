@@ -11,8 +11,9 @@ button {
 }
 
 .button__sm {
-  padding: 0.25rem;
-  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .button__exsm {
@@ -1723,6 +1724,10 @@ svg .icn-stroke {
 }
 .svg-star svg.icn {
   height: 0.9em;
+}
+
+.multipart-nav-holder-bottom .multipart-list {
+  margin-right: 0;
 }
 
 .multipart-list {
