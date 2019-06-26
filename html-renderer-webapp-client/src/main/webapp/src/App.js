@@ -13,7 +13,7 @@ import eqMultiSector from './data/eqMultiSector';
 
 class App extends Component {
   state = {
-    data: { ...eqMultiSector, ...eqData }
+    data: { ...eqMultiSector, ...eqData },
   };
 
   render() {
@@ -29,15 +29,15 @@ class App extends Component {
       headline,
       lede,
       series,
-      toc
+      toc,
     } = this.state.data;
 
     return (
       <>
         <Head data={this.state.data} />
-        <div className='gs-container '>
-          <div className='content__main-column'>
-            <div className='content__article-body'>
+        <div className="gs-container ">
+          <div className="content__main-column">
+            <div className="content__article-body">
               <Meta data={this.state.data} />
               <Body data={this.state.data} />
             </div>
