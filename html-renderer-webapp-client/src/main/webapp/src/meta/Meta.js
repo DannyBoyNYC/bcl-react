@@ -6,11 +6,11 @@ import BylineLarge from './components/BylineLarge';
 import ReadStar from './components/ReadStar';
 import Disclosures from './components/Disclosures';
 
-class Sidebar extends Component {
+class Meta extends Component {
   render() {
     const data = this.props.data;
     return (
-      <div className="content__meta-container main">
+      <div className='content__meta-container main'>
         <Iconlist />
         <BylineSmall />
         <ReadStar />
@@ -21,4 +21,4 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar;
+export default Meta;

@@ -5,18 +5,14 @@ import Main from './Main';
 class Head extends Component {
   render() {
     const {
-      analysts,
       assetClass,
-      authors,
       brandingType,
-      companies,
       date,
       eqAssetClass,
       hashtag,
       headline,
       lede,
-      series,
-      toc
+      series
     } = this.props.data;
 
     const data = this.props.data;
@@ -26,7 +22,6 @@ class Head extends Component {
           <div className='gs-container'>
             <div className='content__main-column'>
               <Toc
-                data={data}
                 brandingType={brandingType}
                 hashtag={hashtag}
                 headline={headline}

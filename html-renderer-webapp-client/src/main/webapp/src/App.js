@@ -50,3 +50,14 @@ class App extends Component {
 }
 
 export default App;
+
+// const {
+//   assetClass,
+//   brandingType,
+//   date,
+//   eqAssetClass,
+//   hashtag,
+//   headline,
+//   lede,
+//   series
+// } = this.props.data;
