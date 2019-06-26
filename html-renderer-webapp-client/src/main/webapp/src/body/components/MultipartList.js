@@ -6,7 +6,7 @@ class MultipartList extends Component {
       <div className="multipart-nav-holder multipart-nav-holder-bottom core">
         <div className="multipart-list">
           <div className="multipart-head">
-            <div>
+            <div className="icon-holder">
               <svg className="circle" viewBox="0 0 32 32">
                 <circle cx="16" cy="16" r="15" />
               </svg>
@@ -15,17 +15,13 @@ class MultipartList extends Component {
                 <use xlinkHref="#books" />
               </svg>
             </div>
-            <div>
+            <div className="pub-title">
               <h1>
                 <a href="#0">Global Economics Weekly</a>
               </h1>
               <div className="date">04 June 2018</div>
             </div>
-            <button
-              style={{ marginLeft: 'auto' }}
-              className="button__sm"
-              href="# "
-            >
+            <button className="button__sm" href="#0">
               View Full Report
             </button>
           </div>

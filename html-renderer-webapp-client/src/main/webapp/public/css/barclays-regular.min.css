@@ -1647,19 +1647,6 @@ svg .icn-stroke {
   height: 0.9em;
 }
 
-.multipart-nav-holder-bottom .multipart-list {
-  margin-right: 0;
-}
-
-.multipart-list {
-  border-top: 3px solid;
-  border-bottom: 3px solid;
-}
-.multipart-list .circle {
-  fill: transparent;
-  position: absolute;
-}
-
 .core .multipart-list {
   border-top-color: #00aeef;
   border-bottom-color: #00aeef;
@@ -1703,11 +1690,17 @@ svg .icn-stroke {
 }
 
 .multipart-list {
+  border-top: 3px solid;
+  border-bottom: 3px solid;
   line-height: 1.35;
   margin-top: 3rem;
   padding-top: 0.25rem;
   padding-bottom: 0.5rem;
   margin-right: 1rem;
+}
+.multipart-list .circle {
+  fill: transparent;
+  position: absolute;
 }
 .multipart-list.yml {
   border-color: #f58420;
@@ -1723,11 +1716,19 @@ svg .icn-stroke {
 }
 .multipart-list .multipart-head {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
   line-height: 1.1;
   position: relative;
+}
+.multipart-list .multipart-head .pub-title {
+  width: 84%;
+}
+.multipart-list .multipart-head button {
+  margin-left: 0;
+  margin-top: 0.75rem;
 }
 .multipart-list .multipart-head svg {
   width: 2.25rem;
@@ -1776,8 +1777,19 @@ svg .icn-stroke {
   color: #444;
 }
 
+.content__article-body .multipart-list {
+  margin-right: 0;
+  flex-wrap: nowrap;
+}
+.content__article-body .multipart-list .pub-title {
+  width: auto;
+}
 .content__article-body .multipart-list .multipart-head {
   margin-bottom: 0.75rem;
+}
+.content__article-body .multipart-list .multipart-head button {
+  margin-top: 0;
+  margin-left: auto;
 }
 .content__article-body .multipart-list .art {
   margin-top: 0;
