@@ -12,15 +12,15 @@ class Head extends Component {
       hashtag,
       headline,
       lede,
-      series
+      series,
     } = this.props.data;
 
-    const data = this.props.data;
+    // const data = this.props.data;
     return (
-      <header className='content__head'>
-        <div className='content__header tonal__header u-cf'>
-          <div className='gs-container'>
-            <div className='content__main-column'>
+      <header className="content__head">
+        <div className="content__header tonal__header u-cf">
+          <div className="gs-container">
+            <div className="content__main-column">
               <Toc
                 brandingType={brandingType}
                 hashtag={hashtag}
