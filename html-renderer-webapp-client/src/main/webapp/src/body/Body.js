@@ -43,7 +43,7 @@ class Body extends Component {
     const hashtag = data.hashtag === '#multisector';
     return (
       <>
-        <PremierEvent />
+        {/* <PremierEvent /> */}
         {/* <Aside /> */}
         <Paragraph />
         <Paragraph />
