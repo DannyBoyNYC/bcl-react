@@ -15,30 +15,34 @@ class Sidebar extends Component {
       return (
         <div className="content__secondary-column">
           <EqMultiSectorData data={this.props.data} />
-          <Certifications />
-          <Multipart />
+          <div className="certifications-disclosures">
+            <Certifications />
+            <Multipart />
+          </div>
         </div>
       );
     } else if (hashtag === '#multicompany') {
       return (
         <div className="content__secondary-column">
           <EqMultiCompanyData />
-          <Certifications />
-          {/* <Related /> */}
+          <div className="certifications-disclosures">
+            <Certifications />
+            <Related />
+          </div>
         </div>
       );
     } else if (hashtag === '#singlecompany') {
       return (
         <div className="content__secondary-column">
           <EqSingleCompanyData />
-          {/* <div className="certifications-disclosures"> */}
-          <Certifications />
-          <Multipart />
-          <Related />
-          {/* </div> */}
+          <div className="certifications-disclosures">
+            <Certifications />
+            <Multipart />
+            <Related />
+          </div>
         </div>
       );
-    } else return "something f'ed up";
+    } else return <Certifications />;
   }
 }
 
