@@ -11,7 +11,7 @@ function handleLoad() {
   setup.toc = toc;
   const tocCoords = toc.getBoundingClientRect();
   setup.bottom = tocCoords.bottom;
-  // setToc();
+  console.log(setup);
 }
 
 function handleClicks(event) {

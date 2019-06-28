@@ -1,6 +1,6 @@
 // global ratings > all three components
 
-$sidebar: rgba(229,248,255,05);
+$sidebar: rgba(229, 248, 255, 05);
 
 // single company grid
 .data-block ul,
@@ -12,11 +12,11 @@ $sidebar: rgba(229,248,255,05);
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-areas:
-  "company rating"
-  "company status";
+    'company rating'
+    'company status';
   &.company__open {
-    border-left: 1px solid lighten( $link, 50%);
-    background: lighten( $sidebar, 4%);
+    border-left: 1px solid lighten($link, 50%);
+    background: lighten($sidebar, 4%);
   }
 }
 
@@ -72,8 +72,8 @@ $sidebar: rgba(229,248,255,05);
   }
   ul.price-target {
     grid-template-areas:
-    "company rating"
-    "status status";
+      'company rating'
+      'status status';
   }
   .sources {
     font-size: 0.75rem;
@@ -108,7 +108,7 @@ $sidebar: rgba(229,248,255,05);
   // opacity: 1;
   // max-height: 2000px;
   margin-top: 0.5rem;
-  background: lighten( $sidebar, 4%);
+  background: lighten($sidebar, 4%);
 }
 
 // multi company topmost
@@ -130,7 +130,7 @@ $sidebar: rgba(229,248,255,05);
   border-left: 1px solid #fff;
   &:hover {
     border-left: 1px solid $link;
-    background: lighten( $sidebar, 2%);
+    background: lighten($sidebar, 2%);
   }
 }
 
@@ -141,44 +141,41 @@ $sidebar: rgba(229,248,255,05);
 
 .data-block__multisector {
   .sector-block {
-  margin-bottom: 0.75rem;
-  cursor: pointer;
-  border-left: 1px solid #fff;
-  padding: 0.25rem;
-  padding-left: 0.25rem;
-  > .datum {
-    font-size: 0.9rem;
-  }
-  .datum {
-    padding-left: 0.25rem;
-  }
-  > li > .datum {
-    font-size: 1rem;
-  }
-  &:hover,
-  &.sector__open {
-    border-left: 1px solid $link;
-    background: lighten( $sidebar, 2%);
-  }
-  li.stats {
-    display: none;
-  }
-  li.stats__open {
-    display: block;
-    margin-top: 0;
-    padding-top: 0.5rem;
-    .company-block {
-      padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    border-left: 1px solid #fff;
+    padding: 0.25rem;
+    > .datum {
+      font-size: 0.9rem;
+    }
+    .datum {
+      font-weight: 600;
+    }
+    > li > .datum {
+      font-size: 1rem;
+    }
+    &:hover,
+    &.sector__open {
+      border-left: 1px solid $link;
+      background: lighten($sidebar, 2%);
+    }
+    li.stats {
+      display: none;
+    }
+    li.stats__open {
+      display: block;
+      margin-top: 0;
+      padding-top: 0.5rem;
+      .company-block {
+        padding-bottom: 0.5rem;
+      }
     }
   }
-}
 }
 
 // para at bottom pointing to full ratings
 .full-ratings {
   font-size: 0.875rem;
-  line-height: 1.5;
-  padding: 0.25rem 0.5rem;
 }
 
 /// table bull ///////
@@ -190,10 +187,91 @@ $sidebar: rgba(229,248,255,05);
     font-weight: 600;
   }
   .sector {
-    background: lighten( $sidebar, 2%);
+    background: lighten($sidebar, 2%);
   }
   .sector td:first-child {
     padding-left: 0.25rem;
     border-left: 1px solid $link;
+  }
+}
+
+// added from main file
+
+.has-overlay {
+  article {
+    // display: none !important;
+  }
+}
+
+.eqchart-page {
+  font-size: 0.875rem;
+  .header,
+  .subheader {
+    font-size: 0.875rem;
+    padding: 0.25rem;
+    span {
+      float: right;
+    }
+  }
+  .header {
+    font-weight: 700;
+    color: #fff;
+    background-color: $cyan;
+  }
+  .subheader {
+    background-color: #f4f1ef;
+  }
+  thead {
+    border-top: 0.75rem solid #fff;
+  }
+  th,
+  td {
+    text-align: right;
+  }
+  th {
+    color: $text;
+  }
+  td:first-child {
+    text-align: left;
+  }
+  th:first-child {
+    text-align: left;
+  }
+  .curr {
+    background-color: #f4f1ef;
+  }
+}
+
+.eq-page-two-side {
+  .img {
+    width: 240px;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+  img {
+    // border: 1px solid $gray25;
+  }
+  .testlist:first-child {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0 0.25rem;
+  }
+  .testlist {
+    padding: 0.25rem;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    li {
+      padding-right: 1rem;
+      margin-bottom: 0;
+    }
+  }
+  p {
+    margin: 0;
   }
 }

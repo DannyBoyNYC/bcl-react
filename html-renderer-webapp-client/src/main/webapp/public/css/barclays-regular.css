@@ -2149,13 +2149,12 @@ html.zoomed {
   cursor: pointer;
   border-left: 1px solid #fff;
   padding: 0.25rem;
-  padding-left: 0.25rem;
 }
 .data-block__multisector .sector-block > .datum {
   font-size: 0.9rem;
 }
 .data-block__multisector .sector-block .datum {
-  padding-left: 0.25rem;
+  font-weight: 600;
 }
 .data-block__multisector .sector-block > li > .datum {
   font-size: 1rem;
@@ -2178,8 +2177,6 @@ html.zoomed {
 
 .full-ratings {
   font-size: 0.875rem;
-  line-height: 1.5;
-  padding: 0.25rem 0.5rem;
 }
 
 .eqdatatable table {
