@@ -59,7 +59,7 @@
         <hibernate.validator.version>5.2.1.Final</hibernate.validator.version>
 
         <!-- Spring -->
-        <spring.version>4.2.5.RELEASE</spring.version>		
+        <spring.version>5.2.7.RELEASE</spring.version>		
         <spring.security.version>4.0.1.RELEASE</spring.security.version>		
 
         <jackson.joda.version>4.0.1.RELEASE</jackson.joda.version>
