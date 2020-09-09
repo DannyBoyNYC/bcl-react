@@ -56,7 +56,7 @@
         <google.guice.version>3.0</google.guice.version>
 
         <!-- Hibernate / JPS -->		
-        <hibernate.validator.version>5.2.1.Final</hibernate.validator.version>
+        <hibernate.validator.version>5.3.6.Final</hibernate.validator.version>
 
         <!-- Spring -->
         <spring.version>4.2.5.RELEASE</spring.version>		
